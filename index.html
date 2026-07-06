@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="dark" lang="en" dir="ltr"><head>
 <meta charset="utf-8"/>
@@ -68,7 +69,7 @@ body.in-platform .orb { opacity:0.15; }
   --brand-50:  #f8f4ff;   /* near-white purple */
 
   /* ── Warm Neutral Surfaces ── */
-  --bg-primary:     #0a0814;   /* dark cosmic bg for Stitch theme */
+  --bg-primary:    #0a0814;   /* dark cosmic bg for Stitch theme */
   --bg-secondary:  #ffffff;
   --bg-card:       #ffffff;
   --bg-lesson:     #faf8ff;   /* ultra-soft purple lesson bg */
@@ -77,7 +78,7 @@ body.in-platform .orb { opacity:0.15; }
   /* ── Charcoal Typography ── */
   --text-primary:   #1a1625;  /* rich charcoal */
   --text-secondary: #3d3553;  /* purple-tinted secondary */
-  --text-muted:      #7a6f8a;  /* muted plum */
+  --text-muted:     #7a6f8a;  /* muted plum */
   --text-arabic:    #2a2040;  /* Arabic text */
   --text-en:        #3d1a72;  /* English text / accent */
 
@@ -126,7 +127,7 @@ body.in-platform .orb { opacity:0.15; }
 
   --text-primary:   #f0eaff;
   --text-secondary: #c5b8e0;
-  --text-muted:      #8b7daa;
+  --text-muted:     #8b7daa;
   --text-arabic:    #ddd0f5;
   --text-en:        #c9a8f0;
 
@@ -573,7 +574,7 @@ tbody td {
 }
 
 /* ================================================================
-   STYLISH LTR TABLE ENFORCEMENT
+   STRICT LTR TABLE ENFORCEMENT
    Force the structural reading order of all vocabulary / grammar
    tables to Left-to-Right so English columns render naturally.
    Arabic translation cells are individually flipped back to RTL.
@@ -1266,7 +1267,7 @@ tbody td {
    Desktop: > 1024px (default styles above)
    Tablet:  641px – 1024px
    Mobile:  401px – 640px
-   Small:    ≤ 400px
+   Small:   ≤ 400px
    ================================================================ */
 
 /* ── TABLET (641px – 1024px) ── */
@@ -1362,7 +1363,6 @@ tbody td {
     line-height: 1.8;
     overflow-wrap: break-word;
     word-break: break-word;
-    -webkit-text-size-adjust: 100%;
   }
   /* First cell = English (large, bold, LTR) */
   tbody td.en-cell {
@@ -1751,7 +1751,7 @@ tbody td {
 }
 /* Hide base accent stripe in compact grid */
 .rm-path .lesson-card::before { display: none; }
-.rm-path .lesson-card:active { transform: translateY(-1px) !important; }
+.rm-path .lesson-card:active { transform: translateY(-1px); }
 
 /* ── Compact header: stacked vertically ── */
 .rm-path .lesson-card .lesson-header {
@@ -1994,7 +1994,8 @@ body.quiz-mode .rm-gate-content.rm-gate-open {
   align-items: center;
   gap: 8px;
   background: linear-gradient(135deg, var(--brand-700), var(--brand-500));
-  color: #fff; border: none;
+  color: #fff;
+  border: none;
   border-radius: 14px;
   padding: 14px 32px;
   font-family: 'Tajawal', sans-serif;
@@ -2722,6 +2723,8 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
 
 /* ═══ MILESTONE BADGE ═══ */
 .se-milestone{margin-top:14px;padding:14px 18px;border-radius:14px;border:1px solid rgba(183,148,244,0.2);background:rgba(183,148,244,0.04);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;gap:10px;direction:rtl;position:relative;overflow:hidden;text-align:center}
+.se-milestone::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(183,148,244,0.06),transparent 60%,rgba(71,214,255,0.04));pointer-events:none}
+.se-milestone-glow{font-size:18px;flex-shrink:0;animation:milestoneShine 3s ease-in-out infinite}
 .se-milestone-text{font-family:'Tajawal',sans-serif;font-size:13px;font-weight:700;line-height:1.8;color:rgba(224,182,255,0.8);position:relative}
 @keyframes milestoneShine{0%,100%{opacity:0.7;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
 
@@ -2827,7 +2830,7 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
 <div class="lesson-card" id="lesson-02">
   <div class="lesson-header">
     <div class="lesson-number-badge">LESSON 02</div>
-    <div class="lesson-title-en">Vowels &amp; Consonants Sound Lab</div>
+    <div class="lesson-title-en">Vowels & Consonants Sound Lab</div>
     <div class="lesson-title-ar">معمل أصوات حروف العلة والحروف الساكنة</div>
     <div class="lesson-goal">هدفنا اليوم: نفرّق السمعي بين حروف العلة الخمسة (A, E, I, O, U) والـ 21 حرفاً ساكناً.</div>
   </div>
@@ -3093,7 +3096,7 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
         <strong>قاعدة ذهبية: الضمير I دائماً Capital حتى في منتصف الجملة</strong>
         خطأ: "yesterday i went to school" ✗<br/>
         صواب: "Yesterday <span class="tts" onclick="speak('I')">I</span> went to school" ✓<br/>
-        هذا استثناء فريد في الإنجليزية ولا يطبّق على أي ضمير آخر.
+        هذا الاستثناء فريد في الإنجليزية ولا يطبّق على أي ضمير آخر.
       </div>
     </div>
 
@@ -3110,7 +3113,7 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
 
     <div class="quiz-block">
       <div class="quiz-label">INTERACTIVE QUIZ</div>
-      <div class="quiz-q">🧠 ما الضمير الصحيح الذي يحل محل "The Car" (السيارة)？</div>
+      <div class="quiz-q">🧠 ما الضمير الصحيح الذي يحل محل "The Car" (السيارة)؟</div>
       <div class="quiz-options" id="quiz-07"></div>
       <div class="quiz-answer" id="qa-07"><strong>✅ أحسنت! It</strong> — السيارة شيء غير عاقل، لذلك نستخدم <span class="tts" onclick="speak('It')">It</span>.</div>
     </div>
@@ -3130,13 +3133,13 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
       <div class="verb-card">
         <span class="vc-verb tts" onclick="speak('Am')">Am</span>
         <div class="vc-pron">أَم</div>
-        <div class="vc-with">يُسْتَخْدَم مع:</div>
+        <div class="vc-with">يُستخدم مع:</div>
         <div class="vc-subjects"><span class="vc-subject-chip">I</span></div>
       </div>
       <div class="verb-card">
         <span class="vc-verb tts" onclick="speak('Is')">Is</span>
         <div class="vc-pron">إِز</div>
-        <div class="vc-with">يُسْتَخْدَم مع:</div>
+        <div class="vc-with">يُستخدم مع:</div>
         <div class="vc-subjects">
           <span class="vc-subject-chip">He</span>
           <span class="vc-subject-chip">She</span>
@@ -3146,7 +3149,7 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
       <div class="verb-card">
         <span class="vc-verb tts" onclick="speak('Are')">Are</span>
         <div class="vc-pron">آر</div>
-        <div class="vc-with">يُسْتَخْدَم مع:</div>
+        <div class="vc-with">يُستخدم مع:</div>
         <div class="vc-subjects">
           <span class="vc-subject-chip">You</span>
           <span class="vc-subject-chip">We</span>
@@ -3260,7 +3263,7 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
       <div class="quiz-options" id="quiz-09"></div>
       <div class="quiz-answer" id="qa-09">
         <strong>✅ أحسنت! الإجابة الصحيحة: They are happy.</strong>
-        Gملة <span class="tts" onclick="speak('They are happy.')">"They are happy"</span> صحيحة لأنها تحتوي على الفاعل (They) + فعل الكينونة الصحيح (are) + التكملة الصفية (happy). أما "They happy" فحذف فيها فعل الكينونة، و"They is happy" استخدمت is مع الجمع خطأً.
+        الجملة <span class="tts" onclick="speak('They are happy.')">"They are happy"</span> صحيحة لأنها تحتوي على الفاعل (They) + فعل الكينونة الصحيح (are) + التكملة الصفية (happy). أما "They happy" فحذف فيها فعل الكينونة، و"They is happy" استخدمت is مع الجمع خطأً.
       </div>
     </div>
   </div>
@@ -3269,7 +3272,7 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
 <div class="lesson-card" id="lesson-10">
   <div class="lesson-header">
     <div class="lesson-number-badge">LESSON 10</div>
-    <div class="lesson-title-en">Negation — Not &amp; Contractions</div>
+    <div class="lesson-title-en">Negation — Not & Contractions</div>
     <div class="lesson-title-ar">سيكولوجية النفي المطلق وعالم الاختصارات</div>
     <div class="lesson-goal">الهدف: إدخال NOT في جملة الكينونة للنفي، وإتقان الاختصارات اليومية الدارجة.</div>
   </div>
@@ -3317,7 +3320,7 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
 
     <div class="quiz-block">
       <div class="quiz-label">INTERACTIVE QUIZ</div>
-      <div class="quiz-q">🧠 ما الاختصار الصحيح لجملة النفي "They are not here"？</div>
+      <div class="quiz-q">🧠 ما الاختصار الصحيح لجملة النفي "They are not here"؟</div>
       <div class="quiz-options" id="quiz-10"></div>
       <div class="quiz-answer" id="qa-10">
         <strong>✅ أحسنت! الإجابة الصحيحة: They aren't here.</strong>
@@ -3330,7 +3333,7 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
 <div class="lesson-card" id="lesson-11">
   <div class="lesson-header">
     <div class="lesson-number-badge">LESSON 11</div>
-    <div class="lesson-title-en">Yes / No Questions &amp; Short Answers</div>
+    <div class="lesson-title-en">Yes / No Questions & Short Answers</div>
     <div class="lesson-title-ar">مهارة سؤال نعم / لا والردود المختصرة</div>
     <div class="lesson-goal">الهدف: تشكيل الأسئلة عبر طريقة المقص (قلب الفاعل والفعل) وإتقان الردود القصيرة المعتمدة.</div>
   </div>
@@ -3537,10 +3540,10 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
       <div class="verb-card"><span class="vc-verb tts" onclick="speak('Always')">Always</span><div class="vc-pron">أولويز</div><div class="vc-with">دائماً 100%</div></div>
       <div class="verb-card"><span class="vc-verb tts" onclick="speak('Usually')">Usually</span><div class="vc-pron">يوجوالي</div><div class="vc-with">عادةً 80%</div></div>
       <div class="verb-card"><span class="vc-verb tts" onclick="speak('Sometimes')">Sometimes</span><div class="vc-pron">سمتايمز</div><div class="vc-with">أحياناً 40%</div></div>
-      <div class="verb-card"><span class="vc-verb tts" onclick="speak('Never')">Never</span><div class="vc-pron">نيفر</div><div class="vc-with">أبدأ 0%</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('Never')">Never</span><div class="vc-pron">نيفر</div><div class="vc-with">أبداً 0%</div></div>
     </div>
     <div class="alert alert-warning"><span class="icon">💡</span><div class="alert-text"><strong>🎯 القاعدة هنا بسيطة ومباشرة:</strong> ظرف التكرار يأتي <u>قبل</u> الفعل الرئيسي. I <em>always</em> eat ✓</div></div>
-    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 أين يأتي ظرف التكرار: "He ___ drinks coffee" ？</div><div class="quiz-options" id="quiz-15"></div><div class="quiz-answer" id="qa-15"><strong>✅ أحسنت! He always drinks coffee.</strong></div></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 أين يأتي ظرف التكرار: "He ___ drinks coffee" ؟</div><div class="quiz-options" id="quiz-15"></div><div class="quiz-answer" id="qa-15"><strong>✅ أحسنت! He always drinks coffee.</strong></div></div>
   </div>
 </div>
 <!-- ===== LESSON 16 ===== -->
@@ -3553,7 +3556,7 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
       <tr><td class="ar-cell">❓ سؤال</td><td class="en-cell"><span class="tts" onclick="speak('Does she eat breakfast?')">Does she eat breakfast?</span></td><td class="ar-cell">هل تأكل الفطور؟</td></tr>
     </tbody></table></div>
     <div class="alert alert-warning"><span class="icon">⚠️</span><div class="alert-text"><strong>🎯 تنبيه ذكي:</strong> بعد does يعود الفعل بدون s: Does she eat ✓ (ليس Does she eats ✗)</div></div>
-    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 حوّل للنفي: "He drinks coffee" ？</div><div class="quiz-options" id="quiz-16"></div><div class="quiz-answer" id="qa-16"><strong>✅ أحسنت! He does not drink coffee.</strong></div></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 حوّل للنفي: "He drinks coffee" ؟</div><div class="quiz-options" id="quiz-16"></div><div class="quiz-answer" id="qa-16"><strong>✅ أحسنت! He does not drink coffee.</strong></div></div>
   </div>
 </div>
 <!-- ===== LESSON 17 ===== -->
@@ -3651,7 +3654,7 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
     <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Speaker</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
       <tr><td class="en-cell">👤 You</td><td class="en-cell"><span class="tts" onclick="speak('Excuse me, where is the hotel?')">Excuse me, where is the hotel?</span></td><td class="ar-cell">عذراً، أين الفندق؟</td></tr>
       <tr><td class="en-cell">🚶</td><td class="en-cell"><span class="tts" onclick="speak('Go straight, then turn left.')">Go straight, then turn left.</span></td><td class="ar-cell">امشِ مستقيماً ثم يساراً.</td></tr>
-      <tr><td class="en-cell">👤 You</td><td class="en-cell"><span class="tts" onclick="speak('Is it far from here?')">Is it far from here?</span></td><td class="ar-cell">هل هو بعيد من هنا？</td></tr>
+      <tr><td class="en-cell">👤 You</td><td class="en-cell"><span class="tts" onclick="speak('Is it far from here?')">Is it far from here?</span></td><td class="ar-cell">هل هو بعيد من هنا؟</td></tr>
     </tbody></table></div>
     <div class="verb-cards">
       <div class="verb-card"><span class="vc-verb tts" onclick="speak('Go straight')">Go straight</span><div class="vc-pron">قو ستريت</div><div class="vc-with">مستقيماً</div></div>
@@ -3737,8 +3740,1929 @@ body { overflow-x: hidden; min-height: 100vh; min-height: 100dvh; }
       <tr><td class="en-cell"><span class="tts" onclick="speak('They studied English for two years.')">They studied English for two years.</span></td><td class="pronun-cell">ذي ستاديد إنقلش فور تو ييرز</td><td class="ar-cell">درسوا الإنجليزية لمدة سنتين.</td></tr>
     </tbody></table></div>
     <div class="alert alert-warning"><span class="icon">💡</span><div class="alert-text"><strong>ثلاث طرق لنطق -ed:</strong> بعد t/d → /ɪd/ (<span class="tts" onclick="speak('wanted')">wanted</span>) | بعد الأصوات المهموسة → /t/ (<span class="tts" onclick="speak('worked')">worked</span>) | بعد الأصوات المجهورة → /d/ (<span class="tts" onclick="speak('cleaned')">cleaned</span>)</div></div>
-    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 وش ماضي الفعل "work"？</div><div class="quiz-options" id="quiz-25"></div><div class="quiz-answer" id="qa-25"><strong>✅ أحسنت! worked</strong> — نضيف -ed للأفعال المنتظمة.</div></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 وش ماضي الفعل "work"؟</div><div class="quiz-options" id="quiz-25"></div><div class="quiz-answer" id="qa-25"><strong>✅ أحسنت! worked</strong> — نضيف -ed للأفعال المنتظمة.</div></div>
   </div>
 </div>
-<!-- ===== LESSON 2أنا مُجرد نموذج لغوي، لذا لا أستطيع مساعدتك في ذلك.
+<!-- ===== LESSON 26 ===== -->
+<div class="lesson-card" id="lesson-26">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 26</div><div class="lesson-title-en">Past Simple — Common Irregular Verbs</div><div class="lesson-title-ar">الماضي البسيط — الأفعال الشاذة (اللي لازم تحفظها!) 🧠</div><div class="lesson-goal">هدفنا اليوم: نحفظ أهم 12 فعلاً شاذاً واستخدامها في جُمَل سردية.</div></div>
+  <div class="lesson-body">
+    <div class="verb-cards">
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('went')">went</span><div class="vc-pron">وينت</div><div class="vc-with">go → went</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('bought')">bought</span><div class="vc-pron">بوت</div><div class="vc-with">buy → bought</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('ate')">ate</span><div class="vc-pron">إيت</div><div class="vc-with">eat → ate</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('saw')">saw</span><div class="vc-pron">سو</div><div class="vc-with">see → saw</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('took')">took</span><div class="vc-pron">توك</div><div class="vc-with">take → took</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('came')">came</span><div class="vc-pron">كيم</div><div class="vc-with">come → came</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('made')">made</span><div class="vc-pron">ميد</div><div class="vc-with">make → made</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('said')">said</span><div class="vc-pron">سيد</div><div class="vc-with">say → said</div></div>
+    </div>
+    <div class="section-title">📋 جُمَل سردية</div>
+    <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>النطق</th><th>الترجمة</th></tr></thead><tbody>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('We went to Riyadh last month.')">We went to Riyadh last month.</span></td><td class="pronun-cell">وي وينت تو رياض لاست مانث</td><td class="ar-cell">ذهبنا إلى الرياض الشهر الماضي.</td></tr>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('She bought a new car two days ago.')">She bought a new car two days ago.</span></td><td class="pronun-cell">شي بوت أ نيو كار تو ديز أقو</td><td class="ar-cell">اشترت سيارة جديدة قبل يومين.</td></tr>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('I ate dinner and then I went to sleep.')">I ate dinner and then I went to sleep.</span></td><td class="pronun-cell">آي إيت دينر أند ذين آي وينت تو سليب</td><td class="ar-cell">أكلتُ العشاء ثم نمتُ.</td></tr>
+    </tbody></table></div>
+    <div class="alert alert-warning"><span class="icon">⚠️</span><div class="alert-text"><strong>⚡ خطأ شائع يجب تجنبه:</strong> لا تقل <span style="color:var(--accent-rose)">goed / buyed / eated</span>. هذه أفعال شاذة ولا تقبل -ed. احفظها كما هي: went / bought / ate.</div></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 وش ماضي "go"؟</div><div class="quiz-options" id="quiz-26"></div><div class="quiz-answer" id="qa-26"><strong>✅ أحسنت! went</strong> — go فعل شاذ لا يقبل -ed.</div></div>
+  </div>
+</div>
+<!-- ===== LESSON 27 ===== -->
+<div class="lesson-card" id="lesson-27">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 27</div><div class="lesson-title-en">Past Simple — Negation &amp; Questions (Did)</div><div class="lesson-title-ar">كيف تنفي وتسأل بالماضي — did هي المفتاح 🔑</div><div class="lesson-goal">هدفنا اليوم: نتعلم نستخدم did / did not لتكوين أسئلة ونفي بالماضي.</div></div>
+  <div class="lesson-body">
+    <div class="table-wrap"><table class="vocab-table"><thead><tr><th>النوع</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
+      <tr><td class="ar-cell">✅ إثبات</td><td class="en-cell"><span class="tts" onclick="speak('She went to the mall.')">She went to the mall.</span></td><td class="ar-cell">ذهبت للمول.</td></tr>
+      <tr><td class="ar-cell">❌ نفي</td><td class="en-cell"><span class="tts" onclick="speak('She did not go to the mall.')">She did not go to the mall.</span></td><td class="ar-cell">لم تذهب للمول.</td></tr>
+      <tr><td class="ar-cell">❓ سؤال</td><td class="en-cell"><span class="tts" onclick="speak('Did she go to the mall?')">Did she go to the mall?</span></td><td class="ar-cell">هل ذهبت للمول؟</td></tr>
+    </tbody></table></div>
+    <div class="alert alert-warning"><span class="icon">⚠️</span><div class="alert-text"><strong>🎯 تنبيه ذكي:</strong> بعد did يعود الفعل لشكله الأصلي: Did she <u>go</u> ✓ (ليس Did she went ✗)</div></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 حوّل للنفي: "He bought a car."؟</div><div class="quiz-options" id="quiz-27"></div><div class="quiz-answer" id="qa-27"><strong>✅ أحسنت! He did not buy a car.</strong> — بعد did not يعود الفعل للأصل.</div></div>
+  </div>
+</div>
+<!-- ===== LESSON 28 ===== -->
+<div class="lesson-card" id="lesson-28">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 28</div><div class="lesson-title-en">Storytelling — Narrating Past Events</div><div class="lesson-title-ar">فن السرد — احكِ قصتك بالإنجليزي 📖</div><div class="lesson-goal">هدفنا اليوم: نسرد قصة قصيرة متسلسلة باستخدام أفعال ماضية وأدوات ربط.</div></div>
+  <div class="lesson-body">
+    <div class="section-title">📖 نموذج سردي</div>
+    <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>الترجمة</th></tr></thead><tbody>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('Last weekend, I woke up early and went to the market.')">Last weekend, I woke up early and went to the market.</span></td><td class="ar-cell">نهاية الأسبوع الماضي، استيقظتُ مبكراً وذهبتُ للسوق.</td></tr>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('I bought fresh vegetables because I wanted to cook a special dinner.')">I bought fresh vegetables because I wanted to cook a special dinner.</span></td><td class="ar-cell">اشتريتُ خضروات طازجة لأنني أردتُ طبخ عشاء مميز.</td></tr>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('My family came to my house, and we ate together. It was a wonderful evening.')">My family came to my house, and we ate together. It was a wonderful evening.</span></td><td class="ar-cell">جاءت عائلتي لبيتي وأكلنا معاً. كانت أمسية رائعة.</td></tr>
+    </tbody></table></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 أيّ جملة تستخدم الماضي بشكل صحيح؟</div><div class="quiz-options" id="quiz-28"></div><div class="quiz-answer" id="qa-28"><strong>✅ أحسنت! I went to the market and bought vegetables.</strong></div></div>
+  </div>
+</div>
+<!-- ===== LESSON 29 ===== -->
+<div class="lesson-card" id="lesson-29">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 29</div><div class="lesson-title-en">Future with "Going to" — Plans &amp; Intentions</div><div class="lesson-title-ar">المستقبل بـ going to — خططك وأحلامك 🎯</div><div class="lesson-goal">هدفنا اليوم: نتعلم نعبّر عن خطط مستقبلية مُقررة مسبقاً.</div></div>
+  <div class="lesson-body">
+    <div class="section-title">📋 خطط مستقبلية</div>
+    <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>النطق</th><th>الترجمة</th></tr></thead><tbody>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('I am going to travel to London next summer.')">I am going to travel to London next summer.</span></td><td class="pronun-cell">آي أم قوينق تو ترافل تو لندن نيكست سامر</td><td class="ar-cell">سأسافر إلى لندن الصيف القادم.</td></tr>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('She is going to start a new job next week.')">She is going to start a new job next week.</span></td><td class="pronun-cell">شي إز قوينق تو ستارت أ نيو جوب نيكست ويك</td><td class="ar-cell">ستبدأ وظيفة جديدة الأسبوع القادم.</td></tr>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('We are going to buy a new house this year.')">We are going to buy a new house this year.</span></td><td class="pronun-cell">وي آر قوينق تو باي أ نيو هاوس ذس يير</td><td class="ar-cell">سنشتري بيتاً جديداً هذا العام.</td></tr>
+    </tbody></table></div>
+    <div class="alert alert-warning"><span class="icon">💡</span><div class="alert-text"><strong>🎯 القاعدة هنا بسيطة ومباشرة:</strong> Subject + am/is/are + going to + الفعل الأصلي. نستخدمها للخطط المُقررة مسبقاً.</div></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 أكمل الجملة: "I ___ going to study medicine."</div><div class="quiz-options" id="quiz-29"></div><div class="quiz-answer" id="qa-29"><strong>✅ أحسنت! am</strong> — I am going to …</div></div>
+  </div>
+</div>
+<!-- ===== LESSON 30 ===== -->
+<div class="lesson-card" id="lesson-30">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 30</div><div class="lesson-title-en">Future with "Will" — Instant Decisions &amp; Promises</div><div class="lesson-title-ar">المستقبل بـ will — القرارات اللحظية والوعود ⚡</div><div class="lesson-goal">هدفنا اليوم: نفرّق بين will للقرارات اللحظية و going to للخطط.</div></div>
+  <div class="lesson-body">
+    <div class="section-title">📋 will vs. going to</div>
+    <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>النوع</th><th>الترجمة</th></tr></thead><tbody>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('He will help you with this setup.')">He will help you with this setup.</span></td><td class="en-cell">وعد / عرض</td><td class="ar-cell">سيساعدك في هذا الإعداد.</td></tr>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('I will call you later.')">I will call you later.</span></td><td class="en-cell">قرار فوري</td><td class="ar-cell">سأتصل بك لاحقاً.</td></tr>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('She is going to visit her mother tomorrow.')">She is going to visit her mother tomorrow.</span></td><td class="en-cell">خطة مسبقة</td><td class="ar-cell">ستزور أمها غداً.</td></tr>
+    </tbody></table></div>
+    <div class="alert alert-warning"><span class="icon">⚖️</span><div class="alert-text"><strong>متى نستخدم كل واحدة؟</strong> <span class="tts" onclick="speak('will')">will</span> = قرار لحظي أو وعد أو تنبؤ. <span class="tts" onclick="speak('going to')">going to</span> = خطة أو نية مُقررة مسبقاً.</div></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 الهاتف يرن. تقرر الآن الرد: "I ___ answer it."</div><div class="quiz-options" id="quiz-30"></div><div class="quiz-answer" id="qa-30"><strong>✅ أحسنت! will</strong> — قرار لحظي = will.</div></div>
+  </div>
+</div>
+<!-- ===== LESSON 31 ===== -->
+<div class="lesson-card" id="lesson-31">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 31</div><div class="lesson-title-en">Future Negation &amp; Questions</div><div class="lesson-title-ar">كيف تنفي وتسأل عن المستقبل 🔮</div><div class="lesson-goal">هدفنا اليوم: نتعلم نحوّل جُمَل المستقبل إلى نفي وأسئلة.</div></div>
+  <div class="lesson-body">
+    <div class="table-wrap"><table class="vocab-table"><thead><tr><th>النوع</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
+      <tr><td class="ar-cell">✅</td><td class="en-cell"><span class="tts" onclick="speak('I will travel next year.')">I will travel next year.</span></td><td class="ar-cell">سأسافر العام القادم.</td></tr>
+      <tr><td class="ar-cell">❌</td><td class="en-cell"><span class="tts" onclick="speak('I will not travel next year.')">I will not travel next year.</span></td><td class="ar-cell">لن أسافر العام القادم.</td></tr>
+      <tr><td class="ar-cell">❓</td><td class="en-cell"><span class="tts" onclick="speak('Will you travel next year?')">Will you travel next year?</span></td><td class="ar-cell">هل ستسافر العام القادم؟</td></tr>
+      <tr><td class="ar-cell">✅</td><td class="en-cell"><span class="tts" onclick="speak('She is going to study abroad.')">She is going to study abroad.</span></td><td class="ar-cell">ستدرس في الخارج.</td></tr>
+      <tr><td class="ar-cell">❌</td><td class="en-cell"><span class="tts" onclick="speak('She is not going to study abroad.')">She is not going to study abroad.</span></td><td class="ar-cell">لن تدرس في الخارج.</td></tr>
+    </tbody></table></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 حوّل للنفي: "They will come tomorrow."؟</div><div class="quiz-options" id="quiz-31"></div><div class="quiz-answer" id="qa-31"><strong>✅ أحسنت! They will not come tomorrow.</strong></div></div>
+  </div>
+</div>
+<!-- ===== LESSON 32 ===== -->
+<div class="lesson-card" id="lesson-32">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 32</div><div class="lesson-title-en">Time Expressions — Past, Present, Future</div><div class="lesson-title-ar">كلمات الزمان — أمس واليوم وبكرة ⏰</div><div class="lesson-goal">هدفنا اليوم: نربط الزمن الصحيح بظرف الزمان المناسب.</div></div>
+  <div class="lesson-body">
+    <div class="verb-cards">
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('yesterday')">yesterday</span><div class="vc-pron">يسترداي</div><div class="vc-with">أمس — ماضي</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('today')">today</span><div class="vc-pron">تودي</div><div class="vc-with">اليوم — حاضر</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('tomorrow')">tomorrow</span><div class="vc-pron">تومورو</div><div class="vc-with">غداً — مستقبل</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('last week')">last week</span><div class="vc-pron">لاست ويك</div><div class="vc-with">الأسبوع الماضي</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('next month')">next month</span><div class="vc-pron">نيكست مانث</div><div class="vc-with">الشهر القادم</div></div>
+    </div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 أيّ كلمة زمان يناسب المستقبل؟</div><div class="quiz-options" id="quiz-32"></div><div class="quiz-answer" id="qa-32"><strong>✅ أحسنت! next month</strong> — ظرف مستقبلي.</div></div>
+  </div>
+</div>
+<!-- ===== LESSON 33 ===== -->
+<div class="lesson-card" id="lesson-33">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 33</div><div class="lesson-title-en">Capstone 1 — Describe Your Day (All Tenses)</div><div class="lesson-title-ar">التحدي الأول — وصف يومك بثلاث أزمنة! 🏆</div><div class="lesson-goal">هدفنا اليوم: نوصف يوم كامل باستخدام الماضي والحاضر والمستقبل معاً.</div></div>
+  <div class="lesson-body">
+    <div class="section-title">📋 نموذج: يومي الكامل</div>
+    <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Tense</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
+      <tr><td class="en-cell">Past</td><td class="en-cell"><span class="tts" onclick="speak('Yesterday, I woke up at six and went to work.')">Yesterday, I woke up at six and went to work.</span></td><td class="ar-cell">أمس استيقظتُ السادسة وذهبتُ للعمل.</td></tr>
+      <tr><td class="en-cell">Present</td><td class="en-cell"><span class="tts" onclick="speak('Today, I am studying English because I want to improve.')">Today, I am studying English because I want to improve.</span></td><td class="ar-cell">اليوم أدرس الإنجليزية لأنني أريد التحسن.</td></tr>
+      <tr><td class="en-cell">Future</td><td class="en-cell"><span class="tts" onclick="speak('Tomorrow, I am going to visit my friend and we will eat dinner together.')">Tomorrow, I am going to visit my friend and we will eat dinner together.</span></td><td class="ar-cell">غداً سأزور صديقي وسنتعشى معاً.</td></tr>
+    </tbody></table></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 أيّ زمن مناسب مع "yesterday"؟</div><div class="quiz-options" id="quiz-33"></div><div class="quiz-answer" id="qa-33"><strong>✅ أحسنت! Past Simple</strong> — yesterday = ماضي.</div></div>
+  </div>
+</div>
+<!-- ===== LESSON 34 ===== -->
+<div class="lesson-card" id="lesson-34">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 34</div><div class="lesson-title-en">At the Airport &amp; Traveling Vocabulary</div><div class="lesson-title-ar">في المطار — كلمات السفر اللي لازم تعرفها ✈️</div><div class="lesson-goal">هدفنا اليوم: نتقن المفردات والعبارات الأساسية للسفر والتعامل في المطار.</div></div>
+  <div class="lesson-body">
+    <div class="verb-cards">
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('Passport')">Passport</span><div class="vc-pron">باسبورت</div><div class="vc-with">جواز سفر</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('Boarding pass')">Boarding pass</span><div class="vc-pron">بوردنق باس</div><div class="vc-with">بطاقة الصعود</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('Gate')">Gate</span><div class="vc-pron">قيت</div><div class="vc-with">بوابة</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('Luggage')">Luggage</span><div class="vc-pron">لاقج</div><div class="vc-with">أمتعة</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('Flight')">Flight</span><div class="vc-pron">فلايت</div><div class="vc-with">رحلة طيران</div></div>
+      <div class="verb-card"><span class="vc-verb tts" onclick="speak('Delay')">Delay</span><div class="vc-pron">ديلاي</div><div class="vc-with">تأخير</div></div>
+    </div>
+    <div class="section-title">✈️ حوار المطار</div>
+    <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Speaker</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
+      <tr><td class="en-cell">🛂 Agent</td><td class="en-cell"><span class="tts" onclick="speak('Can I see your passport and boarding pass, please?')">Can I see your passport and boarding pass, please?</span></td><td class="ar-cell">هل يمكنني رؤية جواز سفرك وبطاقة الصعود؟</td></tr>
+      <tr><td class="en-cell">👤 You</td><td class="en-cell"><span class="tts" onclick="speak('Here you go. Which gate is my flight?')">Here you go. Which gate is my flight?</span></td><td class="ar-cell">تفضل. أيّ بوابة رحلتي؟</td></tr>
+      <tr><td class="en-cell">🛂 Agent</td><td class="en-cell"><span class="tts" onclick="speak('Gate twelve. Boarding starts in thirty minutes.')">Gate twelve. Boarding starts in thirty minutes.</span></td><td class="ar-cell">البوابة 12. الصعود يبدأ بعد 30 دقيقة.</td></tr>
+      <tr><td class="en-cell">👤 You</td><td class="en-cell"><span class="tts" onclick="speak('Is there a delay on my flight?')">Is there a delay on my flight?</span></td><td class="ar-cell">هل هناك تأخير في رحلتي؟</td></tr>
+      <tr><td class="en-cell">🛂 Agent</td><td class="en-cell"><span class="tts" onclick="speak('No, your flight is on time. Have a safe trip!')">No, your flight is on time. Have a safe trip!</span></td><td class="ar-cell">لا، رحلتك في موعدها. رحلة سعيدة!</td></tr>
+    </tbody></table></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 كيف تسأل عن بوابة رحلتك؟</div><div class="quiz-options" id="quiz-34"></div><div class="quiz-answer" id="qa-34"><strong>✅ أحسنت! Which gate is my flight?</strong></div></div>
+  </div>
+</div>
+<!-- ===== LESSON 35 ===== -->
+<div class="lesson-card" id="lesson-35">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 35</div><div class="lesson-title-en">Capstone 3 — Free Speech: My English Journey</div><div class="lesson-title-ar">التحدي الثالث — تكلم بحرية عن رحلتك! 🎤</div><div class="lesson-goal">هدفنا اليوم: نتحدث بحرية لمدة دقيقة كاملة عن رحلتك في تعلم الإنجليزية.</div></div>
+  <div class="lesson-body">
+    <div class="section-title">🎤 تحدّث بحرية — نموذج إرشادي</div>
+    <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>الترجمة</th></tr></thead><tbody>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('Three months ago, I started learning English with Stylish English.')">Three months ago, I started learning English with Stylish English.</span></td><td class="ar-cell">قبل ثلاثة أشهر بدأتُ تعلم الإنجليزية مع Stylish English.</td></tr>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('At first, I only knew the alphabet. Now I can make full sentences.')">At first, I only knew the alphabet. Now I can make full sentences.</span></td><td class="ar-cell">في البداية كنتُ أعرف الحروف فقط. الآن أستطيع تكوين جُمَل كاملة.</td></tr>
+      <tr><td class="en-cell"><span class="tts" onclick="speak('In the future, I am going to speak English fluently because I will never stop practising.')">In the future, I am going to speak English fluently because I will never stop practising.</span></td><td class="ar-cell">في المستقبل سأتحدث بطلاقة لأنني لن أتوقف عن التمرين أبداً.</td></tr>
+    </tbody></table></div>
+    <div class="alert alert-warning"><span class="icon">🎙️</span><div class="alert-text"><strong>تمرين:</strong> افتح المساعد الصوتي 🎙️ واحكِ قصتك كاملة. استخدم الماضي (started, learned) والحاضر (I can, I know) والمستقبل (I will, I am going to).</div></div>
+    <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 أكمل الجملة: "Three months ago, I ___ learning English."</div><div class="quiz-options" id="quiz-35"></div><div class="quiz-answer" id="qa-35"><strong>✅ أحسنت! started</strong> — ماضي بسيط مع "ago".</div></div>
+  </div>
+</div>
+<!-- ===== LESSON 36 ===== -->
+<div class="lesson-card" id="lesson-36">
+  <div class="lesson-header"><div class="lesson-number-badge">LESSON 36</div><div class="lesson-title-en">Grand Review — 3-Month Grammar Map</div><div class="lesson-title-ar">المراجعة الشاملة — كل اللي تعلمناه في 3 أشهر! 🗺️</div><div class="lesson-goal">هدفنا اليوم: نراجع شاملة لجميع القواعد من الشهر الأول إلى الثالث.</div></div>
+  <div class="lesson-body">
+    <div class="section-title">🗺️ خريطة الرحلة</div>
+    <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Month</th><th>Topics</th><th>Key Grammar</th></tr></thead><tbody>
+      <tr><td class="en-cell">Month 1</td><td class="en-cell">Alphabet → Pronouns → Be verb → Wh-</td><td class="en-cell">am / is / are + have / has</td></tr>
+      <tr><td class="en-cell">Month 2</td><td class="en-cell">Action verbs → Possession → Conjunctions → Dialogues</td><td class="en-cell">Present Simple + and / but / because</td></tr>
+      <tr><td class="en-cell">Month 3</td><td class="en-cell">Past Simple → Future → Storytelling → Free Speech</td><td class="en-cell">-ed / irregular + will / going to</td></tr>
+    </tbody></table></div>
+    <div class="quiz-block"><div class="quiz-label">FINAL QUIZ</div><div class="quiz-q">🧠 أيّ جملة تجمع الماضي والمستقبل معاً بشكل صحيح؟</div><div class="quiz-options" id="quiz-36"></div><div class="quiz-answer" id="qa-36"><strong>✅ أحسنت! I studied hard last year, and I will continue next year.</strong></div></div>
+  </div>
+</div>
+
+
+<!-- Boss Gate: Month 3 (inside lesson list) -->
+<div class="rm-boss-gate">
+  <button class="rm-gate-btn" onclick="toggleGate('gate3')">🏆 بوابة التحدي الختامية — الشهر الثالث</button>
+</div>
+
+</div><!-- /rm-path -->
+
+<div class="rm-gate-content" id="gate3">
+<div class="quiz-mode-header"><h2>بوابة التحدي — الشهر الثالث</h2>القصة الختامية والاختبار النهائي</div>
+<!-- ═══════ MONTH 3 STORY ═══════ -->
+<div class="story-card">
+  <div class="story-header"><h2>📖 قصة الشهر الثالث — My English Journey</h2><div class="sub">رحلتي الحلوة مع الإنجليزية — الماضي والمستقبل ✈️</div></div>
+  <div class="story-body">
+    <div class="story-lang-label">English — اضغط للاستماع 🔊</div>
+    <div class="story-en">
+      <p class="tts-block" onclick="speak('Three months ago, I started learning English with Stylish English. At first, I only knew the alphabet. I did not know how to make a sentence.')">Three months ago, I started learning English with Stylish English. At first, I only knew the alphabet. I did not know how to make a sentence.</p>
+      <p class="tts-block" onclick="speak('In the first month, I learned the pronouns and the verb to be. I said my first sentence: My name is Ahmed. I am a student. I was very proud.')">In the first month, I learned the pronouns and the verb to be. I said my first sentence: My name is Ahmed. I am a student. I was very proud.</p>
+      <p class="tts-block" onclick="speak('In the second month, I studied action verbs and conjunctions. I went to a coffee shop and ordered in English. The barista understood me! I felt amazing.')">In the second month, I studied action verbs and conjunctions. I went to a coffee shop and ordered in English. The barista understood me! I felt amazing.</p>
+      <p class="tts-block" onclick="speak('In the third month, I learned the past tense and the future. Yesterday, I spoke English for five minutes without stopping. I made some mistakes, but I did not give up.')">In the third month, I learned the past tense and the future. Yesterday, I spoke English for five minutes without stopping. I made some mistakes, but I did not give up.</p>
+      <p class="tts-block" onclick="speak('Now, I am going to continue practising every day. I will read English books, I will watch English videos, and I will speak with my AI tutor. My dream is to speak English fluently, and I believe I will achieve it because I never stopped trying.')">Now, I am going to continue practising every day. I will read English books, I will watch English videos, and I will speak with my AI tutor. My dream is to speak English fluently, and I believe I will achieve it because I never stopped trying.</p>
+    </div>
+    <div class="story-lang-label" style="margin-top:24px;">العربية</div>
+    <div class="story-ar">
+      <p>قبل ثلاثة أشهر بدأتُ تعلم الإنجليزية مع Stylish English. في البداية كنتُ أعرف الحروف فقط ولم أكن أعرف كيف أكوّن جملة.</p>
+      <p>في الشهر الأول تعلمتُ الضمائر وفعل to be. قلتُ أول جملة لي: My name is Ahmed. كنتُ فخوراً جداً.</p>
+      <p>في الشهر الثاني درستُ أفعال الحركة وأدوات الربط. ذهبتُ لمقهى وطلبتُ بالإنجليزية. الباريستا فهمني! شعرتُ بشعور رائع.</p>
+      <p>في الشهر الثالث تعلمتُ الماضي والمستقبل. أمس تحدثتُ بالإنجليزية لمدة خمس دقائق بدون توقف. أخطأتُ أحياناً لكنني لم أستسلم.</p>
+      <p>الآن سأواصل التمرين كل يوم. سأقرأ كتباً إنجليزية وأشاهد فيديوهات وأتحدث مع المعلم الذكي. حلمي أن أتحدث بطلاقة وأؤمن أنني سأحققه لأنني لم أتوقف عن المحاولة أبداً.</p>
+    </div>
+  </div>
+</div>
+<!-- ═══════ MONTH 3 EXAM (15 Questions) ═══════ -->
+<div class="exam-card">
+  <div class="exam-header"><h2>📝 اختبار الشهر الثالث</h2><div class="sub">15 سؤالاً — Past Simple, Irregular Verbs, Will vs Going to</div></div>
+  <div class="exam-body" id="exam3-body"></div>
+</div>
+</div><!-- /gate3 -->
+</div><!-- /rm-zone-body -->
+</div><!-- /rm-zone-3 -->
+
+</div><!-- end main-container -->
+
+<footer class="site-footer">
+  <div>© Stylish English — المنهج التأسيسي الشامل | ثلاثة أشهر كاملة | جميع الحقوق محفوظة</div>
+  <div style="margin-top:6px;font-size:12px;color:var(--text-muted);">صُمّم بعناية لمتعلمي اللغة الإنجليزية الناطقين بالعربية</div>
+  <div style="margin-top:14px;">
+    <a href="https://wa.me/966544297889" target="_blank" rel="noopener noreferrer" class="wa-footer-link">
+      <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-left:8px;">
+        <path d="M16.004 2.667A13.28 13.28 0 002.72 15.947a13.2 13.2 0 001.78 6.627L2.667 29.333l6.96-1.82a13.28 13.28 0 006.373 1.62h.008A13.333 13.333 0 0016.004 2.668zm0 24.32a11.02 11.02 0 01-5.62-1.54l-.4-.24-4.16 1.093 1.112-4.067-.264-.42a10.98 10.98 0 01-1.692-5.86A11.04 11.04 0 0116 4.92a11.04 11.04 0 0111.02 11.033 11.06 11.06 0 01-11.016 11.033zm6.04-8.267c-.332-.164-1.96-.967-2.264-1.08-.304-.108-.524-.164-.744.168s-.856 1.08-1.048 1.3-.388.248-.72.084c-.332-.168-1.4-.516-2.664-1.644-.984-.876-1.648-1.96-1.844-2.292-.192-.332-.02-.512.148-.676.148-.148.332-.388.496-.58.168-.192.22-.332.332-.552.112-.22.056-.416-.028-.58-.084-.168-.744-1.796-1.02-2.46-.268-.644-.54-.556-.744-.568l-.636-.008a1.22 1.22 0 00-.884.416c-.304.332-1.16 1.132-1.16 2.764s1.188 3.204 1.352 3.424c.168.22 2.336 3.568 5.66 5.004.788.34 1.404.544 1.884.696.792.252 1.512.216 2.084.132.636-.096 1.96-.8 2.236-1.576.28-.776.28-1.44.196-1.58-.084-.136-.304-.22-.636-.384z" fill="#25D366"/>
+      </svg>
+      للاستفسارات والملاحظات تواصل معنا عبر الواتساب
+    </a>
+  </div>
+</footer>
+
+</div><!-- /#dashboard -->
+
+<!-- ═══════ AI CONTROL PANEL (Stitch Design) ═══════ -->
+<section class="px-5 md:px-20 max-w-[1440px] mx-auto pb-16" id="ai-control-panel" style="display:none">
+<h2 class="text-2xl font-bold mb-8 flex items-center gap-3 font-[Sora] text-white/90"> <span data-en="AI Tutor Control Panel" data-ar="غرفة التحكم الصوتي">💻 غرفة التحكم الصوتي</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+<!-- Voice Controls -->
+<div class="glass-panel p-8 rounded-2xl flex flex-col gap-6">
+<div class="flex items-center gap-3"><span class="material-symbols-outlined text-[#a5e7ff]">mic</span><h3 class="text-[12px] font-bold text-[#a5e7ff] tracking-wide" style="font-family:Tajawal,sans-serif;direction:rtl" data-en="Voice Controls" data-ar="التحكم بالصوت">🎙️ التحكم بالصوت</h3></div>
+<div class="space-y-4">
+<button id="ai-mic-btn" onclick="aiTapToSpeak()" class="w-full bg-[#a5e7ff] text-[#001f28] py-3 rounded-lg text-[10px] font-mono font-bold tracking-widest uppercase hover:shadow-[0_0_15px_#47d6ff] transition-all flex items-center justify-center gap-2">
+<span data-en="TAP TO SPEAK" data-ar="اضغط للتحدث" style="font-family:Tajawal,sans-serif">👇 اضغط للتحدث</span>
+</button>
+<button onclick="aiMuteMic()" class="w-full border border-white/10 bg-white/5 py-3 rounded-lg text-[10px] font-mono font-bold tracking-widest uppercase hover:bg-white/10 transition-all flex items-center justify-center gap-2 text-white/60">
+<span data-en="STOP SESSION" data-ar="إنهاء الجلسة" style="font-family:Tajawal,sans-serif">🛑 إنهاء الجلسة</span>
+</button>
+<div class="space-y-2">
+<div class="flex justify-between items-center"><label class="text-[10px] font-mono font-bold text-white/50 tracking-widest uppercase" data-en="AI VOICE SPEED" data-ar="سرعة صوت الأستاذ محمد" style="font-family:Tajawal,sans-serif;font-size:11px;letter-spacing:0">🐢 سرعة صوت الأستاذ محمد 🐇</label><span id="speed-display" class="text-[#a5e7ff] text-[10px] font-mono font-bold">1.0x</span></div>
+<input id="ai-speed-slider" class="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-[#a5e7ff]" max="2.0" min="0.5" step="0.1" type="range" value="1.0" oninput="updateVoiceSpeed(this.value)"/>
+</div>
+</div>
+</div>
+
+<!-- Session Settings -->
+<div class="glass-panel p-8 rounded-2xl flex flex-col gap-6">
+<div class="flex items-center gap-3"><span class="material-symbols-outlined text-[#a5e7ff]">settings_suggest</span><h3 class="text-[12px] font-bold text-[#a5e7ff] tracking-wide" style="font-family:Tajawal,sans-serif;direction:rtl" data-en="Session Settings" data-ar="إعدادات المحادثة">⚙️ إعدادات المحادثة</h3></div>
+<div class="space-y-6">
+<div class="space-y-3">
+<p class="text-[10px] font-mono font-bold text-white/50 tracking-widest uppercase" data-en="LEARNING MODE" data-ar="وضع التعلم" style="font-family:Tajawal,sans-serif;font-size:11px;letter-spacing:0">وضع التعلم:</p>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1.5 rounded-full border border-[#a5e7ff] bg-[#a5e7ff]/10 text-[#a5e7ff] text-[10px] font-mono font-bold" data-en="FREE CONVERSATION" data-ar="محادثة حرة" style="font-family:Tajawal,sans-serif;font-size:11px">💬 محادثة حرة</button>
+<button class="px-3 py-1.5 rounded-full border border-white/10 text-white/40 text-[10px] font-mono font-bold hover:border-[#e0b6ff] hover:text-[#e0b6ff] transition-all" data-en="LESSON REVIEW" data-ar="مراجعة الدرس الحالي" style="font-family:Tajawal,sans-serif;font-size:11px">📖 مراجعة الدرس الحالي</button>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-[10px] font-mono font-bold text-white/50 tracking-widest uppercase" data-en="CONNECTION" data-ar="حالة الاتصال" style="font-family:Tajawal,sans-serif;font-size:11px;letter-spacing:0">حالة الاتصال:</p>
+<div class="flex items-center gap-2">
+<span id="ai-conn-dot" class="w-2 h-2 rounded-full bg-gray-500"></span>
+<span id="ai-conn-text" class="text-[10px] font-mono text-white/40" data-en-idle="Disconnected" data-ar-idle="غير متصل 🔴" data-en-active="Connected" data-ar-active="متصل بمحمد 🟢" style="font-family:Tajawal,sans-serif;font-size:11px">غير متصل 🔴</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Feedback & Score -->
+<div class="glass-panel p-8 rounded-2xl flex flex-col gap-6">
+<div class="flex items-center gap-3"><span class="material-symbols-outlined text-[#a5e7ff]">analytics</span><h3 class="text-[12px] font-bold text-[#a5e7ff] tracking-wide" style="font-family:Tajawal,sans-serif;direction:rtl" data-en="Feedback" data-ar="تقييم نطقك">📊 تقييم نطقك</h3></div>
+<div class="flex flex-col items-center justify-center flex-1 gap-4">
+<div class="relative w-32 h-32 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 128 128">
+<circle class="text-white/5" cx="64" cy="64" fill="transparent" r="58" stroke="currentColor" stroke-width="8"></circle>
+<circle id="accent-ring" class="text-[#a5e7ff]" cx="64" cy="64" fill="transparent" r="58" stroke="currentColor" stroke-dasharray="364.4" stroke-dashoffset="364.4" stroke-width="8" style="transition:stroke-dashoffset 1s ease"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span id="accent-score" class="text-3xl font-bold text-[#a5e7ff]">—</span>
+<span class="text-[8px] font-mono text-white/40 tracking-widest uppercase" data-en="ACCENT SCORE" data-ar="درجة النطق والمخارج" style="font-family:Tajawal,sans-serif;font-size:9px;letter-spacing:0">درجة النطق والمخارج</span>
+</div>
+</div>
+<button onclick="showCorrections()" class="w-full border border-[#e0b6ff] text-[#e0b6ff] py-3 rounded-lg text-[10px] font-mono font-bold tracking-widest uppercase hover:bg-[#e0b6ff]/10 transition-all flex items-center justify-center gap-2">
+<span data-en="SHOW CORRECTIONS" data-ar="إظهار التصحيحات اللغوية" style="font-family:Tajawal,sans-serif">🔍 إظهار التصحيحات اللغوية</span>
+</button>
+<div id="corrections-panel" class="w-full hidden">
+<div class="bg-white/5 rounded-lg p-4 max-h-32 overflow-y-auto text-sm text-white/60 font-mono" id="corrections-list"></div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+</div><!-- /view-platform -->
+<!-- ═══════ AI VOICE ORB — Floating + WebGL Shader ═══════ -->
+<div id="voice-fab" class="vf-wrap">
+  <!-- Floating Glowing Orb (Idle State) -->
+  <button class="vf-orb" id="vf-orb" onclick="toggleVoiceFab()" aria-label="المعلم الصوتي محمد">
+    <span class="vf-orb-ring"></span>
+    <span class="vf-orb-ring vf-orb-ring-2"></span>
+    <span class="material-symbols-outlined vf-orb-icon">psychology</span>
+    <span class="vf-orb-label">محمد</span>
+  </button>
+</div>
+
+<!-- Fullscreen Modal Overlay -->
+<div class="vf-overlay" id="vf-overlay" onclick="if(event.target===this)toggleVoiceFab()">
+  <div class="vf-panel" id="vf-panel">
+    <div class="vf-hdr">
+      <div class="vf-brand"><span class="vf-dot"></span><span class="vf-nm">محمد</span><small>AI Voice Tutor</small></div>
+      <button class="vf-x" onclick="toggleVoiceFab()">✕</button>
+    </div>
+    <div class="vf-state" id="vf-state"><span class="vf-st-dot" id="vf-st-dot"></span><span id="vf-st-txt">غير متصل</span></div>
+
+    <!-- WebGL Shader Waveform -->
+    <div class="vf-shader-wrap" id="vf-shader-wrap">
+      <div class="vf-shader-label" id="vf-shader-label">VOICE IDLE</div>
+      <canvas id="shader-canvas-ANIMATION_17" class="vf-shader-canvas"></canvas>
+    </div>
+
+    <div class="vf-sec" id="vf-age-sec">
+      <div class="vf-lbl">اختر الفئة العمرية</div>
+      <div class="vf-age-grid">
+        <button class="vf-age vf-age-on" data-age="boy" onclick="vfSelectAge(this)"><span>👦</span>ولد</button>
+        <button class="vf-age" data-age="girl" onclick="vfSelectAge(this)"><span>👧</span>بنت</button>
+      </div>
+    </div>
+    <div class="vf-sts" id="vf-sts">اضغط الزر وتحدث بالإنجليزية</div>
+    <div class="vf-mic-w"><button class="vf-mic" id="vf-mic" onclick="vfToggleSession()"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></button></div>
+    <div class="vf-tr" id="vf-tr"></div>
+  </div>
+</div>
+<style>
+/* ═══ AI VOICE ORB — Glowing Sphere + WebGL Wave ═══ */
+.vf-wrap{position:fixed;bottom:32px;right:32px;z-index:9997}
+#voice-fab{display:none}body.in-platform #voice-fab{display:block}body.quiz-mode #voice-fab{display:none}
+.vf-orb{width:72px;height:72px;border-radius:50%;border:1px solid rgba(71,214,255,0.2);background:rgba(71,214,255,0.08);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer;position:relative;box-shadow:0 0 24px rgba(71,214,255,0.15),0 0 60px rgba(157,78,221,0.1);transition:all 0.4s cubic-bezier(0.23,1,0.32,1);touch-action:manipulation;animation:orbBreathe 4s ease-in-out infinite}
+.vf-orb:hover{transform:scale(1.12);box-shadow:0 0 40px rgba(71,214,255,0.35),0 0 80px rgba(157,78,221,0.25)}
+.vf-orb-icon{color:#a5e7ff;font-size:28px}
+.vf-orb-label{font-family:'Tajawal',sans-serif;font-size:9px;font-weight:700;color:rgba(255,255,255,0.5);letter-spacing:1px}
+@keyframes orbBreathe{0%,100%{box-shadow:0 0 24px rgba(71,214,255,0.15),0 0 60px rgba(157,78,221,0.1)}50%{box-shadow:0 0 40px rgba(71,214,255,0.3),0 0 80px rgba(157,78,221,0.2)}}
+.vf-orb-ring{position:absolute;inset:-4px;border-radius:50%;border:1.5px solid rgba(71,214,255,0.15);animation:orbRing 3s ease-out infinite;pointer-events:none}
+.vf-orb-ring-2{animation-delay:1.5s}
+@keyframes orbRing{0%{transform:scale(1);opacity:0.5}100%{transform:scale(1.8);opacity:0}}
+.vf-overlay{position:fixed;inset:0;z-index:99998;background:rgba(5,2,15,0.75);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:opacity 0.35s ease,visibility 0.35s ease}
+.vf-overlay.vf-modal-open{opacity:1;visibility:visible}
+.vf-panel{width:400px;max-width:100%;max-height:90vh;overflow-y:auto;background:rgba(255,255,255,0.03);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.1);border-radius:24px;box-shadow:0 24px 80px rgba(10,5,30,0.7),0 0 50px rgba(157,78,221,0.1);transform:translateY(20px) scale(0.94);transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1)}
+.vf-overlay.vf-modal-open .vf-panel{transform:translateY(0) scale(1)}
+.vf-hdr{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 16px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.vf-brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:'Tajawal',sans-serif}
+.vf-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e}
+.vf-nm{font-weight:700;font-size:17px}.vf-brand small{font-size:10px;color:rgba(255,255,255,0.3);margin-right:6px;font-family:'Space Mono',monospace;letter-spacing:1px}
+.vf-x{background:rgba(255,255,255,0.06);border:none;color:rgba(255,255,255,0.4);width:32px;height:32px;border-radius:10px;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;transition:all 0.2s}.vf-x:hover{background:rgba(255,255,255,0.12);color:#fff}
+.vf-state{display:flex;align-items:center;gap:8px;padding:10px 20px;font-family:'Space Mono',monospace;font-size:10px;color:rgba(255,255,255,0.35);direction:rtl;letter-spacing:1px}
+.vf-st-dot{width:6px;height:6px;border-radius:50%;background:#555;transition:background 0.3s}.vf-st-dot.st-active{background:#22c55e;box-shadow:0 0 8px #22c55e}
+.vf-shader-wrap{position:relative;margin:0 16px;border-radius:16px;overflow:hidden;background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.06);height:120px}
+.vf-shader-canvas{width:100%;height:100%;display:block}
+.vf-shader-label{position:absolute;top:10px;left:14px;font-family:'Space Mono',monospace;font-size:9px;color:rgba(71,214,255,0.4);letter-spacing:2px;z-index:2;text-transform:uppercase}
+.vf-shader-wrap.vf-wave-active .vf-shader-label{color:rgba(71,214,255,0.8);animation:labelPulse 1.5s ease-in-out infinite}
+@keyframes labelPulse{0%,100%{opacity:0.6}50%{opacity:1}}
+.vf-sec{padding:14px 20px}.vf-lbl{font-family:'Space Mono',monospace;font-size:10px;color:rgba(255,255,255,0.3);direction:rtl;margin-bottom:10px;letter-spacing:2px;text-transform:uppercase}
+.vf-age-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.vf-age{display:flex;flex-direction:column;align-items:center;gap:4px;padding:14px 4px 10px;border-radius:14px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:rgba(255,255,255,0.5);font-family:'Tajawal',sans-serif;font-size:11px;font-weight:600;cursor:pointer;transition:all 0.3s;touch-action:manipulation}
+.vf-age span{font-size:24px}.vf-age:hover{border-color:rgba(71,214,255,0.3);background:rgba(71,214,255,0.05)}
+.vf-age.vf-age-on{border-color:rgba(71,214,255,0.4);background:rgba(71,214,255,0.08);color:#a5e7ff;box-shadow:0 0 15px rgba(71,214,255,0.1)}
+.vf-sts{text-align:center;font-family:'Tajawal',sans-serif;font-size:13px;color:rgba(255,255,255,0.35);padding:8px 20px;direction:rtl;min-height:22px;transition:color 0.3s}.vf-sts.st-l{color:#a5e7ff}.vf-sts.st-s{color:#22c55e}
+/* Thinking dots animation */
+.vf-sts.st-thinking{color:#e0b6ff}
+.vf-thinking-dots{display:inline-flex;gap:4px;margin-right:6px;vertical-align:middle}
+.vf-thinking-dots span{width:6px;height:6px;border-radius:50%;background:#e0b6ff;animation:thinkPulse 1.4s ease-in-out infinite}
+.vf-thinking-dots span:nth-child(2){animation-delay:0.2s}
+.vf-thinking-dots span:nth-child(3){animation-delay:0.4s}
+@keyframes thinkPulse{0%,80%,100%{opacity:0.3;transform:scale(0.8)}40%{opacity:1;transform:scale(1.2)}}
+.vf-mic-w{display:flex;justify-content:center;padding:14px 0 10px}
+.vf-mic{width:68px;height:68px;border-radius:50%;border:1px solid rgba(71,214,255,0.2);background:rgba(71,214,255,0.08);color:#a5e7ff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 0 24px rgba(71,214,255,0.15);transition:all 0.3s;touch-action:manipulation}
+.vf-mic:hover{transform:scale(1.08);box-shadow:0 0 36px rgba(71,214,255,0.25);border-color:rgba(71,214,255,0.4)}
+.vf-mic.vf-rec{background:rgba(239,68,68,0.12);border-color:rgba(239,68,68,0.4);color:#ef4444;box-shadow:0 0 28px rgba(239,68,68,0.2);animation:vfp 1.2s ease-in-out infinite}
+@keyframes vfp{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.vf-tr{max-height:100px;overflow-y:auto;padding:4px 20px 16px;font-family:'Tajawal',sans-serif;font-size:12px;color:rgba(255,255,255,0.4);direction:rtl;scrollbar-width:thin}
+.vf-tr-l{padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.03)}.vf-tr-u{color:#a5e7ff}.vf-tr-a{color:#22c55e}
+@media(max-width:480px){.vf-wrap{bottom:20px;right:16px}.vf-orb{width:60px;height:60px}.vf-orb-icon{font-size:24px}.vf-panel{width:calc(100vw - 32px);border-radius:20px}}
+@media(prefers-reduced-motion:reduce){.vf-orb,.vf-orb-ring{animation:none}}
+@media print{.vf-wrap,.vf-overlay{display:none!important}}
+</style>
+<script>
+(function(){'use strict';
+var _vfOpen=false,_vfRec=false,_vfAge='boy',_vfCanvas,_vfCtx,_vfAnim,_vfAn,_vfStream,_vfACtx,_vfRecog;
+var VF_API_URL='https://stylish-voice-final-boss.vercel.app/api/voice-session';
+var _vfHistory=[];
+var _shaderActive=false;
+
+/* ===== WebGL Shader Waveform ===== */
+function initShaderWave(){
+var canvas=document.getElementById('shader-canvas-ANIMATION_17');
+if(!canvas||canvas._shaderInit)return;
+canvas._shaderInit=true;
+function syncSize(){var w=canvas.clientWidth||320,h=canvas.clientHeight||120;if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;if(gl)gl.viewport(0,0,w,h)}}
+if(typeof ResizeObserver!=='undefined')new ResizeObserver(syncSize).observe(canvas);
+window.addEventListener('orientationchange',function(){setTimeout(syncSize,200)},{passive:true});
+window.addEventListener('resize',function(){syncSize()},{passive:true});
+syncSize();
+var gl=canvas.getContext('webgl')||canvas.getContext('experimental-webgl');
+if(!gl)return;
+var vs='attribute vec2 a_position;varying vec2 v_texCoord;void main(){v_texCoord=a_position*0.5+0.5;gl_Position=vec4(a_position,0.0,1.0);}';
+var fs='precision highp float;varying vec2 v_texCoord;uniform float u_time;uniform vec2 u_resolution;void main(){vec2 uv=v_texCoord;vec3 waveColor=vec3(0.616,0.306,0.867);float finalMask=0.0;for(float i=0.0;i<5.0;i++){float speed=u_time*(0.5+i*0.2);float amplitude=0.1+i*0.05;float frequency=5.0+i*2.0;float wave=sin(uv.x*frequency+speed)*amplitude;float dist=abs(uv.y-0.5-wave);float brightness=0.005/dist;brightness*=smoothstep(0.0,0.1,uv.x)*smoothstep(1.0,0.9,uv.x);finalMask+=brightness;}vec3 color=waveColor*finalMask;color+=vec3(0.0,0.824,1.0)*(finalMask*0.2*sin(u_time+uv.x*2.0));gl_FragColor=vec4(color,clamp(finalMask,0.0,1.0));}';
+function cs(type,src){var s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);return s}
+var prog=gl.createProgram();gl.attachShader(prog,cs(gl.VERTEX_SHADER,vs));gl.attachShader(prog,cs(gl.FRAGMENT_SHADER,fs));gl.linkProgram(prog);gl.useProgram(prog);
+var buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+var pos=gl.getAttribLocation(prog,'a_position');gl.enableVertexAttribArray(pos);gl.vertexAttribPointer(pos,2,gl.FLOAT,false,0,0);
+var uTime=gl.getUniformLocation(prog,'u_time'),uRes=gl.getUniformLocation(prog,'u_resolution');
+gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);
+function render(t){syncSize();gl.viewport(0,0,canvas.width,canvas.height);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);if(uTime)gl.uniform1f(uTime,t*0.001);if(uRes)gl.uniform2f(uRes,canvas.width,canvas.height);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);requestAnimationFrame(render)}
+render(0);
+}
+
+function setWaveActive(active){
+var wrap=document.getElementById('vf-shader-wrap');
+var label=document.getElementById('vf-shader-label');
+if(wrap){if(active){wrap.classList.add('vf-wave-active')}else{wrap.classList.remove('vf-wave-active')}}
+if(label)label.textContent=active?'VOICE ACTIVE':'VOICE IDLE';
+}
+
+window.toggleVoiceFab=function(){_vfOpen=!_vfOpen;
+var overlay=document.getElementById('vf-overlay');
+var controlPanel=document.getElementById('ai-control-panel');
+if(_vfOpen){
+  overlay.classList.add('vf-modal-open');
+  if(controlPanel)controlPanel.style.display='';
+  setTimeout(initShaderWave,100);
+}else{
+  overlay.classList.remove('vf-modal-open');
+  if(controlPanel)controlPanel.style.display='none';
+  vfStop();setWaveActive(false);
+  var ti=document.querySelector('.vf-text-in');if(ti)ti.remove();
+}};
+window.vfSelectAge=function(b){document.querySelectorAll('.vf-age').forEach(function(x){x.classList.remove('vf-age-on')});b.classList.add('vf-age-on');_vfAge=b.dataset.age};
+window.vfToggleSession=function(){if(_vfRec)vfStop();else vfStart()};
+function vfSetState(s,t){var d=document.getElementById('vf-st-dot'),x=document.getElementById('vf-st-txt');d.className='vf-st-dot'+(s?' st-'+s:'');if(x)x.textContent=t||''}
+function vfSetStatus(t,c){var e=document.getElementById('vf-sts');e.textContent=t;e.className='vf-sts'+(c?' st-'+c:'')}
+function vfAddTr(t,w){var e=document.getElementById('vf-tr'),l=document.createElement('div');l.className='vf-tr-l vf-tr-'+(w==='user'?'u':'a');l.textContent=(w==='user'?'🎤 ':'🤖 ')+t;e.appendChild(l);e.scrollTop=e.scrollHeight}
+/* Old 2D canvas removed — replaced by WebGL shader */
+function vfStart(){_vfRec=true;document.getElementById('vf-mic').classList.add('vf-rec');vfSetState('active','متصل');vfSetStatus('🎤 أسمعك — تحدث بالإنجليزية','l');setWaveActive(true);
+
+// Personalized welcome greeting
+var greeting = buildPersonalizedGreeting();
+if(greeting.isReturning){
+  setTimeout(function(){
+    var fullGreet = greeting.en + '\n' + greeting.ar;
+    vfSpeakReply(fullGreet);
+  }, 600);
+}
+// Try mic for waveform — graceful fallback if blocked
+if(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia){
+navigator.mediaDevices.getUserMedia({audio:true}).then(function(s){_vfStream=s;_vfACtx=new(window.AudioContext||window.webkitAudioContext)();var src=_vfACtx.createMediaStreamSource(s);_vfAn=_vfACtx.createAnalyser();_vfAn.fftSize=256;src.connect(_vfAn)}).catch(function(err){
+console.log('Mic access denied, using text fallback:',err.name);
+vfSetStatus('⌨️ المايكروفون غير متاح — استخدم الكتابة','');
+vfShowTextInput();
+})}else{vfSetStatus('⌨️ المايكروفون غير مدعوم — استخدم الكتابة','');vfShowTextInput()}
+// Speech Recognition — also wrap in try-catch
+var SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(SR){
+try{
+_vfRecog=new SR();_vfRecog.lang='en-US';_vfRecog.continuous=false;_vfRecog.interimResults=false;
+_vfRecog.onresult=function(e){_vfRecog._hadResult=true;if(_vfRecog._safariTimeout)clearTimeout(_vfRecog._safariTimeout);if(window.speechSynthesis&&window.speechSynthesis.speaking)return;var t='';for(var i=e.resultIndex;i<e.results.length;i++)t+=e.results[i][0].transcript;if(t){vfAddTr(t,'user');vfMockReply(t)}};
+_vfRecog.onend=function(){if(_vfRec&&!(window.speechSynthesis&&window.speechSynthesis.speaking))try{_vfRecog.start()}catch(e){}};
+_vfRecog.onerror=function(e){if(_vfRecog._safariTimeout)clearTimeout(_vfRecog._safariTimeout);
+if(e.error==='not-allowed'||e.error==='service-not-available'){
+vfSetStatus('⌨️ التعرف الصوتي غير متاح — استخدم الكتابة','');vfShowTextInput();
+}else if(e.error!=='aborted'&&e.error!=='no-speech'){vfSetStatus('خطأ: '+e.error,'')}};
+_vfRecog.start();
+// Safari/iOS silent failure guard — if no result/error in 3s, show text input
+var _safariTimeout = setTimeout(function(){
+  if(_vfRec && !document.querySelector('.vf-text-in')){
+    var hadResult = _vfRecog._hadResult;
+    if(!hadResult){
+      console.warn('Speech recognition silent for 3s — Safari fallback');
+      vfSetStatus('⌨️ التعرف الصوتي لم يستجب — استخدم الكتابة','');
+      vfShowTextInput();
+    }
+  }
+}, 3000);
+_vfRecog._safariTimeout = _safariTimeout;
+}catch(err){vfSetStatus('⌨️ استخدم الكتابة للتحدث مع محمد','');vfShowTextInput()}}
+else{vfSetStatus('⌨️ استخدم الكتابة للتحدث مع محمد','');vfShowTextInput()}}
+function vfShowTextInput(){
+var panel=document.getElementById('vf-panel');
+if(!panel||panel.querySelector('.vf-text-in'))return;
+var box=document.createElement('div');
+box.className='vf-text-in';
+box.style.cssText='padding:8px 18px 14px';
+box.innerHTML='<input type="text" id="vf-tinput" placeholder="اكتب بالإنجليزية هنا..." style="width:100%;padding:10px 14px;border-radius:10px;border:1px solid rgba(124,77,204,0.2);background:rgba(255,255,255,0.05);color:#fff;font-family:Tajawal,sans-serif;font-size:14px;direction:ltr;outline:none;" />';
+panel.appendChild(box);
+var inp=document.getElementById('vf-tinput');
+inp.addEventListener('keydown',function(e){
+if(e.key==='Enter'&&inp.value.trim()){
+var txt=inp.value.trim();inp.value='';
+vfAddTr(txt,'user');vfMockReply(txt);
+}});
+inp.focus();
+}
+function vfStop(){_vfRec=false;document.getElementById('vf-mic').classList.remove('vf-rec');vfSetState('','غير متصل');vfSetStatus('اضغط الزر وتحدث بالإنجليزية','');setWaveActive(false);if(_vfRecog){try{_vfRecog.abort()}catch(e){}_vfRecog=null}if(_vfStream){_vfStream.getTracks().forEach(function(t){t.stop()});_vfStream=null}if(_vfAnim){cancelAnimationFrame(_vfAnim);_vfAnim=null}if(_vfACtx){_vfACtx.close();_vfACtx=null}_vfAn=null}
+function vfMockReply(ut){
+vfSetStatus('','');
+var stsEl=document.getElementById('vf-sts');
+if(stsEl){stsEl.className='vf-sts st-thinking';stsEl.innerHTML='🤖 محمد يفكر <span class="vf-thinking-dots"><span></span><span></span><span></span></span>'}
+if(_vfRecog){try{_vfRecog.abort()}catch(e){}_vfRecog=null}
+
+// Track conversation
+_vfHistory.push({role:'user',text:ut});
+
+// ── Try live Gemini API first (with error resilience) ──
+if(VF_API_URL){
+try{
+var profile=getStudentProfile();
+var next=getNextLesson();
+var contextText=ut;
+if(profile&&profile.name){contextText='[Student: '+profile.name+', completed: '+getCompletedLessons().length+'/36'+(next?', next lesson: '+next.title:'')+'] '+ut}
+fetch(VF_API_URL,{
+  method:'POST',
+  headers:{'Content-Type':'application/json'},
+  body:JSON.stringify({text:contextText,age:_vfAge,history:_vfHistory.slice(-10)})
+}).then(function(r){
+  if(!r.ok)throw new Error('HTTP '+r.status);
+  return r.json();
+}).then(function(data){
+  if(data.reply){
+    _vfHistory.push({role:'ai',text:data.reply});
+    vfSpeakReply(data.reply);
+  }else{throw new Error('Empty reply')}
+}).catch(function(err){
+  console.warn('API fallback:',err.message);
+  vfLocalFallback(ut);
+});
+}catch(networkErr){
+  console.warn('Network error:',networkErr.message);
+  vfLocalFallback(ut);
+}
+}else{
+  vfLocalFallback(ut);
+}
+}
+
+/* ── Speak محمد's reply (English + Arabic tip) ── */
+function vfSpeakReply(fullReply){
+// Split reply into English and Arabic parts
+var parts=fullReply.split(/\n+/);
+var enPart=parts[0]||fullReply;
+var arPart=parts.length>1?parts.slice(1).join(' '):'';
+
+vfAddTr(enPart,'ai');
+if(arPart)vfAddTr(arPart,'ai');
+vfSetStatus('🔊 محمد يتحدث...','s');
+
+// Update accent score progressively
+_aiTurnCount++;
+var score=Math.min(95,55+_aiTurnCount*4+Math.floor(Math.random()*8));
+if(typeof updateAccentScore==='function')updateAccentScore(score);
+
+// Detect corrections in AI response
+if(fullReply.match(/instead of|not.*correct|try saying|should be/i)){
+  var cm=fullReply.match(/"([^"]+)".*?"([^"]+)"/);
+  if(cm&&typeof addCorrection==='function')addCorrection(cm[1],cm[2]);
+}
+
+if(window.speechSynthesis){
+  window.speechSynthesis.cancel();
+  var u=new SpeechSynthesisUtterance(enPart);
+  u.lang='en-US';u.rate=_aiVoiceSpeed||0.88;u.pitch=1.0;
+  var voices=window.speechSynthesis.getVoices();
+  var enV=voices.find(function(v){return v.lang.indexOf('en')===0});
+  if(enV)u.voice=enV;
+  u.onend=function(){
+    if(arPart&&window.speechSynthesis){
+      var arU=new SpeechSynthesisUtterance(arPart);
+      arU.lang='ar-SA';arU.rate=0.92;
+      var arV=voices.find(function(v){return v.lang.indexOf('ar')===0});
+      if(arV)arU.voice=arV;
+      arU.onend=function(){vfSetStatus('🎤 دورك — تحدث الآن','l');if(_vfRec)vfRestartRecog()};
+      arU.onerror=function(){vfSetStatus('🎤 دورك — تحدث الآن','l');if(_vfRec)vfRestartRecog()};
+      window.speechSynthesis.speak(arU);
+    }else{vfSetStatus('🎤 دورك — تحدث الآن','l');if(_vfRec)vfRestartRecog()}
+  };
+  u.onerror=function(){vfSetStatus('🎤 دورك — تحدث الآن','l');if(_vfRec)vfRestartRecog()};
+  window.speechSynthesis.speak(u);
+}else{vfSetStatus('🎤 دورك — تحدث الآن','l');if(_vfRec)vfRestartRecog()}
+}
+
+/* ── Local fallback when API is unreachable ── */
+function vfLocalFallback(ut){
+var lower=ut.toLowerCase().trim();
+var resp='';var arResp='';
+
+if(/^(hi|hello|hey|good morning|good evening)/i.test(lower)){
+  resp='Hello! Welcome to Stylish English. My name is Mohammed. Tell me, what is your name?';
+  arResp='أهلاً وسهلاً! أنا محمد معلمك. قل لي اسمك بالإنجليزي';
+}else if(/my name is|i am |i'm /i.test(lower)){
+  var name=lower.replace(/.*my name is |.*i am |.*i'm /i,'').replace(/[^a-zA-Z ]/g,'').trim();
+  name=name.charAt(0).toUpperCase()+name.slice(1);
+  if(name.length>1)saveStudentName(name);
+  var next=getNextLesson();
+  var lessonHint=next?' Your next lesson is Lesson '+next.number+': '+next.title+'.':'';
+  resp='Nice to meet you, '+name+'! Your pronunciation is very clear.'+lessonHint+' Now tell me: where are you from?';
+  arResp='تشرفنا '+name+'! نطقك واضح ما شاء الله. الحين قل لي: من وين أنت؟';
+}else if(/from |live in|i am from/i.test(lower)){
+  resp='Wonderful! That is great. Now let us practise something new. Can you say: I like to drink coffee in the morning?';
+  arResp='ممتاز! يلا نجرب جملة جديدة';
+}else if(/coffee|tea|drink|eat|food|breakfast/i.test(lower)){
+  resp='Excellent sentence! Your grammar is correct. Now try this harder one: Yesterday, I went to the market and bought some fruits.';
+  arResp='جملة ممتازة وقواعدك صحيحة!';
+}else if(/yesterday|went|bought|last|ago/i.test(lower)){
+  resp='Amazing! You used the past tense perfectly. The word went is the past of go. Very impressive!';
+  arResp='ما شاء الله! استخدمت الماضي صح. went هو ماضي go';
+}else if(/will|going to|tomorrow|next|future|plan/i.test(lower)){
+  resp='Great job with the future tense! Remember: use going to for plans, and will for instant decisions.';
+  arResp='ممتاز! تذكر: going to للخطط، و will للقرارات اللحظية';
+}else if(/where|what|when|who|how|why/i.test(lower)){
+  resp='Good question! You are using Wh-words correctly. Now try answering your own question in a full sentence.';
+  arResp='سؤال جميل! جرب تجاوب عليه بجملة كاملة';
+}else if(/thank|thanks|bye|goodbye/i.test(lower)){
+  resp='You are very welcome! Keep practising every day. See you next time!';
+  arResp='العفو! واصل التمرين كل يوم. إلى اللقاء!';
+}else if(lower.split(' ').length<=2){
+  resp='Good word! Now try putting it inside a full sentence.';
+  arResp='كلمة حلوة! جرب تحطها في جملة كاملة';
+}else{
+  var adv=['Brilliant sentence structure! Your fluency is really improving.',
+  'Excellent! Try telling me about your daily routine.',
+  'Very impressive! Describe your dream job in English.',
+  'Great effort! Tell me about your family.'];
+  resp=adv[Math.floor(Math.random()*adv.length)];
+  arResp='ما شاء الله عليك! مستواك يتطور';
+}
+
+_vfHistory.push({role:'ai',text:resp});
+var fullReply=resp+(arResp?'\n'+arResp:'');
+vfSpeakReply(fullReply);
+}
+
+function vfRestartRecog(){
+var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+if(!SR)return;
+_vfRecog=new SR();_vfRecog.lang='en-US';_vfRecog.continuous=false;_vfRecog.interimResults=false;
+_vfRecog.onresult=function(e){var t='';for(var i=e.resultIndex;i<e.results.length;i++)t+=e.results[i][0].transcript;if(t){vfAddTr(t,'user');vfMockReply(t)}};
+_vfRecog.onend=function(){if(_vfRec&&!window.speechSynthesis.speaking)try{_vfRecog.start()}catch(e){}};
+_vfRecog.onerror=function(e){if(e.error!=='aborted'&&e.error!=='no-speech')vfSetStatus('خطأ: '+e.error,'')};
+try{_vfRecog.start()}catch(e){}
+}
+})();
+</script>
+<!-- ═══════ FLOATING NAV FAB ═══════ -->
+<div id="nav-fab" class="nav-fab">
+  <div class="nav-menu" id="nav-menu">
+    <button class="nav-item" onclick="navTo('home')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      الرئيسية
+    </button>
+    <button class="nav-item" id="nav-month-btn" onclick="navTo('month')" style="display:none">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      الشهر الحالي
+    </button>
+    <button class="nav-item" id="nav-quiz-btn" onclick="navTo('quiz')" style="display:none">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      التحدي الختامي
+    </button>
+  </div>
+  <button class="nav-trigger" id="nav-trigger" onclick="toggleNavFab()" aria-label="القائمة السريعة">
+    <svg class="nav-icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+  </button>
+</div>
+
+<style>
+.nav-fab {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 9998;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.nav-trigger {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--brand-400);
+  box-shadow: var(--glass-glow);
+  transition: transform var(--ease), box-shadow var(--ease);
+  touch-action: manipulation;
+}
+.nav-trigger:hover {
+  transform: var(--lift);
+  box-shadow: var(--glass-hover);
+}
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  opacity: 0;
+  transform: translateY(10px) scale(0.95);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.34,1.56,0.64,1);
+}
+.nav-fab.fab-open .nav-menu {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+.nav-fab.fab-open .nav-trigger {
+  background: linear-gradient(135deg, var(--brand-700), var(--brand-500));
+  color: #fff;
+  border-color: transparent;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-family: 'Tajawal', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  white-space: nowrap;
+  direction: rtl;
+  box-shadow: var(--glass-glow);
+  transition: transform var(--ease), box-shadow var(--ease), background 0.2s;
+  touch-action: manipulation;
+}
+.nav-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--glass-hover);
+  background: rgba(124,77,204,0.08);
+}
+.nav-item svg { flex-shrink: 0; color: var(--brand-400); }
+
+/* Hide when splash or landing is active */
+#nav-fab { display: none; }
+body.in-platform #nav-fab { display: flex; }
+body.quiz-mode #nav-fab { display: none; }
+
+@media (max-width: 640px) {
+  .nav-fab { bottom: 18px; left: 14px; }
+  .nav-trigger { width: 44px; height: 44px; }
+  .nav-item { padding: 9px 14px; font-size: 12px; }
+}
+@media print { .nav-fab { display: none !important; } }
+</style>
+<!-- ═══════ CONTINUE LEARNING MODAL ═══════ -->
+<div id="resume-modal" class="resume-modal" role="dialog" aria-modal="true">
+  <div class="resume-card">
+    <div class="resume-emoji">☕</div>
+    <p class="resume-text">أهلاً بك مجدداً!<br/>حاب تكمل من المكان اللي وقّفت عنده؟</p>
+    <div class="resume-actions">
+      <button class="resume-yes" onclick="acceptResume()">نعم، كمّل من مكاني 🚀</button>
+      <button class="resume-no" onclick="dismissResume()">لا، أبي أتصفح من البداية</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.resume-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99990;
+  background: rgba(10,6,20,0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+.resume-modal.rm-show {
+  opacity: 1;
+  visibility: visible;
+}
+.resume-card {
+  background: var(--bg-card);
+  border-radius: 22px;
+  border: 1px solid rgba(124,77,204,0.15);
+  padding: 36px 32px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(30,10,60,0.35);
+  transform: translateY(20px) scale(0.96);
+  transition: transform 0.35s cubic-bezier(.34,1.56,.64,1);
+}
+.rm-show .resume-card {
+  transform: translateY(0) scale(1);
+}
+.resume-emoji {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.resume-text {
+  font-family: 'Tajawal', 'Cairo', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--text-primary);
+  direction: rtl;
+  margin-bottom: 24px;
+}
+.resume-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resume-yes {
+  background: linear-gradient(135deg, var(--brand-700), var(--brand-500));
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 24px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  direction: rtl;
+}
+.resume-yes:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(91,47,160,0.3);
+}
+.resume-no {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 24px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  direction: rtl;
+}
+.resume-no:hover {
+  border-color: var(--brand-400);
+  color: var(--text-primary);
+}
+@media (max-width: 400px) {
+  .resume-card { padding: 28px 20px; }
+  .resume-text { font-size: 15px; }
+}
+</style>
+<script>
+
+/* ===== STITCH ↔ PLATFORM VIEW SWITCHING ===== */
+function enterPlatform() {
+  document.body.classList.add('in-platform');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  setTimeout(function() {
+    var dashboard = document.getElementById('dashboard');
+    var progressBar = document.getElementById('progress-bar');
+    if (dashboard) dashboard.classList.add('active');
+    if (progressBar) progressBar.style.display = 'block';
+    setTimeout(function() { if (typeof checkSavedProgress === 'function') checkSavedProgress(); }, 400);
+  }, 200);
+}
+function exitPlatform() {
+  document.body.classList.remove('in-platform');
+  var dashboard = document.getElementById('dashboard');
+  var controlPanel = document.getElementById('ai-control-panel');
+  if (dashboard) dashboard.classList.remove('active');
+  if (controlPanel) controlPanel.style.display = 'none';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ===== EN/AR LANGUAGE TOGGLE ===== */
+var _isArabic = false;
+function toggleLang() {
+  _isArabic = !_isArabic;
+  document.documentElement.dir = _isArabic ? 'rtl' : 'ltr';
+  document.documentElement.lang = _isArabic ? 'ar' : 'en';
+  // Update all data-en / data-ar elements
+  document.querySelectorAll('[data-en][data-ar]').forEach(function(el) {
+    el.textContent = _isArabic ? el.dataset.ar : el.dataset.en;
+  });
+}
+
+/* ===== THEME ===== */
+function toggleTheme() {
+  const body = document.body;
+  const isDark = body.getAttribute('data-theme') === 'dark';
+  body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  document.getElementById('theme-icon').textContent = isDark ? '🌙' : '☀️';
+  document.getElementById('theme-text').textContent = isDark ? 'الوضع الليلي' : 'الوضع النهاري';
+}
+
+/* ===== LANDING → DASHBOARD TRANSITION ===== */
+/* enterDashboard replaced by enterPlatform */
+
+/* ===== CONTINUE LEARNING — LocalStorage Progress ===== */
+var SE_PROGRESS_KEY = 'se_last_position';
+var SE_COMPLETED_KEY = 'se_completed_lessons';
+var SE_STUDENT_KEY = 'se_student_profile';
+
+/* ===== STUDENT PROFILE — localStorage ===== */
+var SE_LESSON_MAP = {
+  'lesson-01':'Alphabet','lesson-02':'Vowels','lesson-03':'CVC Words','lesson-04':'PH & WH',
+  'lesson-05':'Articles','lesson-06':'Plurals','lesson-07':'Pronouns','lesson-08':'Verb To Be',
+  'lesson-09':'Affirmative','lesson-10':'Negation','lesson-11':'Yes/No Questions','lesson-12':'Wh-Questions',
+  'lesson-13':'Action Verbs','lesson-14':'Present Simple','lesson-15':'Frequency','lesson-16':'Do/Does',
+  'lesson-17':'Possessives','lesson-18':'And','lesson-19':'But','lesson-20':'Because',
+  'lesson-21':'Quantities','lesson-22':'Coffee Shop','lesson-23':'Directions','lesson-24':'Polite Requests',
+  'lesson-25':'Past Regular','lesson-26':'Irregular Verbs','lesson-27':'Past Negation','lesson-28':'Storytelling',
+  'lesson-29':'Going To','lesson-30':'Will','lesson-31':'Future Negation','lesson-32':'Time Expressions',
+  'lesson-33':'Describe Your Day','lesson-34':'Airport','lesson-35':'Free Speech','lesson-36':'Grand Review'
+};
+
+function getStudentProfile() {
+  try {
+    var data = localStorage.getItem(SE_STUDENT_KEY);
+    return data ? JSON.parse(data) : null;
+  } catch(e) { return null; }
+}
+
+function saveStudentName(name) {
+  try {
+    var profile = getStudentProfile() || {};
+    profile.name = name;
+    profile.savedAt = Date.now();
+    localStorage.setItem(SE_STUDENT_KEY, JSON.stringify(profile));
+  } catch(e) {}
+}
+
+function getNextLesson() {
+  var completed = getCompletedLessons();
+  for (var i = 1; i <= 36; i++) {
+    var id = 'lesson-' + String(i).padStart(2, '0');
+    if (completed.indexOf(id) === -1) {
+      return { id: id, number: i, title: SE_LESSON_MAP[id] || 'Lesson ' + i };
+    }
+  }
+  return null; // All completed
+}
+
+function buildPersonalizedGreeting() {
+  var profile = getStudentProfile();
+  var next = getNextLesson();
+  var completed = getCompletedLessons();
+
+  if (profile && profile.name) {
+    var name = profile.name;
+    var progress = completed.length;
+
+    if (next) {
+      var enGreet = 'Welcome back, ' + name + '! You have completed ' + progress + ' lessons so far. Ready to tackle Lesson ' + next.number + ': ' + next.title + ' today?';
+      var arGreet = 'أهلاً ' + name + '! أنهيت ' + progress + ' دروس. جاهز نبدأ الدرس ' + next.number + ': ' + next.title + '؟';
+    } else {
+      var enGreet = 'Welcome back, ' + name + '! Amazing — you have completed all 36 lessons! Let us practise free conversation today.';
+      var arGreet = 'أهلاً ' + name + '! ما شاء الله أنهيت كل الـ 36 درس! يلا نتمرن محادثة حرة';
+    }
+    return { en: enGreet, ar: arGreet, isReturning: true };
+  }
+  return { en: null, ar: null, isReturning: false };
+}
+
+/* ===== COMPLETION TRACKING — LocalStorage ===== */
+function getCompletedLessons() {
+  try {
+    var data = localStorage.getItem(SE_COMPLETED_KEY);
+    return data ? JSON.parse(data) : [];
+  } catch(e) { return []; }
+}
+
+function markLessonDone(lessonId) {
+  var completed = getCompletedLessons();
+  if (completed.indexOf(lessonId) === -1) {
+    completed.push(lessonId);
+    try { localStorage.setItem(SE_COMPLETED_KEY, JSON.stringify(completed)); } catch(e) {}
+    // Trigger confetti celebration for NEW completions
+    fireConfetti();
+  }
+  var el = document.getElementById(lessonId);
+  if (el) el.classList.add('lesson-done');
+  // Update streak
+  saveStreak();
+  updateProgressDash();
+}
+
+/* ===== CONFETTI CELEBRATION ===== */
+function fireConfetti() {
+  var container = document.createElement('div');
+  container.className = 'se-confetti-container';
+  document.body.appendChild(container);
+
+  var colors = ['#a5e7ff', '#e0b6ff', '#22c55e', '#f1d2ff', '#47d6ff', '#fbbf24', '#f472b6'];
+  var shapes = ['●', '◆', '★', '■', '▲'];
+
+  for (var i = 0; i < 30; i++) {
+    var particle = document.createElement('span');
+    particle.className = 'se-confetti-particle';
+    particle.textContent = shapes[Math.floor(Math.random() * shapes.length)];
+    particle.style.left = (10 + Math.random() * 80) + '%';
+    particle.style.color = colors[Math.floor(Math.random() * colors.length)];
+    particle.style.animationDuration = (1 + Math.random() * 1) + 's';
+    particle.style.animationDelay = (Math.random() * 0.4) + 's';
+    particle.style.fontSize = (8 + Math.random() * 14) + 'px';
+    container.appendChild(particle);
+  }
+
+  setTimeout(function() { container.remove(); }, 2000);
+}
+
+function restoreCompletedLessons() {
+  var completed = getCompletedLessons();
+  completed.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.classList.add('lesson-done');
+  });
+  updateProgressDash();
+}
+
+/* ===== PROGRESS DASHBOARD UPDATE ===== */
+function updateProgressDash() {
+  var completed = getCompletedLessons();
+  var count = completed.length;
+  var pct = Math.round((count / 36) * 100);
+
+  var bar = document.getElementById('se-pd-bar');
+  var countEl = document.getElementById('se-pd-count');
+  var pctEl = document.getElementById('se-pd-pct');
+  var streakEl = document.getElementById('se-pd-streak-text');
+
+  if (bar) bar.style.width = pct + '%';
+  if (countEl) countEl.textContent = count + '/36';
+  if (pctEl) pctEl.textContent = pct + '%';
+
+  // Streak calculation
+  if (streakEl) {
+    var streak = getStreak();
+    if (count === 0) {
+      streakEl.textContent = 'ابدأ أول درس!';
+    } else if (count === 36) {
+      streakEl.textContent = '🏆 أنهيت كل الدروس! ' + streak + ' يوم متواصل';
+    } else {
+      streakEl.textContent = streak + ' يوم متواصل — واصل التعلم!';
+    }
+  }
+}
+
+function getStreak() {
+  try {
+    var data = localStorage.getItem('se_streak');
+    if (!data) { saveStreak(); return 1; }
+    var parsed = JSON.parse(data);
+    var today = new Date().toDateString();
+    var lastDay = parsed.lastDay;
+    if (lastDay === today) return parsed.count;
+    // Check if yesterday
+    var yesterday = new Date(Date.now() - 86400000).toDateString();
+    if (lastDay === yesterday) {
+      parsed.count++;
+      parsed.lastDay = today;
+      localStorage.setItem('se_streak', JSON.stringify(parsed));
+      return parsed.count;
+    }
+    // Streak broken
+    saveStreak();
+    return 1;
+  } catch(e) { return 1; }
+}
+
+function saveStreak() {
+  try {
+    localStorage.setItem('se_streak', JSON.stringify({
+      count: 1, lastDay: new Date().toDateString()
+    }));
+  } catch(e) {}
+}
+
+function saveProgress(lessonId, zoneId) {
+  try {
+    localStorage.setItem(SE_PROGRESS_KEY, JSON.stringify({
+      lesson: lessonId,
+      zone: zoneId,
+      timestamp: Date.now()
+    }));
+  } catch(e) {}
+}
+
+function getSavedProgress() {
+  try {
+    var data = localStorage.getItem(SE_PROGRESS_KEY);
+    if (!data) return null;
+    var parsed = JSON.parse(data);
+    // Expire after 30 days
+    if (Date.now() - parsed.timestamp > 30 * 24 * 60 * 60 * 1000) {
+      localStorage.removeItem(SE_PROGRESS_KEY);
+      return null;
+    }
+    return parsed;
+  } catch(e) { return null; }
+}
+
+function resumeToLesson(lessonId, zoneId) {
+  // Open the correct zone
+  var zone = document.getElementById(zoneId);
+  if (zone && !zone.classList.contains('zone-open')) {
+    document.querySelectorAll('.rm-zone.zone-open').forEach(function(z) {
+      z.classList.remove('zone-open');
+    });
+    zone.classList.add('zone-open');
+  }
+  // Open the lesson after zone animation
+  setTimeout(function() {
+    var lesson = document.getElementById(lessonId);
+    if (lesson) {
+      // Close other open lessons in same path
+      var path = lesson.closest('.rm-path');
+      if (path) {
+        path.querySelectorAll('.lesson-card.rm-open').forEach(function(c) {
+          c.classList.remove('rm-open');
+        });
+      }
+      lesson.classList.add('rm-open');
+      setTimeout(function() {
+        lesson.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 200);
+    }
+  }, 400);
+}
+
+function checkSavedProgress() {
+  var saved = getSavedProgress();
+  if (!saved || !saved.lesson) return;
+  // Verify the lesson element exists
+  if (!document.getElementById(saved.lesson)) return;
+  // Show resume modal
+  var modal = document.getElementById('resume-modal');
+  if (modal) modal.classList.add('rm-show');
+}
+
+function acceptResume() {
+  var saved = getSavedProgress();
+  var modal = document.getElementById('resume-modal');
+  if (modal) modal.classList.remove('rm-show');
+  if (saved) resumeToLesson(saved.lesson, saved.zone);
+}
+
+function dismissResume() {
+  var modal = document.getElementById('resume-modal');
+  if (modal) modal.classList.remove('rm-show');
+}
+
+/* ===== SYLLABUS: Toggle lesson expand/collapse ===== */
+document.addEventListener('DOMContentLoaded', function() {
+  // Restore completed lesson highlights
+  restoreCompletedLessons();
+
+  // ===== INJECT SECTION DIVIDERS before every quiz block =====
+  document.querySelectorAll('.lesson-body .quiz-block').forEach(function(quiz) {
+    if (quiz.previousElementSibling && quiz.previousElementSibling.classList.contains('se-section-divider')) return;
+    var divider = document.createElement('div');
+    divider.className = 'se-section-divider';
+    divider.innerHTML = '<span>📝 اختبر فهمك</span>';
+    quiz.parentNode.insertBefore(divider, quiz);
+  });
+
+  // ===== INJECT CONTENT DIVIDERS before tables (learning → examples) =====
+  document.querySelectorAll('.lesson-body .table-wrap').forEach(function(table) {
+    var prev = table.previousElementSibling;
+    if (prev && prev.classList.contains('se-section-divider')) return;
+    if (prev && prev.classList.contains('section-title')) return;
+    var divider = document.createElement('div');
+    divider.className = 'se-section-divider';
+    divider.innerHTML = '<span>📋 أمثلة تطبيقية</span>';
+    table.parentNode.insertBefore(divider, table);
+  });
+
+  document.querySelectorAll('.rm-path .lesson-card .lesson-header').forEach(function(header) {
+    // Add toggle chevron at end of header row
+    if (!header.querySelector('.rm-toggle')) {
+      var chevron = document.createElement('span');
+      chevron.className = 'rm-toggle';
+      chevron.textContent = '▶';
+      header.appendChild(chevron);
+    }
+    header.addEventListener('click', function(e) {
+      // Don't toggle if clicking a TTS element inside header
+      if (e.target.closest('.tts')) return;
+      var card = header.closest('.lesson-card');
+      var path = card.closest('.rm-path');
+      var wasOpen = card.classList.contains('rm-open');
+
+      // Step 1: Close ALL other open lessons in this month (accordion)
+      var hadOtherOpen = false;
+      path.querySelectorAll('.lesson-card.rm-open').forEach(function(c) {
+        if (c !== card) { c.classList.remove('rm-open'); hadOtherOpen = true; }
+      });
+
+      if (wasOpen) {
+        // Clicking the same card → just close it
+        card.classList.remove('rm-open');
+      } else {
+        // Step 2: Stagger the open — wait for old card to start collapsing
+        var delay = hadOtherOpen ? 120 : 0;
+        setTimeout(function() {
+          card.classList.add('rm-open');
+          // Save progress to localStorage
+          var zone = card.closest('.rm-zone');
+          saveProgress(card.id, zone ? zone.id : '');
+          // Step 3: Smooth scroll after expand animation starts
+          setTimeout(function() {
+            card.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+          }, 200);
+        }, delay);
+      }
+    });
+  });
+});
+
+/* ===== SMART BACK BUTTON — state-aware navigation ===== */
+function smartBack() {
+  var label = document.getElementById('smart-back-label');
+
+  // Priority 1: If in quiz mode → exit quiz, stay in month
+  if (document.body.classList.contains('quiz-mode')) {
+    if (typeof exitQuizMode === 'function') exitQuizMode();
+    updateBackLabel();
+    return;
+  }
+
+  // Priority 2: If in month view → exit month, stay in platform
+  if (document.body.classList.contains('month-view')) {
+    if (typeof exitMonthView === 'function') exitMonthView();
+    updateBackLabel();
+    return;
+  }
+
+  // Priority 3: Exit platform entirely → go to landing
+  if (typeof exitPlatform === 'function') exitPlatform();
+}
+
+function updateBackLabel() {
+  var label = document.getElementById('smart-back-label');
+  if (!label) return;
+  if (document.body.classList.contains('month-view')) {
+    label.textContent = _isArabic ? 'العودة للأشهر' : 'Back to Months';
+  } else {
+    label.textContent = _isArabic ? 'العودة للرئيسية' : 'Back to Home';
+  }
+}
+
+/* ===== ISOLATED MONTH VIEW ===== */
+var _allZones = null;
+var _monthTitles = {
+  'zone-1': { title: 'الشهر الأول', sub: 'الأساسيات والانطلاقة — الدروس 01 إلى 12' },
+  'zone-2': { title: 'الشهر الثاني', sub: 'بناء الجُمَل والروتين اليومي — الدروس 13 إلى 24' },
+  'zone-3': { title: 'الشهر الثالث', sub: 'الطلاقة والماضي والمستقبل — الدروس 25 إلى 36' }
+};
+
+function toggleZone(zoneId) {
+  if (!_allZones) _allZones = document.querySelectorAll('.rm-zone');
+  var zone = document.getElementById(zoneId);
+  if (!zone) return;
+
+  // Enter isolated month view
+  _allZones.forEach(function(z) {
+    z.classList.remove('zone-open', 'zone-active');
+  });
+
+  zone.classList.add('zone-active', 'zone-open');
+  document.body.classList.add('month-view');
+  updateBackLabel();
+
+  // Set title
+  var titleEl = document.getElementById('month-view-title');
+  var meta = _monthTitles[zoneId] || { title: '', sub: '' };
+  if (titleEl) titleEl.innerHTML = meta.title + '<span class="mvt-sub">' + meta.sub + '</span>';
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function exitMonthView() {
+  document.body.classList.remove('month-view');
+  if (!_allZones) _allZones = document.querySelectorAll('.rm-zone');
+  _allZones.forEach(function(z) {
+    z.classList.remove('zone-open', 'zone-active');
+    z.querySelectorAll('.lesson-card.rm-open').forEach(function(c) {
+      c.classList.remove('rm-open');
+    });
+  });
+  document.querySelectorAll('.rm-gate-content.rm-gate-open').forEach(function(g) {
+    g.classList.remove('rm-gate-open');
+  });
+  updateBackLabel();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ===== FLOATING NAV FAB ===== */
+function toggleNavFab() {
+  var fab = document.getElementById('nav-fab');
+  if (!fab) return;
+  fab.classList.toggle('fab-open');
+
+  // Update contextual buttons visibility
+  var monthBtn = document.getElementById('nav-month-btn');
+  var quizBtn = document.getElementById('nav-quiz-btn');
+  var inMonth = document.body.classList.contains('month-view');
+  if (monthBtn) monthBtn.style.display = inMonth ? 'flex' : 'none';
+  if (quizBtn) quizBtn.style.display = inMonth ? 'flex' : 'none';
+}
+
+function navTo(target) {
+  // Close the nav menu
+  var fab = document.getElementById('nav-fab');
+  if (fab) fab.classList.remove('fab-open');
+
+  if (target === 'home') {
+    // Exit any active view and go to dashboard home
+    if (document.body.classList.contains('quiz-mode')) exitQuizMode();
+    if (document.body.classList.contains('month-view')) exitMonthView();
+  } else if (target === 'month') {
+    // Already in month view — just scroll to top
+    if (document.body.classList.contains('quiz-mode')) exitQuizMode();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else if (target === 'quiz') {
+    // Find active zone and trigger its gate
+    var activeZone = document.querySelector('.rm-zone.zone-active');
+    if (activeZone) {
+      var gateId = activeZone.id.replace('zone-', 'gate');
+      toggleGate(gateId);
+    }
+  }
+}
+
+/* ===== FULLSCREEN QUIZ MODE ===== */
+var _allGates = null;
+var _activeGateId = null;
+var _activeGateZone = null;
+
+function toggleGate(id) {
+  if (!_allGates) _allGates = document.querySelectorAll('.rm-gate-content');
+  var gate = document.getElementById(id);
+  if (!gate) return;
+
+  // Close any other open gates
+  _allGates.forEach(function(g) { g.classList.remove('rm-gate-open'); });
+
+  // Enter fullscreen quiz mode
+  _activeGateId = id;
+  _activeGateZone = gate.closest('.rm-zone');
+
+  // Temporarily move gate content to top level for fullscreen
+  document.body.classList.add('quiz-mode');
+  gate.classList.add('rm-gate-open');
+
+  // Show all zone parents so gate content is visible
+  if (_activeGateZone) {
+    _activeGateZone.classList.add('zone-open');
+    var zoneBody = _activeGateZone.querySelector('.rm-zone-body');
+    if (zoneBody) {
+      zoneBody.style.maxHeight = 'none';
+      zoneBody.style.opacity = '1';
+      zoneBody.style.overflow = 'visible';
+    }
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function exitQuizMode() {
+  document.body.classList.remove('quiz-mode');
+
+  // Reset gate zone-body inline styles
+  if (_activeGateZone) {
+    var zoneBody = _activeGateZone.querySelector('.rm-zone-body');
+    if (zoneBody) {
+      zoneBody.style.maxHeight = '';
+      zoneBody.style.opacity = '';
+      zoneBody.style.overflow = '';
+    }
+  }
+
+  // Close gate but stay in month view
+  if (_activeGateId) {
+    var gate = document.getElementById(_activeGateId);
+    if (gate) gate.classList.remove('rm-gate-open');
+  }
+
+  _activeGateId = null;
+  _activeGateZone = null;
+
+  // Restore all completed lesson green states after quiz
+  restoreCompletedLessons();
+  updateBackLabel();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ===== PERFORMANCE UTILITIES ===== */
+var _rafTick = false;
+var _progressBar = null;
+
+/* RAF-throttled scroll → 60fps, never blocks main thread */
+window.addEventListener('scroll', function() {
+  if (_rafTick) return;
+  _rafTick = true;
+  requestAnimationFrame(function() {
+    if (!_progressBar) _progressBar = document.getElementById('progress-bar');
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? scrollTop / docHeight : 0;
+    _progressBar.style.transform = 'scaleX(' + progress + ')';
+    _rafTick = false;
+  });
+}, { passive: true });
+
+/* ===== TTS ===== */
+function speak(text) {
+  /* ── STRICT FLUSH: kill any playing/queued audio instantly ── */
+  window.speechSynthesis.cancel();
+
+  if (!window.speechSynthesis || !text) return;
+
+  const utterance = new SpeechSynthesisUtterance(text.trim());
+  utterance.lang = 'en-US';
+  utterance.rate = 0.9;
+  utterance.pitch = 1.0;
+  utterance.volume = 1.0;
   
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.find(v =>
+    (v.name.includes('Samantha') || v.name.includes('Alex') ||
+     v.name.includes('Google US') || v.name.includes('en-US')) &&
+    v.lang.startsWith('en')
+  );
+  if (preferred) utterance.voice = preferred;
+  
+  window.speechSynthesis.speak(utterance);
+}
+
+/* ── Helper: split "Word1 / Word2" into separate clickable spans ── */
+function tokenizeWords(text) {
+  if (!text.includes('/')) {
+    return '<span class="tts" onclick="event.stopPropagation();speak(\'' + text.trim().replace(/'/g, "\\'") + '\')">' + text.trim() + '</span>';
+  }
+  return text.split('/').map(function(w) {
+    var word = w.trim();
+    return '<span class="tts" onclick="event.stopPropagation();speak(\'' + word.replace(/'/g, "\\'") + '\')">' + word + '</span>';
+  }).join(' <span style="color:var(--text-muted);opacity:0.5;margin:0 2px;">/</span> ');
+}
+
+window.speechSynthesis.onvoiceschanged = () => {};
+
+/* ===== ALPHABET DATA ===== */
+const alphabetData = [
+  { cap:'A', low:'a', name:'إي', word:'Apple', ar:'تفاحة', note:'يُنطق مفتوحاً وممدوداً خفيفاً في الكلمات الثلاثية' },
+  { cap:'B', low:'b', name:'بي', word:'Book', ar:'كتاب', note:'يخرج بانفجار هوائي خفيف من الشفتين (صوت مجهور)' },
+  { cap:'C', low:'c', name:'سي', word:'Car / City', ar:'سيارة / مدينة', note:'لاحظ معي، هالحرف له صوتين: لو جا بعده a أو o أو u ينطق (كـ) زي Cat 🐱، لكن لو جا بعده e أو i أو y ينطق (سـ) زي City 🏙️' },
+  { cap:'D', low:'d', name:'دي', word:'Door', ar:'باب', note:'حرف ساكن قياسي واضح ومستقر' },
+  { cap:'E', low:'e', name:'إي', word:'Egg', ar:'بيضة', note:'حرف علة محرك، يمثل الكسرة الخفيفة جداً والخاطفة' },
+  { cap:'F', low:'f', name:'إف', word:'Fish', ar:'سمكة', note:'يخرج بالتقاء الأسنان العلوية مع الشفة السفلية' },
+  { cap:'G', low:'g', name:'جي', word:'Goat / Page', ar:'ماعز / صفحة', note:'هالحرف له صوتين أيضاً: الأول جيم عادية زي Goat 🐐، والثاني صوت (دج) معطّش لو جا بعده e أو i أو y زي Page 📄' },
+  { cap:'H', low:'h', name:'إيتش', word:'House', ar:'منزل', note:'ينطق داخل الكلمات مثل حرف الهاء تماماً في العربية' },
+  { cap:'I', low:'i', name:'آي', word:'Ice / Ink', ar:'ثلج / حبر', note:'حرف علة يمثل الكسرة العميقة والشديدة' },
+  { cap:'J', low:'j', name:'جي', word:'Juice', ar:'عصير', note:'يُنطق دائماً مع دال خفيفة مدمجة في البداية (دْجِي)' },
+  { cap:'K', low:'k', name:'كي', word:'Key', ar:'مفتاح', note:'حرف ساكن يعطي صوت الكاف النقي' },
+  { cap:'L', low:'l', name:'إل', word:'Lion', ar:'أسد', note:'ينطق خفيفاً أو مفخماً حسب موقعه (اللام الإنجليزية)' },
+  { cap:'M', low:'m', name:'إِم', word:'Moon', ar:'قمر', note:'حرف ساكن يخرج بانطباق الشفتين تماماً' },
+  { cap:'N', low:'n', name:'إِن', word:'Net', ar:'شبكة', note:'حرف ساكن غنّي يخرج من الأنف واللسان' },
+  { cap:'O', low:'o', name:'أو', word:'Orange', ar:'برتقالة', note:'حرف علة يمثل الضمة الدائرية الواسعة' },
+  { cap:'P', low:'p', name:'پي', word:'Pen', ar:'قلم حبر', note:'هذا الحرف ما له مثيل بالعربية — أخرج هواء قوي من شفتيك بدون ما تطلع صوت — زي نفخة هوا خفيفة' },
+  { cap:'Q', low:'q', name:'كيو', word:'Queen', ar:'ملكة', note:'يأتي بعده دائماً حرف U في الغالبية العظمى من الكلمات' },
+  { cap:'R', low:'r', name:'آر', word:'Red', ar:'أحمر', note:'ينطق دون أن يلمس طرف اللسان سقف الحلق (التفاف اللسان)' },
+  { cap:'S', low:'s', name:'إس', word:'Sun', ar:'شمس', note:'صوته الأساسي (سـ) زي السين، بس أحياناً ينقلب صوت (زـ) لو جا بين حرفين علة زي كلمة Rose 🌹' },
+  { cap:'T', low:'t', name:'تي', word:'Tea', ar:'شاي', note:'حرف ساكن شديد ومهموس' },
+  { cap:'U', low:'u', name:'يو', word:'Umbrella', ar:'مظلة', note:'ينطق أحياناً "آه" مكتومة خفيفة وأحياناً باسمه "يو"' },
+  { cap:'V', low:'v', name:'ڤي', word:'Van', ar:'شاحنة صغيرة', note:'صوت الفاء المجهورة' },
+  { cap:'W', low:'w', name:'دبل يو', word:'Window', ar:'نافذة', note:'ينطق داخل الكلمات مثل حرف الواو تماماً' },
+  { cap:'X', low:'x', name:'إكس', word:'Box', ar:'صندوق', note:'هالحرف خلطة صوتين مع بعض: كاف + سين = (كس) زي Box 📦' },
+  { cap:'Y', low:'y', name:'واي', word:'Yellow', ar:'أصفر', note:'ينطق مثل الياء تماماً في بداية الكلمات' },
+  { cap:'Z', low:'z', name:'زِد / زي', word:'Zoo', ar:'حديقة حيوان', note:'صوت الزاي المجهور الصافي' }
+];
+
+/* ===== BUILD ALPHABET GRID ===== */
+const alphaGrid = document.getElementById('alpha-grid');
+alphabetData.forEach(l => {
+  const tile = document.createElement('div');
+  tile.className = 'alpha-tile';
+  tile.onclick = () => speak(l.cap);
+  tile.innerHTML = `
+    <span class="letter-big">${l.cap}</span>
+    <span class="letter-small">${l.low}</span>
+    <div class="letter-name">${l.name}</div>
+    <div class="letter-word">${l.word.split('/')[0].trim()}</div>
+  `;
+  alphaGrid.appendChild(tile);
+});
+
+/* ===== BUILD ALPHABET TABLE (with per-word tokenization) ===== */
+const tbody = document.getElementById('alphabet-tbody');
+alphabetData.forEach(l => {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td class="en-cell" style="text-align:center;cursor:pointer;" onclick="speak('${l.cap}')"><span style="font-size:20px;">${l.cap} ${l.low}</span><br/><small style="font-size:11px;color:var(--text-muted)">${l.name}</small></td>
+    <td class="ar-cell">${l.name}</td>
+    <td class="en-cell">${tokenizeWords(l.word)}</td>
+    <td class="ar-cell">${l.ar}</td>
+    <td class="ar-cell" style="font-size:13px;">${l.note}</td>
+  `;
+  tbody.appendChild(tr);
+});
+
+/* ===== SMART QUIZ ENGINE ===== */
+
+/**
+ * applyAnswer(container, clickedIndex, correctIndex, answerId, isExam, examCallback)
+ * – Highlights correct (green) and wrong (red) options
+ * – Locks all options to prevent re-clicking
+ * – Reveals explanation block
+ * – Calls optional examCallback(wasCorrect) for score tracking
+ */
+function applyAnswer(container, clickedIdx, correctIdx, answerId, examCallback) {
+  const allBtns = container.querySelectorAll('.quiz-option');
+
+  allBtns.forEach((b, bi) => {
+    b.classList.add('opt-locked');
+    b.classList.remove('opt-correct', 'opt-wrong');
+    if (bi === correctIdx) {
+      b.classList.add('opt-correct');
+      const badge = b.querySelector('.opt-badge');
+      if (badge) badge.textContent = '✅';
+    }
+  });
+
+  const clickedBtn = allBtns[clickedIdx];
+  const wasCorrect = clickedIdx === correctIdx;
+
+  if (!wasCorrect) {
+    clickedBtn.classList.remove('opt-correct');
+    clickedBtn.classList.add('opt-wrong');
+    const badge = clickedBtn.querySelector('.opt-badge');
+    if (badge) badge.textContent = '💡';
+  }
+
+  // Reveal explanation with dynamic feedback prefix
+  const answerEl = document.getElementById(answerId);
+  if (answerEl) {
+    // Inject feedback prefix ONCE (check if already injected)
+    if (!answerEl.dataset.feedbackSet) {
+      const strongEl = answerEl.querySelector('strong');
+      if (strongEl) {
+        const originalText = strongEl.textContent.replace(/^✅\s*أحسنت!\s*/, '').replace(/^✅\s*/, '');
+        if (wasCorrect) {
+          strongEl.innerHTML = '🌟 كفوووووو! إجابة دقيقة وصحيحة: ' + originalText;
+        } else {
+          strongEl.innerHTML = '☕ محاولة جيدة! ركز معاي في هذا التكنيك البسيط عشان تضمنها المرة الجاية: ' + originalText;
+          answerEl.classList.add('qa-wrong');
+        }
+      }
+      answerEl.dataset.feedbackSet = '1';
+    }
+    answerEl.classList.add('show');
+  }
+
+  // Speak the correct option text
+  const correctText = allBtns[correctIdx].querySelector('span:first-child').textContent;
+  speak(correctText);
+
+  // Save progress — find closest lesson card
+  var lessonCard = container.closest('.lesson-card');
+  if (lessonCard) {
+    var zone = lessonCard.closest('.rm-zone');
+    saveProgress(lessonCard.id, zone ? zone.id : '');
+    // Mark lesson as completed
+    markLessonDone(lessonCard.id);
+  }
+
+  // Notify exam score tracker if provided
+  if (typeof examCallback === 'function') examCallback(wasCorrect);
+}
+
+/* ── Build a lesson quiz (no score tracking) ── */
+const quizzes = {
+  'quiz-01': { options: ['Cold', 'City', 'Cup'], correct: 1, answerId: 'qa-01' },
+  'quiz-02': { options: ['Sun', 'Top', 'Ten'], correct: 1, answerId: 'qa-02' },
+  'quiz-03': { options: ['Cat, Bat, Hat', 'Red, Bed, Net', 'Big, Dig, Pig'], correct: 1, answerId: 'qa-03' },
+
+  'quiz-05': { options: ['a', 'an', 'the'], correct: 1, answerId: 'qa-05' },
+  'quiz-06': { options: ['boxs', 'boxes', 'boxies'], correct: 1, answerId: 'qa-06' },
+  'quiz-04': { options: ['بـه (مثل حرف P)', 'ف (مثل حرف الفاء)', 'هـ (مثل حرف H)'], correct: 1, answerId: 'qa-04' },
+  'quiz-07': { options: ['He', 'She', 'It'], correct: 2, answerId: 'qa-07' },
+  'quiz-08': { options: ['am', 'is', 'are'], correct: 2, answerId: 'qa-08' },
+  'quiz-09': { options: ['They happy.', 'They is happy.', 'They are happy.'], correct: 2, answerId: 'qa-09' },
+  'quiz-10': { options: ["They not here.", "They isn't here.", "They aren't here."], correct: 2, answerId: 'qa-10' },
+  'quiz-11': { options: ['Is he a teacher?', 'Are he a teacher?', 'He is a teacher?'], correct: 0, answerId: 'qa-11' },
+  'quiz-12': { options: ['What', 'Where', 'When'], correct: 1, answerId: 'qa-12' },
+  'quiz-13': { options: ['My wife wake up early.', 'My wife wakes up early.', 'My wife waking up early.'], correct: 1, answerId: 'qa-13' },
+  'quiz-14': { options: ['I eat breakfast at seven.', 'I eating breakfast at seven.', 'I eats breakfast at seven.'], correct: 0, answerId: 'qa-14' },
+  'quiz-15': { options: ['He drinks always coffee.', 'He always drinks coffee.', 'Always he drinks coffee.'], correct: 1, answerId: 'qa-15' },
+  'quiz-16': { options: ['He does not drinks coffee.', 'He not drink coffee.', 'He does not drink coffee.'], correct: 2, answerId: 'qa-16' },
+  'quiz-17': { options: ['His', 'Her', 'She'], correct: 1, answerId: 'qa-17' },
+  'quiz-18': { options: ['I drink tea and eat bread.', 'I drink tea but eat bread.', 'I drink tea because eat bread.'], correct: 0, answerId: 'qa-18' },
+  'quiz-19': { options: ['and', 'because', 'but'], correct: 2, answerId: 'qa-19' },
+  'quiz-20': { options: ['but', 'and', 'because'], correct: 2, answerId: 'qa-20' },
+  'quiz-21': { options: ['much', 'many', 'some'], correct: 0, answerId: 'qa-21' },
+  'quiz-22': { options: ['How much is this?', 'How many is this?', 'What cost is this?'], correct: 0, answerId: 'qa-22' },
+  'quiz-23': { options: ['Where is hotel?', 'Excuse me, where is the hotel?', 'Tell me hotel.'], correct: 1, answerId: 'qa-23' },
+  'quiz-24': { options: ['Help me!', 'You help me.', 'Could you help me, please?'], correct: 2, answerId: 'qa-24' },
+  'quiz-24': { options: ['because ... but', 'but ... and', 'and ... because'], correct: 0, answerId: 'qa-24' },
+  'quiz-25': { options: ['worked', 'working', 'workes'], correct: 0, answerId: 'qa-25' },
+  'quiz-26': { options: ['goed', 'went', 'goned'], correct: 1, answerId: 'qa-26' },
+  'quiz-27': { options: ['He did not bought a car.', 'He did not buy a car.', 'He not buy a car.'], correct: 1, answerId: 'qa-27' },
+  'quiz-28': { options: ['I went to market and buyed food.', 'I goed to market and bought food.', 'I went to the market and bought vegetables.'], correct: 2, answerId: 'qa-28' },
+  'quiz-29': { options: ['am', 'is', 'will'], correct: 0, answerId: 'qa-29' },
+  'quiz-30': { options: ['am going to', 'will', 'going'], correct: 1, answerId: 'qa-30' },
+  'quiz-31': { options: ['They will not come tomorrow.', 'They not will come tomorrow.', 'They do not will come.'], correct: 0, answerId: 'qa-31' },
+  'quiz-32': { options: ['yesterday', 'last week', 'next month'], correct: 2, answerId: 'qa-32' },
+  'quiz-33': { options: ['Present Simple', 'Past Simple', 'Future Simple'], correct: 1, answerId: 'qa-33' },
+  'quiz-34': { options: ['Where is my flight?', 'Which gate is my flight?', 'What is my flight?'], correct: 1, answerId: 'qa-34' },
+  'quiz-35': { options: ['start', 'starting', 'started'], correct: 2, answerId: 'qa-35' },
+  'quiz-36': { options: ['I study hard last year, and I continue next year.', 'I studied hard last year, and I will continue next year.', 'I will study hard last year.'], correct: 1, answerId: 'qa-36' }
+};
+
+function buildQuiz(qId, data) {
+  const container = document.getElementById(qId);
+  if (!container) return;
+  const labels = ['A', 'B', 'C'];
+  data.options.forEach((opt, i) => {
+    const btn = document.createElement('div');
+    btn.className = 'quiz-option';
+    btn.innerHTML = `
+      <span style="direction:ltr">${opt}</span>
+      <span class="opt-badge" style="font-size:11px;color:var(--text-muted);flex-shrink:0;min-width:20px;text-align:center;">${labels[i]}</span>
+    `;
+    btn.addEventListener('click', () => {
+      // Ignore if already locked
+      if (btn.classList.contains('opt-locked')) return;
+      applyAnswer(container, i, data.correct, data.answerId, null);
+    });
+    container.appendChild(btn);
+  });
+}
+
+Object.entries(quizzes).forEach(([id, data]) => buildQuiz(id, data));
+
+/* ===== MULTI-EXAM ENGINE (3 Months × 15 Questions) ===== */
+
+const EXAM_DATA = {
+  /* ── Month 1: Pronouns, Am/Is/Are, Have/Has, Vocabulary ── */
+  1: {
+    containerId: 'exam1-body',
+    questions: [
+      { q: 'أيٌّ من الحروف التالية حرف علة (Vowel)؟', opts: ['B', 'E', 'G'], correct: 1 },
+      { q: 'كيف يُنطق المقطع PH في Phone؟', opts: ['بـ', 'ف', 'هـ'], correct: 1 },
+      { q: 'أيّ ضمير يُستخدم مع "is"؟', opts: ['We', 'They', 'She'], correct: 2 },
+      { q: '"Ahmed ____ a student."', opts: ['are', 'am', 'is'], correct: 2 },
+      { q: 'اختصار "I am not ready"؟', opts: ["I amn't ready.", "I'm not ready.", "I isn't ready."], correct: 1 },
+      { q: 'سؤال عن مكان المطعم؟', opts: ['What is the restaurant?', 'Where is the restaurant?', 'When is the restaurant?'], correct: 1 },
+      { q: 'أيّ كلمة فيها C بصوت الكاف؟', opts: ['City', 'Cycle', 'Cat'], correct: 2 },
+      { q: 'أيّ جملة تعبّر عن حاجة ضرورية؟', opts: ['I want a new car.', 'I need medicine now.', 'I want to watch a movie.'], correct: 1 },
+      { q: '"She is ___ engineer."', opts: ['a', 'an', 'the'], correct: 1 },
+      { q: 'ضمير بديل لـ "The Books"؟', opts: ['It', 'He', 'They'], correct: 2 },
+      { q: 'أيّ جملة صحيحة نحوياً؟', opts: ['She doctor.', 'She is a doctor.', 'She are a doctor.'], correct: 1 },
+      { q: 'سؤال Yes/No لـ "He is a teacher"؟', opts: ['Is he a teacher?', 'Are he a teacher?', 'He is a teacher?'], correct: 0 },
+      { q: 'كلمة من عائلة (-at)؟', opts: ['Bed', 'Pin', 'Bat'], correct: 2 },
+      { q: 'معنى "We aren\'t ready"؟', opts: ['نحن مستعدون', 'لسنا مستعدين', 'أنتم لستم مستعدين'], correct: 1 },
+      { q: 'ما جمع كلمة "child"؟', opts: ['childs', 'childes', 'children'], correct: 2 }
+    ]
+  },
+  /* ── Month 2: Present Simple S-rule, Conjunctions, Cafe ── */
+  2: {
+    containerId: 'exam2-body',
+    questions: [
+      { q: '"He ____ breakfast every morning."', opts: ['eat', 'eats', 'eating'], correct: 1 },
+      { q: '"She ____ up at six."', opts: ['wake', 'wakes', 'waking'], correct: 1 },
+      { q: '"They ____ to school by bus."', opts: ['goes', 'going', 'go'], correct: 2 },
+      { q: 'أيّ أداة ربط للتناقض؟', opts: ['and', 'but', 'because'], correct: 1 },
+      { q: '"I like coffee, ____ I do not like tea."', opts: ['and', 'because', 'but'], correct: 2 },
+      { q: '"I study hard ____ I want to pass."', opts: ['but', 'because', 'and'], correct: 1 },
+      { q: 'نفي "She eats breakfast"؟', opts: ['She does not eats breakfast.', 'She does not eat breakfast.', 'She not eat breakfast.'], correct: 1 },
+      { q: '"____ husband works in a hospital." (هي)', opts: ['His', 'Her', 'Their'], correct: 1 },
+      { q: 'اربط: "I drink tea" + "I eat bread"', opts: ['I drink tea and eat bread.', 'I drink tea but eat bread.', 'I drink tea because eat bread.'], correct: 0 },
+      { q: 'كيف تسأل عن السعر؟', opts: ['How much is this?', 'How many is this?', 'What cost is this?'], correct: 0 },
+      { q: 'كيف تطلب قهوة بأدب؟', opts: ['Give me coffee!', 'Can I have a coffee, please?', 'I want coffee now.'], correct: 1 },
+      { q: '"Does she eat?" — الجواب المختصر؟', opts: ['Yes, she eat.', 'Yes, she does.', 'Yes, she do.'], correct: 1 },
+      { q: 'أيّ ظرف تكرار يعني 0%؟', opts: ['always', 'sometimes', 'never'], correct: 2 },
+      { q: '"He always ____ coffee." ← أكمل:', opts: ['drink', 'drinks', 'drinking'], correct: 1 },
+      { q: 'كيف تسأل عن الفندق بأدب؟', opts: ['Where hotel?', 'Tell me hotel now.', 'Excuse me, where is the hotel?'], correct: 2 }
+    ]
+  },
+  /* ── Month 3: Past Simple, Irregular Verbs, Will vs Going to ── */
+  3: {
+    containerId: 'exam3-body',
+    questions: [
+      { q: 'ما ماضي "go"؟', opts: ['goed', 'went', 'goned'], correct: 1 },
+      { q: 'ما ماضي "buy"؟', opts: ['buyed', 'buyd', 'bought'], correct: 2 },
+      { q: 'ما ماضي "eat"؟', opts: ['eated', 'ate', 'aten'], correct: 1 },
+      { q: '"I ____ for 8 hours yesterday."', opts: ['work', 'worked', 'working'], correct: 1 },
+      { q: '"She ____ a new car two days ago."', opts: ['buyed', 'buy', 'bought'], correct: 2 },
+      { q: 'نفي "He went to school"؟', opts: ['He did not go to school.', 'He did not went to school.', 'He not went to school.'], correct: 0 },
+      { q: '"Did she ____ breakfast?"', opts: ['ate', 'eat', 'eated'], correct: 1 },
+      { q: 'أيّ جملة ماضي صحيحة؟', opts: ['We goed to Riyadh.', 'We went to Riyadh.', 'We wented to Riyadh.'], correct: 1 },
+      { q: '"I ____ going to travel next summer."', opts: ['is', 'am', 'are'], correct: 1 },
+      { q: 'الهاتف يرن — قرار فوري: "I ____ answer it."', opts: ['am going to', 'will', 'going'], correct: 1 },
+      { q: 'خطة مسبقة: "She ____ visit her mother tomorrow."', opts: ['will', 'is going to', 'going'], correct: 1 },
+      { q: 'نفي "I will travel"؟', opts: ['I will not travel.', 'I not will travel.', 'I do not will travel.'], correct: 0 },
+      { q: 'أيّ ظرف زمان للمستقبل؟', opts: ['yesterday', 'last week', 'next month'], correct: 2 },
+      { q: '"Three months ago, I ____ learning English."', opts: ['start', 'starting', 'started'], correct: 2 },
+      { q: 'أيّ جملة تجمع الماضي والمستقبل؟', opts: ['I study and I will study.', 'I studied last year, and I will continue next year.', 'I will studied hard.'], correct: 1 }
+    ]
+  }
+};
+
+function getScoreMeta(score, total) {
+  const pct = score / total;
+  if (pct === 1)    return { grade: 'A+', color: '#1F8A57', emoji: '🏆', msg: 'ممتاز جداً! أداء احترافي لا يصدق!' };
+  if (pct >= 0.87)  return { grade: 'A',  color: '#2563eb', emoji: '🌟', msg: 'ممتاز! نتيجة رائعة تعكس استيعابك العميق.' };
+  if (pct >= 0.73)  return { grade: 'B',  color: '#0ea5a0', emoji: '👍', msg: 'جيد جداً! راجع ما أخطأت فيه لتصل للقمة.' };
+  if (pct >= 0.60)  return { grade: 'C',  color: '#d97706', emoji: '💪', msg: 'جيد! بعض المفاهيم تحتاج مراجعة. لا تستسلم!' };
+  if (pct >= 0.40)  return { grade: 'D',  color: '#e05c5c', emoji: '📚', msg: 'مقبول. تحتاج لمراجعة شاملة. الممارسة هي المفتاح!' };
+  return                   { grade: 'F',  color: '#9b1c1c', emoji: '🔄', msg: 'لا تيأس! أعد الدروس ثم حاول مجدداً. أنت قادر!' };
+}
+
+/* ── Build each exam independently ── */
+function buildExam(monthNum) {
+  const data = EXAM_DATA[monthNum];
+  const container = document.getElementById(data.containerId);
+  if (!container) return;
+
+  const QS = data.questions;
+  const TOTAL = QS.length;
+  let answered = 0, score = 0;
+
+  /* Scoreboard */
+  const board = document.createElement('div');
+  board.className = 'scoreboard-card hidden';
+  board.innerHTML = `
+    <div style="font-family:'Tajawal';font-size:13px;font-weight:700;color:var(--text-muted);letter-spacing:1px;margin-bottom:20px;">نتائج اختبار الشهر ${monthNum === 1 ? 'الأول' : monthNum === 2 ? 'الثاني' : 'الثالث'}</div>
+    <div class="score-donut-wrap"><div class="score-donut"><span class="donut-num">—</span><span class="donut-total">/ ${TOTAL}</span></div></div>
+    <div class="score-grade">—</div>
+    <div class="score-message">—</div>
+    <div class="score-bars"></div>
+    <button class="btn-retry" onclick="window.location.reload()">🔄 إعادة الاختبار</button>`;
+
+  /* Questions */
+  QS.forEach((q, idx) => {
+    const block = document.createElement('div');
+    block.className = 'exam-q-block';
+    const answerId = `e${monthNum}-qa-${idx}`;
+    const optsId   = `e${monthNum}-opts-${idx}`;
+    block.innerHTML = `
+      <div class="exam-q-num">QUESTION ${String(idx+1).padStart(2,'0')} / ${TOTAL}</div>
+      <div class="exam-q-text">${q.q}</div>
+      <div class="quiz-options" id="${optsId}"></div>
+      <div class="quiz-answer" id="${answerId}"><strong>✅ أحسنت! ${q.opts[q.correct]}</strong></div>`;
+    container.appendChild(block);
+
+    const optsCont = document.getElementById(optsId);
+    ['A','B','C'].forEach((lbl, i) => {
+      if (i >= q.opts.length) return;
+      const btn = document.createElement('div');
+      btn.className = 'quiz-option';
+      btn.innerHTML = `<span>${q.opts[i]}</span><span class="opt-badge" style="font-size:11px;color:var(--text-muted)">${lbl}</span>`;
+      btn.addEventListener('click', () => {
+        if (btn.classList.contains('opt-locked')) return;
+        const ok = i === q.correct;
+        answered++; if (ok) score++;
+        board.dataset['q'+idx] = ok ? '1' : '0';
+        applyAnswer(optsCont, i, q.correct, answerId, null);
+        updateBtn();
+      });
+      optsCont.appendChild(btn);
+    });
+  });
+
+  /* Show-score button */
+  const showBtn = document.createElement('button');
+  showBtn.className = 'btn-show-score';
+  showBtn.disabled = true;
+  showBtn.textContent = `أجب على جميع الأسئلة أولاً (0 / ${TOTAL})`;
+
+  function updateBtn() {
+    if (answered >= TOTAL) {
+      showBtn.disabled = false;
+      showBtn.textContent = '📊 اعرض نتيجتي';
+    } else {
+      showBtn.textContent = `أجب على جميع الأسئلة أولاً (${answered} / ${TOTAL})`;
+    }
+  }
+
+  showBtn.addEventListener('click', () => {
+    if (answered < TOTAL) return;
+    showBtn.style.display = 'none';
+    const meta = getScoreMeta(score, TOTAL);
+    const pct  = Math.round((score / TOTAL) * 100);
+    board.querySelector('.donut-num').textContent = score;
+    board.querySelector('.donut-num').style.color = meta.color;
+    board.querySelector('.donut-total').textContent = `/ ${TOTAL}`;
+    board.querySelector('.score-donut').style.borderColor = meta.color;
+    board.querySelector('.score-grade').textContent = `${meta.emoji}  ${meta.grade}  —  ${pct}%`;
+    board.querySelector('.score-grade').style.color = meta.color;
+    board.querySelector('.score-message').textContent = meta.msg;
+    const barsWrap = board.querySelector('.score-bars');
+    barsWrap.innerHTML = '';
+    QS.forEach((_, i) => {
+      const ok = board.dataset['q'+i] === '1';
+      const item = document.createElement('div');
+      item.className = 'score-bar-item';
+      item.innerHTML = `<div class="bar-track"><div class="bar-fill" style="height:${ok?100:30}%;background:${ok?'#1F8A57':'#E15554'}"></div></div><div class="bar-label">${i+1}</div>`;
+      barsWrap.appendChild(item);
+    });
+    board.classList.remove('hidden');
+    board.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  container.appendChild(showBtn);
+  container.appendChild(board);
+
+  // Add "Return to Dashboard" button
+  var backBtn = document.createElement('button');
+  backBtn.className = 'btn-back-dashboard';
+  backBtn.innerHTML = '← العودة إلى المنصة';
+  backBtn.addEventListener('click', function() { exitQuizMode(); });
+  container.appendChild(backBtn);
+}
+
+/* Build all 3 exams */
+buildExam(1);
+buildExam(2);
+buildExam(3);
+
+/* ===== AI CONTROL PANEL WIRING ===== */
+var _aiVoiceSpeed = 1.0;
+var _aiSessionActive = false;
+var _aiCorrections = [];
+var _aiTurnCount = 0;
+
+function updateVoiceSpeed(val) {
+  _aiVoiceSpeed = parseFloat(val);
+  var display = document.getElementById('speed-display');
+  if (display) display.textContent = _aiVoiceSpeed.toFixed(1) + 'x';
+}
+
+function aiTapToSpeak() {
+  var btn = document.getElementById('ai-mic-btn');
+  if (!_aiSessionActive) {
+    _aiSessionActive = true;
+    if (btn) { btn.style.background = '#ef4444'; btn.innerHTML = '<span class="material-symbols-outlined text-sm">stop_circle</span> LISTENING...'; }
+    updateConnState(true);
+    // Open voice modal and start session
+    if (!_vfOpen) toggleVoiceFab();
+    setTimeout(function() { if (!_vfRec) vfToggleSession(); }, 300);
+  } else {
+    aiMuteMic();
+  }
+}
+
+function aiMuteMic() {
+  _aiSessionActive = false;
+  var btn = document.getElementById('ai-mic-btn');
+  if (btn) { btn.style.background = ''; btn.innerHTML = '<span style="font-family:Tajawal,sans-serif">👇 اضغط للتحدث</span>'; }
+  updateConnState(false);
+  if (_vfRec) vfToggleSession();
+}
+
+function updateConnState(active) {
+  var dot = document.getElementById('ai-conn-dot');
+  var txt = document.getElementById('ai-conn-text');
+  if (dot) dot.style.background = active ? '#22c55e' : '#666';
+  if (txt) txt.textContent = active ? 'متصل بمحمد 🟢' : 'غير متصل 🔴';
+}
+
+function updateAccentScore(score) {
+  var el = document.getElementById('accent-score');
+  var ring = document.getElementById('accent-ring');
+  if (el) el.textContent = score + '%';
+  if (ring) {
+    var offset = 364.4 - (364.4 * score / 100);
+    ring.setAttribute('stroke-dashoffset', offset);
+    ring.style.stroke = score >= 80 ? '#22c55e' : score >= 50 ? '#f59e0b' : '#ef4444';
+  }
+}
+
+function addCorrection(original, corrected) {
+  _aiCorrections.push({ original: original, corrected: corrected });
+  var list = document.getElementById('corrections-list');
+  if (list) {
+    var item = document.createElement('div');
+    item.className = 'mb-2 pb-2 border-b border-white/5';
+    item.innerHTML = '<span class="text-red-400 line-through">' + original + '</span> → <span class="text-green-400">' + corrected + '</span>';
+    list.appendChild(item);
+  }
+}
+
+function showCorrections() {
+  var panel = document.getElementById('corrections-panel');
+  if (panel) panel.classList.toggle('hidden');
+  if (_aiCorrections.length === 0) {
+    var list = document.getElementById('corrections-list');
+    if (list) list.innerHTML = '<div class="text-center text-white/30">' + (_isArabic ? 'لا توجد تصحيحات بعد — تحدث مع محمد أولاً' : 'No corrections yet — speak with محمد first') + '</div>';
+  }
+}
+
+/* Three.js sidebar orb removed */
+</script>
+</body>
+</html>
