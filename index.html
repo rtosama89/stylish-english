@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" lang="en" dir="ltr"><head>
+<html class="dark bg-gray-950" lang="en" dir="ltr"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>STYLISH ENGLISH // AI Language Tutor</title>
@@ -24,7 +24,7 @@ tailwind.config = {
   }
 }
 </script>
-<style>body{background-color:#000 !important;color:#e2e2e2;overflow-x:hidden;font-family:'Geist', sans-serif;}
+<style>body{background-color:#0a0a1a !important;color:#e2e2e2;overflow-x:hidden;font-family:'Geist', sans-serif;}
 body.in-platform{font-family:'Tajawal', 'Cairo', 'Segoe UI Arabic', sans-serif;}
 [dir="rtl"] body, [dir="rtl"]{font-family:'Tajawal', 'Cairo', sans-serif;}
 .orb{position:fixed;filter:blur(140px);z-index:0;border-radius:50%;pointer-events:none;opacity:0.3;}
@@ -39,10 +39,10 @@ body.in-platform{font-family:'Tajawal', 'Cairo', 'Segoe UI Arabic', sans-serif;}
 body.in-platform .view-landing{display:none !important;}
 body.in-platform .view-platform{display:block;}
 body.in-platform nav{display:none;}
-body.in-platform .orb{opacity:0.15;}:root{--brand-900:#1e0a3c;--brand-800:#2d1158;--brand-700:#3d1a72;--brand-600:#5b2fa0;--brand-500:#7c4dcc;--brand-400:#a87de0;--brand-300:#c9a8f0;--brand-100:#f0e8ff;--brand-50:#f8f4ff;--bg-primary:#0a0814;--bg-secondary:#ffffff;--bg-card:#ffffff;--bg-lesson:#faf8ff;--bg-elevated:#ffffff;--text-primary:#1a1625;--text-secondary:#3d3553;--text-muted:#7a6f8a;--text-arabic:#2a2040;--text-en:#3d1a72;--accent-teal:#0d9e8f;--accent-rose:#d94f4f;--border:#ddd5f0;--border-light:#ece8f8;--shadow-sm:0 1px 4px rgba(61,26,114,0.07);--shadow-md:0 4px 20px rgba(61,26,114,0.10);--shadow-lg:0 8px 40px rgba(61,26,114,0.16);--shadow-xl:0 16px 60px rgba(61,26,114,0.20);--glow-brand:0 0 0 3px rgba(124,77,204,0.18);--radius-sm:8px;--radius-md:14px;--radius-lg:20px;--radius-xl:28px;--tts-hover-bg:#ede5ff;--tts-hover-border:#7c4dcc;--quiz-correct-border:#1a7a4a;--quiz-selected:#ede5ff;--quiz-selected-border:#7c4dcc;}
+body.in-platform .orb{opacity:0.15;}:root{--brand-900:#1e0a3c;--brand-800:#2d1158;--brand-700:#3d1a72;--brand-600:#5b2fa0;--brand-500:#7c4dcc;--brand-400:#a87de0;--brand-300:#c9a8f0;--brand-100:rgba(167,139,250,0.08);--brand-50:rgba(167,139,250,0.04);--bg-primary:#111827;--bg-secondary:#1f1f2e;--bg-card:#1a1a2e;--bg-lesson:#151525;--bg-elevated:#1f1f2e;--text-primary:#ffffff;--text-secondary:#d1d5db;--text-muted:#9ca3af;--text-arabic:#e5e7eb;--text-en:#c9a8f0;--accent-teal:#a78bfa;--accent-rose:#d94f4f;--border:rgba(167,139,250,0.15);--border-light:rgba(167,139,250,0.08);--shadow-sm:0 1px 4px rgba(0,0,0,0.3);--shadow-md:0 4px 20px rgba(0,0,0,0.4);--shadow-lg:0 8px 40px rgba(0,0,0,0.5);--shadow-xl:0 16px 60px rgba(0,0,0,0.6);--glow-brand:0 0 0 3px rgba(167,139,250,0.25);--radius-sm:8px;--radius-md:14px;--radius-lg:20px;--radius-xl:28px;--tts-hover-bg:rgba(167,139,250,0.1);--tts-hover-border:#a78bfa;--quiz-correct-border:#a78bfa;--quiz-selected:rgba(167,139,250,0.1);--quiz-selected-border:#a78bfa;}
 *, *::before, *::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent;}
-body{font-family:'Tajawal', 'Cairo', 'Segoe UI Arabic', sans-serif;background:var(--bg-primary);color:var(--text-primary);transition:background 0.4s ease, color 0.4s ease;line-height:1.9;overflow-x:hidden;font-size:15px;overflow-wrap:break-word;word-break:break-word;-webkit-text-size-adjust:100%;}
+body{font-family:'Tajawal', 'Cairo', 'Segoe UI Arabic', sans-serif;background:#0a0a1a !important;color:var(--text-primary);transition:background 0.4s ease, color 0.4s ease;line-height:1.9;overflow-x:hidden;font-size:15px;overflow-wrap:break-word;word-break:break-word;-webkit-text-size-adjust:100%;}
 a, button, .quiz-option, .tts, .rm-zone-header, .lesson-header,
 .rm-gate-btn, .land-cta, .alpha-tile, .verb-card{touch-action:manipulation;}
 .lesson-card, .verb-card, .alpha-tile, .quiz-option,
@@ -61,40 +61,40 @@ a, button, .quiz-option, .tts, .rm-zone-header, .lesson-header,
 .site-header .brand-name span{color:var(--brand-300);}
 .header-actions{display:flex;align-items:center;gap:8px;}
 .btn-icon{background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.18);color:#fff;border-radius:10px;padding:8px 14px;cursor:pointer;font-size:13px;font-family:'Tajawal', sans-serif;font-weight:600;display:flex;align-items:center;gap:6px;transition:background 0.2s, transform 0.18s;white-space:nowrap;backdrop-filter:blur(6px);}
-.btn-icon:hover{background:rgba(255,255,255,0.20);transform:translateY(-1px);}
+.btn-icon:hover{background:rgba(167,139,250,0.15);transform:translateY(-1px);}
 .btn-print{background:linear-gradient(135deg, var(--brand-600), var(--accent-teal));border:none;box-shadow:0 2px 12px rgba(124,77,204,0.4);}
 .btn-print:hover{opacity:0.9;}
-.main-container{max-width:1080px;margin:0 auto;padding:32px 24px 80px;}
+.main-container{background:transparent;max-width:1080px;margin:0 auto;padding:32px 24px 80px;}
 .cover-card{background:linear-gradient(135deg, var(--brand-900) 0%, var(--brand-700) 55%, #1a5f8a 100%);color:#fff;border-radius:var(--radius-xl);padding:60px 40px;text-align:center;margin-bottom:32px;position:relative;overflow:hidden;box-shadow:var(--shadow-xl);}
 .cover-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 80%, rgba(124,77,204,0.25) 0%, transparent 50%),
 radial-gradient(ellipse at 80% 20%, rgba(13,158,143,0.20) 0%, transparent 50%),
 url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");pointer-events:none;}
-.cover-card .cover-badge{display:inline-block;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.28);border-radius:999px;padding:5px 18px;font-size:12px;font-weight:700;margin-bottom:20px;letter-spacing:1px;backdrop-filter:blur(4px);}
+.cover-card .cover-badge{display:inline-block;background:rgba(255,255,255,0.12);border:1px solid rgba(167,139,250,0.2);border-radius:999px;padding:5px 18px;font-size:12px;font-weight:700;margin-bottom:20px;letter-spacing:1px;backdrop-filter:blur(4px);}
 .cover-card h1{font-family:'Space Grotesk', sans-serif;font-size:clamp(28px, 5vw, 48px);font-weight:700;margin-bottom:10px;line-height:1.15;position:relative;}
 .cover-card h1 em{font-style:italic;color:var(--brand-300);font-family:'Lora', serif;}
 .cover-card .cover-sub{font-family:'Tajawal', sans-serif;font-size:clamp(15px, 2.5vw, 18px);font-weight:400;opacity:0.88;margin-bottom:32px;position:relative;}
 .cover-stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;position:relative;}
-.cover-stat{background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.16);border-radius:var(--radius-md);padding:16px 24px;min-width:100px;backdrop-filter:blur(6px);transition:transform 0.2s, background 0.2s;}
-.cover-stat:hover{transform:translateY(-3px);background:rgba(255,255,255,0.16);}
+.cover-stat{background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.12);border-radius:var(--radius-md);padding:16px 24px;min-width:100px;backdrop-filter:blur(6px);transition:transform 0.2s, background 0.2s;}
+.cover-stat:hover{transform:translateY(-3px);background:rgba(167,139,250,0.12);}
 .cover-stat .num{font-family:'Space Grotesk', sans-serif;font-size:30px;font-weight:700;display:block;}
 .cover-stat .label{font-size:12px;opacity:0.8;}
-.welcome-card{background:rgba(255, 255, 255, 0.03);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-radius:20px;border:1px solid rgba(255, 255, 255, 0.1);padding:36px;margin-bottom:32px;box-shadow:0 0 20px rgba(183,148,244,0.08);transition:all 0.4s cubic-bezier(0.23, 1, 0.32, 1);}
-.welcome-card:hover{border-color:rgba(71, 214, 255, 0.3);transform:translateY(-4px);box-shadow:0 0 30px rgba(183,148,244,0.2);}
+.welcome-card{background:#111827;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-radius:20px;border:1px solid rgba(167,139,250,0.15);padding:36px;margin-bottom:32px;box-shadow:0 0 20px rgba(167,139,250,0.06);transition:all 0.4s cubic-bezier(0.23, 1, 0.32, 1);}
+.welcome-card:hover{border-color:rgba(167,139,250,0.3);transform:translateY(-4px);box-shadow:0 0 30px rgba(167,139,250,0.15);}
 .welcome-card .wc-header{display:flex;align-items:center;gap:14px;margin-bottom:24px;}
 .welcome-card .wc-icon{width:52px;height:52px;background:rgba(183,148,244,0.1);border:1px solid rgba(183,148,244,0.2);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;}
 .welcome-card .wc-title{font-family:'Tajawal', sans-serif;font-size:22px;font-weight:800;color:#e0b6ff;}
 .welcome-card .wc-sub{font-size:13px;color:rgba(255,255,255,0.5);}
 .welcome-steps{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:14px;}
-.welcome-step{background:rgba(255, 255, 255, 0.03);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:14px;padding:16px;border:1px solid rgba(255, 255, 255, 0.08);display:flex;gap:12px;align-items:flex-start;transition:all 0.4s cubic-bezier(0.23, 1, 0.32, 1);}
-.welcome-step:hover{border-color:rgba(71, 214, 255, 0.3);transform:translateY(-2px);box-shadow:0 0 20px rgba(183,148,244,0.15);}
-.step-num{width:32px;height:32px;background:rgba(183,148,244,0.15);border:1px solid rgba(183,148,244,0.3);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk', sans-serif;font-weight:700;font-size:14px;flex-shrink:0;}
-.step-text{font-size:14px;line-height:1.6;color:var(--text-secondary);}
+.welcome-step{background:#1a1a2e;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:14px;padding:16px;border:1px solid rgba(167,139,250,0.12);display:flex;gap:12px;align-items:flex-start;transition:all 0.4s cubic-bezier(0.23, 1, 0.32, 1);}
+.welcome-step:hover{border-color:rgba(167,139,250,0.3);background:#1f1f35;transform:translateY(-2px);box-shadow:0 0 20px rgba(167,139,250,0.1);}
+.step-num{width:32px;height:32px;background:rgba(157,78,221,0.15);border:1px solid rgba(157,78,221,0.3);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk', sans-serif;font-weight:700;font-size:14px;flex-shrink:0;}
+.step-text{font-size:14px;line-height:1.6;color:#d1d5db;}
 .step-text strong{color:var(--text-primary);display:block;margin-bottom:2px;}
-.lesson-card{background:var(--bg-card);border-radius:var(--radius-xl);border:1px solid var(--border-light);box-shadow:var(--shadow-sm);margin-bottom:32px;overflow:hidden;transition:box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;position:relative;}
+.lesson-card{background:#1a1a2e;border-radius:var(--radius-xl);border:1px solid var(--border-light);box-shadow:var(--shadow-sm);margin-bottom:32px;overflow:hidden;transition:box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;position:relative;}
 .lesson-card::before{content:'';position:absolute;top:0;right:0;width:4px;height:100%;background:linear-gradient(180deg, var(--brand-600), var(--brand-300), transparent);border-radius:0 var(--radius-xl) var(--radius-xl) 0;opacity:0;transition:opacity 0.3s ease;}
 .lesson-card:hover{box-shadow:var(--shadow-lg), 0 0 0 1px var(--border);transform:translateY(-2px);border-color:var(--brand-300);}
 .lesson-card:hover::before{opacity:1;}
-.lesson-header{padding:28px 32px 24px;border-bottom:1px solid var(--border-light);background:linear-gradient(135deg, var(--bg-card) 0%, var(--bg-lesson) 100%);}
+.lesson-header{padding:28px 32px 24px;border-bottom:1px solid var(--border-light);background:linear-gradient(135deg, #1a1a2e 0%, #151525 100%);}
 .lesson-number-badge{display:inline-flex;align-items:center;background:linear-gradient(135deg, var(--brand-700), var(--brand-500));color:#fff;font-family:'Space Grotesk', sans-serif;font-weight:700;font-size:11px;letter-spacing:1.5px;padding:5px 14px;border-radius:999px;margin-bottom:12px;box-shadow:0 2px 8px rgba(91,47,160,0.3);}
 .lesson-title-en{font-family:'Space Grotesk', sans-serif;font-size:clamp(18px, 3vw, 24px);font-weight:700;color:var(--text-primary);margin-bottom:4px;direction:ltr;text-align:left;}
 .lesson-title-ar{font-family:'Tajawal', sans-serif;font-size:15px;color:var(--text-muted);margin-bottom:16px;}
@@ -110,7 +110,7 @@ thead th.th-en{text-align:left;direction:ltr;}
 tbody tr{border-bottom:1px solid var(--border-light);}
 tbody tr:last-child{border-bottom:none;}
 tbody tr:nth-child(even){background:var(--bg-lesson);}
-tbody tr:hover{background:var(--brand-50);transition:background 0.15s;}
+tbody tr:hover{background:rgba(167,139,250,0.06);transition:background 0.15s;}
 tbody td{padding:13px 16px;font-size:14px;vertical-align:middle;color:var(--text-secondary);}
 .en-cell{font-family:'Space Grotesk', sans-serif;font-size:16px;font-weight:600;color:var(--brand-600);direction:ltr;text-align:left;unicode-bidi:embed;}
 .ar-cell{font-family:'Tajawal', sans-serif;font-size:14px;color:var(--text-arabic);direction:rtl;text-align:right;}
@@ -136,7 +136,7 @@ color 0.18s, transform 0.18s;border:1px solid transparent;display:inline;directi
 .tts-block{cursor:pointer;border-radius:var(--radius-sm);padding:10px 14px;transition:background 0.18s, border-color 0.18s, box-shadow 0.2s, transform 0.18s;border:1px solid transparent;}
 .tts-block:hover{background:var(--tts-hover-bg);border-color:var(--tts-hover-border);box-shadow:var(--glow-brand);transform:translateY(-2px);}
 .alert{border-radius:var(--radius-md);padding:14px 18px;margin:20px 0;display:flex;gap:12px;align-items:flex-start;font-size:14px;}
-.alert-warning{background:#fffbeb;border:1px solid #fcd34d;border-right:4px solid #d97706;}
+.alert-warning{background:#111827beb;border:1px solid #fcd34d;border-right:4px solid #d97706;}
 .alert-warning .icon{color:#d97706;}
 .alert-info{background:var(--brand-50);border:1px solid var(--brand-300);border-right:4px solid var(--brand-500);}
 .alert-info .icon{color:var(--brand-600);}
@@ -150,26 +150,26 @@ color 0.18s, transform 0.18s;border:1px solid transparent;display:inline;directi
 .se-section-divider::before,
 .se-section-divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg, transparent, rgba(183,148,244,0.25), transparent);}
 .se-section-divider span{font-family:'Tajawal', sans-serif;font-size:12px;font-weight:700;color:rgba(183,148,244,0.6);white-space:nowrap;letter-spacing:0.5px;}
-.quiz-block{background:linear-gradient(135deg, var(--brand-50) 0%, var(--bg-card) 100%);border-radius:var(--radius-lg);border:1px solid var(--border);padding:26px;margin-top:28px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;}
+.quiz-block{background:linear-gradient(135deg, rgba(167,139,250,0.06) 0%, #1a1a2e 100%);border-radius:var(--radius-lg);border:1px solid var(--border);padding:26px;margin-top:28px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;}
 .quiz-block::before{content:'';position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle, rgba(124,77,204,0.08) 0%, transparent 70%);pointer-events:none;}
 .quiz-label{font-family:'Space Grotesk', sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--brand-500);text-transform:uppercase;margin-bottom:10px;direction:ltr;}
 .quiz-q{font-family:'Tajawal', sans-serif;font-size:17px;font-weight:700;color:var(--text-primary);margin-bottom:18px;line-height:1.65;}
 .quiz-options{display:flex;flex-direction:column;gap:10px;}
-.quiz-option{background:var(--bg-secondary);border:1.5px solid var(--border);border-radius:var(--radius-md);padding:13px 18px;cursor:pointer;font-family:'Space Grotesk', sans-serif;font-size:14px;color:var(--text-primary);direction:ltr;text-align:left;transition:all 0.22s ease;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.quiz-option{background:rgba(255,255,255,0.04);border:1.5px solid var(--border);border-radius:var(--radius-md);padding:13px 18px;cursor:pointer;font-family:'Space Grotesk', sans-serif;font-size:14px;color:var(--text-primary);direction:ltr;text-align:left;transition:all 0.22s ease;display:flex;align-items:center;justify-content:space-between;gap:10px;}
 .quiz-option:hover:not(.opt-locked){border-color:var(--brand-400);background:var(--tts-hover-bg);box-shadow:var(--glow-brand);transform:translateX(-3px);}
-.quiz-option.opt-correct{background:#E7F6EE !important;border-color:#1F8A57 !important;color:#145c38 !important;font-weight:700;cursor:default;}
-.quiz-option.opt-wrong{background:#FFF8EE !important;border-color:#c4960a !important;color:#7a5d00 !important;font-weight:700;cursor:default;}
+.quiz-option.opt-correct{background:rgba(167,139,250,0.06) !important;border-color:#1F8A57 !important;color:#145c38 !important;font-weight:700;cursor:default;}
+.quiz-option.opt-wrong{background:rgba(245,158,11,0.06) !important;border-color:#c4960a !important;color:#7a5d00 !important;font-weight:700;cursor:default;}
 .quiz-option.opt-locked{cursor:default;pointer-events:none;}
 .quiz-option .opt-badge{font-size:15px;flex-shrink:0;transition:opacity 0.2s;}
-.quiz-answer{display:none;background:#E7F6EE;border:1px solid #1F8A57;border-right:4px solid #1F8A57;border-radius:var(--radius-md);padding:16px 18px;margin-top:14px;font-family:'Tajawal', sans-serif;font-size:14px;color:var(--text-primary);line-height:1.8;animation:fadeIn 0.3s ease;}
+.quiz-answer{display:none;background:rgba(167,139,250,0.08);border:1px solid rgba(167,139,250,0.2);border-right:4px solid #a78bfa;border-radius:var(--radius-md);padding:16px 18px;margin-top:14px;font-family:'Tajawal', sans-serif;font-size:14px;color:var(--text-primary);line-height:1.8;animation:fadeIn 0.3s ease;}
 .quiz-answer.show{display:block;}
 .quiz-answer strong{color:#1F8A57;font-size:15px;display:block;margin-bottom:6px;}
-.quiz-answer.qa-wrong{background:#f5f0e8;border-color:#c4960a;border-right-color:#c4960a;}
+.quiz-answer.qa-wrong{background:rgba(196,150,10,0.08);border-color:rgba(196,150,10,0.3);border-right-color:#c4960a;}
 .quiz-answer.qa-wrong strong{color:#8a6d00;}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-8px);}
 to{opacity:1;transform:translateY(0);}
 }
-.scoreboard-card{background:var(--bg-card);border-radius:var(--radius-xl);border:2px solid var(--brand-300);padding:44px 32px;margin-top:32px;text-align:center;box-shadow:var(--shadow-xl);animation:fadeIn 0.5s ease;position:relative;overflow:hidden;}
+.scoreboard-card{background:#1a1a2e;border-radius:var(--radius-xl);border:2px solid var(--brand-300);padding:44px 32px;margin-top:32px;text-align:center;box-shadow:var(--shadow-xl);animation:fadeIn 0.5s ease;position:relative;overflow:hidden;}
 .scoreboard-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%, rgba(124,77,204,0.07) 0%, transparent 60%);pointer-events:none;}
 .scoreboard-card.hidden{display:none;}
 .score-donut-wrap{display:flex;justify-content:center;margin-bottom:24px;}
@@ -185,11 +185,11 @@ to{opacity:1;transform:translateY(0);}
 .score-bar-item .bar-fill{width:100%;border-radius:6px;transition:height 1s ease;}
 .btn-retry{background:linear-gradient(135deg, var(--brand-700), var(--brand-500));color:#fff;border:none;border-radius:var(--radius-md);padding:14px 36px;font-family:'Tajawal', sans-serif;font-size:16px;font-weight:700;cursor:pointer;transition:opacity 0.2s, transform 0.2s;box-shadow:0 4px 16px rgba(91,47,160,0.35);}
 .btn-retry:hover{opacity:0.88;transform:translateY(-2px);}
-.btn-show-score{display:block;margin:28px auto 0;background:linear-gradient(135deg, #1F8A57, #0d9e8f);color:#fff;border:none;border-radius:var(--radius-lg);padding:16px 48px;font-family:'Tajawal', sans-serif;font-size:18px;font-weight:800;cursor:pointer;box-shadow:0 4px 20px rgba(31,138,87,0.35);transition:all 0.22s;letter-spacing:0.3px;}
+.btn-show-score{display:block;margin:28px auto 0;background:linear-gradient(135deg, #6d11ad, #9d4edd);color:#fff;border:none;border-radius:var(--radius-lg);padding:16px 48px;font-family:'Tajawal', sans-serif;font-size:18px;font-weight:800;cursor:pointer;box-shadow:0 4px 20px rgba(109,17,173,0.35);transition:all 0.22s;letter-spacing:0.3px;}
 .btn-show-score:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(31,138,87,0.45);}
 .btn-show-score:disabled{opacity:0.5;cursor:not-allowed;transform:none;box-shadow:none;}
 .alpha-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(min(90px, 28vw), 1fr));gap:10px;margin-bottom:24px;direction:ltr;}
-.alpha-tile{background:var(--bg-lesson);border:1.5px solid var(--border-light);border-radius:var(--radius-md);padding:14px 8px;text-align:center;cursor:pointer;transition:all 0.22s ease;direction:ltr;}
+.alpha-tile{background:rgba(167,139,250,0.05);border:1.5px solid var(--border-light);border-radius:var(--radius-md);padding:14px 8px;text-align:center;cursor:pointer;transition:all 0.22s ease;direction:ltr;}
 .alpha-tile:hover{border-color:var(--brand-400);background:var(--tts-hover-bg);transform:translateY(-4px);box-shadow:var(--shadow-md), var(--glow-brand);}
 .alpha-tile .letter-big{font-family:'Space Grotesk', sans-serif;font-size:26px;font-weight:700;color:var(--brand-600);direction:ltr;display:block;}
 .alpha-tile .letter-small{font-family:'Space Grotesk', sans-serif;font-size:18px;color:var(--brand-400);direction:ltr;display:block;}
@@ -197,7 +197,7 @@ to{opacity:1;transform:translateY(0);}
 .alpha-tile .letter-word{font-family:'Space Grotesk', sans-serif;font-size:10px;color:var(--accent-teal);margin-top:2px;direction:ltr;}
 .section-title{font-family:'Tajawal', sans-serif;font-size:17px;font-weight:800;color:var(--brand-700);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border-light);display:flex;gap:8px;align-items:center;position:relative;}
 .section-title::after{content:'';position:absolute;bottom:-2px;right:0;width:48px;height:2px;background:linear-gradient(90deg, var(--brand-600), transparent);border-radius:2px;}
-.story-card{background:var(--bg-card);border-radius:var(--radius-xl);border:1px solid var(--border-light);box-shadow:var(--shadow-md);margin-bottom:32px;overflow:hidden;transition:box-shadow 0.3s, transform 0.3s;}
+.story-card{background:#1a1a2e;border-radius:var(--radius-xl);border:1px solid var(--border-light);box-shadow:var(--shadow-md);margin-bottom:32px;overflow:hidden;transition:box-shadow 0.3s, transform 0.3s;}
 .story-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);}
 .story-header{background:linear-gradient(135deg, #064e3b, #065f46, #0d8a6f);padding:28px 32px;color:#fff;}
 .story-header h2{font-family:'Lora', serif;font-size:clamp(20px, 3vw, 26px);margin-bottom:6px;}
@@ -211,7 +211,7 @@ to{opacity:1;transform:translateY(0);}
 .story-ar p:last-child{margin-bottom:0;}
 .story-lang-label{font-size:11px;letter-spacing:1.5px;font-weight:700;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
 .story-lang-label::before{content:'';width:24px;height:2px;background:var(--brand-500);border-radius:2px;}
-.exam-card{background:var(--bg-card);border-radius:var(--radius-xl);border:1px solid var(--border-light);box-shadow:var(--shadow-md);margin-bottom:32px;overflow:hidden;transition:box-shadow 0.3s;}
+.exam-card{background:#1a1a2e;border-radius:var(--radius-xl);border:1px solid var(--border-light);box-shadow:var(--shadow-md);margin-bottom:32px;overflow:hidden;transition:box-shadow 0.3s;}
 .exam-card:hover{box-shadow:var(--shadow-lg);}
 .exam-header{background:linear-gradient(135deg, var(--brand-900), var(--brand-700));padding:28px 32px;color:#fff;}
 .exam-header h2{font-family:'Tajawal', sans-serif;font-size:clamp(20px, 3vw, 26px);font-weight:800;margin-bottom:6px;}
@@ -222,14 +222,14 @@ to{opacity:1;transform:translateY(0);}
 .exam-q-num{font-family:'Space Grotesk', sans-serif;font-size:11px;font-weight:700;color:var(--brand-500);letter-spacing:1.5px;margin-bottom:8px;direction:ltr;text-align:left;}
 .exam-q-text{font-family:'Tajawal', sans-serif;font-size:16px;font-weight:700;color:var(--text-primary);margin-bottom:16px;line-height:1.7;}
 .verb-cards{display:grid;grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));gap:12px;margin-bottom:24px;}
-.verb-card{background:var(--bg-lesson);border:1.5px solid var(--border-light);border-radius:var(--radius-md);padding:20px;text-align:center;transition:border-color 0.2s, box-shadow 0.2s, transform 0.2s;}
-.verb-card:hover{border-color:var(--brand-300);box-shadow:var(--shadow-sm);transform:translateY(-2px);}
+.verb-card{background:rgba(167,139,250,0.04);border:1.5px solid var(--border-light);border-radius:var(--radius-md);padding:20px;text-align:center;transition:border-color 0.2s, box-shadow 0.2s, transform 0.2s;}
+.verb-card:hover{border-color:rgba(167,139,250,0.3);background:rgba(167,139,250,0.06);transform:translateY(-2px);}
 .verb-card .vc-verb{font-family:'Space Grotesk', sans-serif;font-size:34px;font-weight:700;color:var(--brand-600);direction:ltr;display:block;margin-bottom:4px;}
 .verb-card .vc-pron{font-family:'Tajawal', sans-serif;font-size:12px;color:var(--text-muted);margin-bottom:10px;}
 .verb-card .vc-with{font-size:12px;color:var(--text-muted);margin-bottom:6px;font-family:'Tajawal', sans-serif;}
 .verb-card .vc-subjects{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;}
 .vc-subject-chip{background:linear-gradient(135deg, var(--brand-700), var(--brand-500));color:#fff;font-family:'Space Grotesk', sans-serif;font-size:11px;padding:3px 10px;border-radius:999px;direction:ltr;}
-.sentence-row{background:var(--bg-card);border-radius:var(--radius-md);border:1px solid var(--border-light);padding:14px 18px;margin-bottom:10px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;transition:border-color 0.2s, box-shadow 0.2s, transform 0.2s;}
+.sentence-row{background:#1a1a2e;border-radius:var(--radius-md);border:1px solid var(--border-light);padding:14px 18px;margin-bottom:10px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;transition:border-color 0.2s, box-shadow 0.2s, transform 0.2s;}
 .sentence-row:hover{border-color:var(--brand-300);box-shadow:var(--shadow-sm);transform:translateX(-2px);}
 .sentence-row .sen-en{font-family:'Space Grotesk', sans-serif;font-size:16px;color:var(--brand-600);direction:ltr;text-align:left;cursor:pointer;transition:color 0.18s, transform 0.18s;}
 .sentence-row .sen-en:hover{color:var(--accent-teal);transform:translateX(2px);}
@@ -252,7 +252,7 @@ to{opacity:1;transform:translateY(0);}
 .wh-card .wh-meaning{font-family:'Tajawal', sans-serif;font-size:12px;color:var(--accent-teal);margin-bottom:8px;}
 .wh-card .wh-example{font-family:'Space Grotesk', sans-serif;font-size:11px;color:var(--text-muted);direction:ltr;font-style:italic;}
 .site-footer{text-align:center;padding:32px 20px;color:var(--text-muted);font-family:'Tajawal', sans-serif;font-size:14px;border-top:1px solid var(--border-light);margin-top:40px;background:linear-gradient(180deg, transparent, var(--brand-50));}
-@media print{body{background:#fff!important;color:#000!important;font-size:12pt;}
+@media print{body{background:#111827!important;color:#000!important;font-size:12pt;}
 .main-container{max-width:100%;padding:0;}
 .lesson-card, .story-card, .exam-card, .welcome-card, .cover-card{break-inside:avoid;box-shadow:none!important;border:1px solid #ccc!important;margin-bottom:16pt;transform:none!important;}
 .quiz-answer{display:block!important;}
@@ -300,7 +300,7 @@ a{text-decoration:none;color:#000;}
 table, thead, tbody, tr, th, td{display:block;width:100%;text-align:right;}
 table{min-width:0;}
 thead{display:none;}
-tbody tr{background:rgba(255,255,255,0.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(124,77,204,0.1);border-radius:14px;margin-bottom:10px;padding:16px;display:flex;flex-direction:column;gap:8px;box-shadow:0 2px 10px rgba(30,10,60,0.06);}
+tbody tr{background:rgba(15,10,30,0.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(124,77,204,0.1);border-radius:14px;margin-bottom:10px;padding:16px;display:flex;flex-direction:column;gap:8px;box-shadow:0 2px 10px rgba(30,10,60,0.06);}
 tbody td{padding:0;border:none;font-size:14px;line-height:1.8;overflow-wrap:break-word;word-break:break-word;}
 tbody td.en-cell{font-size:16px;font-weight:700;font-family:'Space Grotesk', sans-serif;direction:ltr;text-align:left;color:var(--brand-600);padding-bottom:4px;}
 tbody td.pronun-cell{font-size:13px;color:var(--text-muted);direction:rtl;text-align:right;}
@@ -407,7 +407,7 @@ padding 0.3s ease;padding:0 0;border:1px solid transparent;border-top:none;borde
 .rm-path .lesson-card::before{display:none;}
 .rm-path .lesson-card:active{transform:translateY(-1px);}
 .rm-path .lesson-card .lesson-header{display:flex;flex-direction:column;align-items:center;gap:10px;padding:20px 12px 16px;cursor:pointer;transition:background 0.2s;}
-.rm-path .lesson-card:hover .lesson-header{background:rgba(124,77,204,0.04);}
+.rm-path .lesson-card:hover .lesson-header{background:rgba(167,139,250,0.06);}
 .rm-path .lesson-number-badge{flex-shrink:0;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(224, 182, 255, 0.1);border:1px solid rgba(224, 182, 255, 0.3);color:#e0b6ff;font-family:'Space Mono', monospace;font-size:13px;font-weight:700;box-shadow:0 0 12px rgba(183,148,244,0.15);letter-spacing:-0.5px;padding:0;transition:all 0.3s ease;}
 .rm-path .lesson-card:hover .lesson-number-badge{background:rgba(71, 214, 255, 0.15);border-color:rgba(71, 214, 255, 0.4);color:#a5e7ff;box-shadow:0 0 16px rgba(71,214,255,0.2);}
 .rm-path .lesson-title-en{font-size:12px;font-weight:700;line-height:1.4;direction:ltr;text-align:center;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
@@ -462,10 +462,10 @@ body.quiz-mode .rm-gate-content.rm-gate-open{max-height:none;opacity:1;display:b
 .btn-back-dashboard:hover{transform:var(--lift);box-shadow:0 8px 32px rgba(91,47,160,0.3);}
 .quiz-mode-header{text-align:center;padding:16px 20px 24px;font-family:'Tajawal', sans-serif;font-size:14px;color:var(--text-muted);direction:rtl;}
 .quiz-mode-header h2{font-family:'Space Grotesk', sans-serif;font-size:clamp(20px, 5vw, 28px);color:var(--text-primary);margin-bottom:6px;}
-.rm-path .lesson-card.lesson-done{border:1.5px solid rgba(34,197,94,0.35) !important;box-shadow:0 0 16px rgba(34,197,94,0.08), var(--glass-glow);position:relative;}
-.rm-path .lesson-card.lesson-done .lesson-number-badge{background:linear-gradient(135deg, #15803d, #22c55e);box-shadow:0 2px 14px rgba(34,197,94,0.3);}
-.rm-path .lesson-card.lesson-done::after{content:'✓';position:absolute;top:8px;left:8px;width:20px;height:20px;border-radius:50%;background:#22c55e;color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(34,197,94,0.3);}
-.rm-path .lesson-card.lesson-done.rm-open{border-color:rgba(34,197,94,0.3) !important;}
+.rm-path .lesson-card.lesson-done{border:1.5px solid rgba(183,148,244,0.4) !important;box-shadow:0 0 16px rgba(183,148,244,0.12), var(--glass-glow);position:relative;}
+.rm-path .lesson-card.lesson-done .lesson-number-badge{background:linear-gradient(135deg, #6d11ad, #b794f4);box-shadow:0 2px 14px rgba(183,148,244,0.35);}
+.rm-path .lesson-card.lesson-done::after{content:'✓';position:absolute;top:8px;left:8px;width:20px;height:20px;border-radius:50%;background:#b794f4;color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(183,148,244,0.3);}
+.rm-path .lesson-card.lesson-done.rm-open{border-color:rgba(183,148,244,0.4) !important;}
 @media (max-width:768px){.rm-path{grid-template-columns:repeat(2, 1fr);gap:10px;}
 }
 @media (max-width:400px){.rm-path{grid-template-columns:repeat(2, 1fr);gap:8px;}
@@ -483,7 +483,7 @@ body.quiz-mode .rm-gate-content.rm-gate-open{max-height:none;opacity:1;display:b
 .rm-path .lesson-number-badge{width:40px;height:40px;font-size:11px;}
 .rm-path .lesson-card.rm-open .lesson-body{padding:16px 14px 20px;}
 .rm-gate-btn{padding:14px 24px;font-size:14px;width:100%;justify-content:center;}
-}:root{--glass-bg:rgba(255,255,255,0.55);--glass-border:rgba(124,77,204,0.08);--glass-blur:blur(12px);--glass-glow:0 8px 32px rgba(91,47,160,0.1), 0 0 0 1px rgba(124,77,204,0.06);--glass-hover:0 12px 40px rgba(91,47,160,0.18), 0 0 20px rgba(124,77,204,0.08), 0 0 0 1px rgba(124,77,204,0.12);--lift:translateY(-4px);--ease:0.3s cubic-bezier(0.25,0.46,0.45,0.94);}
+}:root{--glass-bg:rgba(15,10,30,0.8);--glass-border:rgba(167,139,250,0.12);--glass-blur:blur(16px);--glass-glow:0 4px 24px rgba(0,0,0,0.3),0 0 0 1px rgba(167,139,250,0.06);--glass-hover:0 8px 36px rgba(0,0,0,0.4),0 0 16px rgba(167,139,250,0.1),0 0 0 1px rgba(167,139,250,0.12);--lift:translateY(-4px);--ease:0.3s cubic-bezier(0.25,0.46,0.45,0.94);}
 .lesson-card,.welcome-card,.story-card,.exam-card,.quiz-block,.scoreboard-card,.alert{background:var(--glass-bg) !important;backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:1px solid var(--glass-border) !important;box-shadow:var(--glass-glow);transition:transform var(--ease), box-shadow var(--ease), border-color var(--ease);}
 .verb-card,.alpha-tile,.land-stat{background:var(--glass-bg) !important;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--glass-border) !important;transition:transform var(--ease), box-shadow var(--ease), border-color var(--ease);}
 .verb-card:hover,.alpha-tile:hover,.land-stat:hover{transform:var(--lift);box-shadow:var(--glass-hover);border-color:rgba(124,77,204,0.2) !important;}
@@ -503,7 +503,7 @@ body.quiz-mode .rm-gate-content.rm-gate-open{max-height:none;opacity:1;display:b
 .sentence-row{transition:transform var(--ease), box-shadow var(--ease);}
 .sentence-row:hover{transform:translateX(-3px);box-shadow:var(--glass-glow);}
 .tts{transition:color 0.2s, transform 0.2s;}
-.tts:hover{color:var(--brand-500);transform:scale(1.03);display:inline-block;}
+.tts:hover{color:#b794f4;transform:scale(1.03);display:inline-block;}
 @media (hover:none){.verb-card:hover,.alpha-tile:hover,.quiz-option:not(.opt-locked):hover,.rm-zone-header:hover,
 .rm-path .lesson-card:hover,.land-stat:hover,.sentence-row:hover{transform:none !important;}
 }
@@ -575,7 +575,7 @@ tbody td{padding:14px 18px;}
 .rm-toggle{font-size:14px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:rgba(124,77,204,0.06);transition:transform 0.3s ease, background 0.2s ease;}
 .rm-open .rm-toggle{transform:rotate(90deg);background:rgba(124,77,204,0.12);}
 .rm-zone-chevron{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:6px;background:rgba(255,255,255,0.12);margin-left:10px;font-size:12px;transition:transform 0.35s ease, background 0.2s ease;}
-.rm-zone.zone-open .rm-zone-chevron{transform:rotate(90deg);background:rgba(255,255,255,0.2);}
+.rm-zone.zone-open .rm-zone-chevron{transform:rotate(90deg);background:rgba(167,139,250,0.15);}
 *, *::before, *::after{max-width:100%;}
 img, video, canvas, svg{max-width:100%;height:auto;}
 html{overflow-x:hidden;}
@@ -642,10 +642,10 @@ body{overflow-x:hidden;min-height:100vh;min-height:100dvh;}
 footer, .site-footer{padding-bottom:calc(24px + env(safe-area-inset-bottom));}
 }
 @media print{.orb, .vf-wrap, .vf-overlay, #nav-fab, .smart-back-btn, #progress-bar{display:none !important;}
-body{background:#fff !important;color:#000 !important;}
+body{background:#111827 !important;color:#000 !important;}
 }</style>
 </head>
-<body class="dark" data-theme="dark">
+<body class="dark bg-gray-950 text-white" data-theme="dark">
 
 <!-- Progress Bar -->
 <div id="progress-bar" style="display:none;position:fixed;top:0;left:0;width:100%;height:3px;z-index:99999;background:linear-gradient(90deg,#7c4dcc,#47d6ff);transform-origin:left;transform:scaleX(0);transition:transform 0.15s;"></div>
@@ -761,7 +761,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 
 <!-- Platform Language Toggle -->
 <button id="platform-lang-btn" class="platform-lang-btn" onclick="toggleLang()">العربية / EN</button>
-<div id="dashboard">
+<div id="dashboard" style="background:#0a0a1a">
 
 <div class="main-container">
 
@@ -806,19 +806,19 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 </div>
 
-<style>.se-progress-dash{background:rgba(255,255,255,0.03);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:24px;margin-bottom:20px;transition:all 0.4s cubic-bezier(0.23,1,0.32,1)}
+<style>.se-progress-dash{background:#111827;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:24px;margin-bottom:20px;transition:all 0.4s cubic-bezier(0.23,1,0.32,1)}
 .se-progress-dash:hover{border-color:rgba(71,214,255,0.3);box-shadow:0 0 30px rgba(183,148,244,0.15)}
 .se-pd-header{display:flex;align-items:center;gap:10px;margin-bottom:16px;direction:rtl}
 .se-pd-emoji{font-size:24px}
 .se-pd-title{font-family:'Tajawal',sans-serif;font-size:16px;font-weight:700;color:#e0b6ff}
 .se-pd-bar-wrap{width:100%;height:10px;background:rgba(255,255,255,0.06);border-radius:10px;overflow:hidden;margin-bottom:10px}
-.se-pd-bar{height:100%;background:linear-gradient(90deg,#7c4dcc,#47d6ff,#22c55e);border-radius:10px;transition:width 1s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:0 0 12px rgba(71,214,255,0.3)}
+.se-pd-bar{height:100%;background:linear-gradient(90deg,#6d11ad,#9d4edd,#b794f4);border-radius:10px;transition:width 1s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:0 0 12px rgba(183,148,244,0.4)}
 .se-pd-stats{display:flex;justify-content:space-between;align-items:center;font-family:'Space Mono',monospace;font-size:12px;color:rgba(255,255,255,0.5);direction:ltr;margin-bottom:12px}
 .se-pd-pct{color:#a5e7ff;font-weight:700;font-size:14px}
 .se-pd-streak{display:flex;align-items:center;gap:8px;justify-content:center;padding:10px 16px;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid rgba(255,255,255,0.06)}
 .se-pd-fire{font-size:20px}
 #se-pd-streak-text{font-family:'Tajawal',sans-serif;font-size:13px;color:rgba(255,255,255,0.6);font-weight:600}
-.se-milestone{margin-top:14px;padding:14px 18px;border-radius:14px;border:1px solid rgba(183,148,244,0.2);background:rgba(183,148,244,0.04);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;gap:10px;direction:rtl;position:relative;overflow:hidden;text-align:center}
+.se-milestone{margin-top:14px;padding:14px 18px;border-radius:14px;border:1px solid rgba(167,139,250,0.15);background:#1a1a2e;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;gap:10px;direction:rtl;position:relative;overflow:hidden;text-align:center}
 .se-milestone::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(183,148,244,0.06),transparent 60%,rgba(71,214,255,0.04));pointer-events:none}
 .se-milestone-glow{font-size:18px;flex-shrink:0;animation:milestoneShine 3s ease-in-out infinite}
 .se-milestone-text{font-family:'Tajawal',sans-serif;font-size:13px;font-weight:700;line-height:1.8;color:rgba(224,182,255,0.8);position:relative}
@@ -869,7 +869,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="lesson-header">
 <div class="lesson-number-badge">LESSON 01</div>
 <div class="lesson-title-en">The Complete Alphabet Encyclopedia</div>
-<div class="lesson-title-ar">موسوعة الحروف الأبجدية الكاملة</div>
+<div class="lesson-title-ar">الحروف الأبجدية</div>
 <div class="lesson-goal">هدفنا اليوم: نحفظ الأشكال الكبيرة والصغيرة لجميع الحروف الـ 26، وفهم مخارجها الصوتية القياسية.</div>
 </div>
 <div class="lesson-body">
@@ -925,7 +925,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="lesson-header">
 <div class="lesson-number-badge">LESSON 02</div>
 <div class="lesson-title-en">Vowels & Consonants Sound Lab</div>
-<div class="lesson-title-ar">معمل أصوات حروف العلة والحروف الساكنة</div>
+<div class="lesson-title-ar">أصوات الحروف</div>
 <div class="lesson-goal">هدفنا اليوم: نفرّق السمعي بين حروف العلة الخمسة (A, E, I, O, U) والـ 21 حرفاً ساكناً.</div>
 </div>
 <div class="lesson-body">
@@ -1002,7 +1002,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="lesson-header">
 <div class="lesson-number-badge">LESSON 03</div>
 <div class="lesson-title-en">CVC Words — Reading Short Words</div>
-<div class="lesson-title-ar">مهارة تفكيك وقراءة الكلمات الثلاثية القصيرة (CVC)</div>
+<div class="lesson-title-ar">الكلمات القصيرة (CVC)</div>
 <div class="lesson-goal">الهدف: قراءة الكلمات (ساكن + علة + ساكن) ككتلة واحدة سريعة دون تهجي حرف بحرف.</div>
 </div>
 <div class="lesson-body">
@@ -1066,7 +1066,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="lesson-header">
 <div class="lesson-number-badge">LESSON 04</div>
 <div class="lesson-title-en">Special Letter Combinations — PH &amp; WH</div>
-<div class="lesson-title-ar">المقاطع الصوتية الخاصة — PH و WH</div>
+<div class="lesson-title-ar">دمج الحروف (PH/WH)</div>
 <div class="lesson-goal">هدفنا اليوم: نفرّق بين الأصوات المدمجة PH (= F) و WH (= واو)، وتطبيقها في الكلمات والجُمَل.</div>
 </div>
 <div class="lesson-body">
@@ -1108,7 +1108,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 05 ===== -->
 <div class="lesson-card" id="lesson-05">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 05</div><div class="lesson-title-en">Articles — A, An &amp; The</div><div class="lesson-title-ar">أدوات التعريف والتنكير — A و An و The</div><div class="lesson-goal">هدفنا اليوم: نفرّق بين أدوات التنكير (a/an) وأداة التعريف (the) واستخدامها بشكل صحيح — بإذن الله تقدر! 💪</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 05</div><div class="lesson-title-en">Articles — A, An &amp; The</div><div class="lesson-title-ar">أدوات التعريف والتنكير</div><div class="lesson-goal">هدفنا اليوم: نفرّق بين أدوات التنكير (a/an) وأداة التعريف (the) واستخدامها بشكل صحيح — بإذن الله تقدر! 💪</div></div>
 <div class="lesson-body">
 <div class="verb-cards">
 <div class="verb-card"><span class="vc-verb tts" onclick="speak('A')">A</span><div class="vc-pron">أ</div><div class="vc-with">قبل الساكن: a book</div></div>
@@ -1128,7 +1128,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 06 ===== -->
 <div class="lesson-card" id="lesson-06">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 06</div><div class="lesson-title-en">Singular &amp; Plural Nouns</div><div class="lesson-title-ar">الأسماء المفردة والجمع</div><div class="lesson-goal">هدفنا اليوم: نتعلم نحوّل الأسماء من المفرد إلى الجمع بإضافة -s أو -es أو تغييرات شاذة.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 06</div><div class="lesson-title-en">Singular &amp; Plural Nouns</div><div class="lesson-title-ar">المفرد والجمع</div><div class="lesson-goal">هدفنا اليوم: نتعلم نحوّل الأسماء من المفرد إلى الجمع بإضافة -s أو -es أو تغييرات شاذة.</div></div>
 <div class="lesson-body">
 <div class="section-title">📋 قواعد الجمع</div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>القاعدة</th><th>Singular</th><th>Plural</th><th>الترجمة</th></tr></thead><tbody>
@@ -1148,7 +1148,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="lesson-header">
 <div class="lesson-number-badge">LESSON 07</div>
 <div class="lesson-title-en">Subject Pronouns — The 7 Foundations</div>
-<div class="lesson-title-ar">هندسة ضمائر الفاعل الأساسية</div>
+<div class="lesson-title-ar">ضمائر الفاعل</div>
 <div class="lesson-goal">هدفنا اليوم: نتعلم نستخدم فواعل الجمل السبعة دون خلط، مع فهم الفرق بين العاقل وغير العاقل.</div>
 </div>
 <div class="lesson-body">
@@ -1218,7 +1218,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="lesson-header">
 <div class="lesson-number-badge">LESSON 08</div>
 <div class="lesson-title-en">Verb To Be — Am / Is / Are</div>
-<div class="lesson-title-ar">معمارية أفعال الكينونة المساعد الكبرى</div>
+<div class="lesson-title-ar">فعل الكينونة (To Be)</div>
 <div class="lesson-goal">الهدف: الربط التلقائي بين كل ضمير وصيغة الكينونة الصحيحة (Am / Is / Are) دون تفكير.</div>
 </div>
 <div class="lesson-body">
@@ -1290,7 +1290,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="lesson-header">
 <div class="lesson-number-badge">LESSON 09</div>
 <div class="lesson-title-en">Affirmative Sentences — Subject + Be + Complement</div>
-<div class="lesson-title-ar">هندسة جملة الإثبات الخبرية المستقيمة</div>
+<div class="lesson-title-ar">تركيب الجملة الإثباتية</div>
 <div class="lesson-goal">الهدف: بناء جملة كاملة صحيحة باستخدام الفاعل + فعل الكينونة + تكملة (صفة أو وظيفة أو مكان).</div>
 </div>
 <div class="lesson-body">
@@ -1367,7 +1367,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="lesson-header">
 <div class="lesson-number-badge">LESSON 10</div>
 <div class="lesson-title-en">Negation — Not & Contractions</div>
-<div class="lesson-title-ar">سيكولوجية النفي المطلق وعالم الاختصارات</div>
+<div class="lesson-title-ar">النفي والاختصارات</div>
 <div class="lesson-goal">الهدف: إدخال NOT في جملة الكينونة للنفي، وإتقان الاختصارات اليومية الدارجة.</div>
 </div>
 <div class="lesson-body">
@@ -1428,7 +1428,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="lesson-header">
 <div class="lesson-number-badge">LESSON 11</div>
 <div class="lesson-title-en">Yes / No Questions & Short Answers</div>
-<div class="lesson-title-ar">مهارة سؤال نعم / لا والردود المختصرة</div>
+<div class="lesson-title-ar">أسئلة (Yes/No)</div>
 <div class="lesson-goal">الهدف: تشكيل الأسئلة عبر طريقة المقص (قلب الفاعل والفعل) وإتقان الردود القصيرة المعتمدة.</div>
 </div>
 <div class="lesson-body">
@@ -1489,7 +1489,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="lesson-header">
 <div class="lesson-number-badge">LESSON 12</div>
 <div class="lesson-title-en">Wh- Questions — The 6 Great Tools</div>
-<div class="lesson-title-ar">معمل الأسئلة المفتوحة الكبرى (Wh- Questions)</div>
+<div class="lesson-title-ar">أدوات الاستفهام (Wh)</div>
 <div class="lesson-goal">الهدف: توظيف أدوات الاستفهام الست الكبرى واستخدام كل منها في سياقها الصحيح.</div>
 </div>
 <div class="lesson-body">
@@ -1595,7 +1595,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 
 <!-- ===== LESSON 13 ===== -->
 <div class="lesson-card" id="lesson-13">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 13</div><div class="lesson-title-en">Action Verbs — Eat, Wake, Go, Work</div><div class="lesson-title-ar">أفعال الحركة اللي نستخدمها كل يوم 🏃</div><div class="lesson-goal">هدفنا اليوم: نحفظ أهم أفعال الحركة اليومية ونطقها صح. يلا نبدأ! 🚀</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 13</div><div class="lesson-title-en">Action Verbs — Eat, Wake, Go, Work</div><div class="lesson-title-ar">الأفعال الحركية الشائعة</div><div class="lesson-goal">هدفنا اليوم: نحفظ أهم أفعال الحركة اليومية ونطقها صح. يلا نبدأ! 🚀</div></div>
 <div class="lesson-body">
 <div class="section-title">🏃 أفعال الحركة</div>
 <div class="verb-cards">
@@ -1616,7 +1616,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 14 ===== -->
 <div class="lesson-card" id="lesson-14">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 14</div><div class="lesson-title-en">Present Simple — Daily Routine Sentences</div><div class="lesson-title-ar">المضارع البسيط — كيف توصف يومك بالإنجليزي 📅</div><div class="lesson-goal">هدفنا اليوم: نتعلم نكوّن جُمَل كاملة تصف الروتين اليومي.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 14</div><div class="lesson-title-en">Present Simple — Daily Routine Sentences</div><div class="lesson-title-ar">المضارع البسيط والروتين</div><div class="lesson-goal">هدفنا اليوم: نتعلم نكوّن جُمَل كاملة تصف الروتين اليومي.</div></div>
 <div class="lesson-body">
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>النطق</th><th>الترجمة</th></tr></thead><tbody>
 <tr><td class="en-cell"><span class="tts" onclick="speak('I wake up at seven every day.')">I wake up at seven every day.</span></td><td class="pronun-cell">آي ويك أب أت سيفن إيفري داي</td><td class="ar-cell">أستيقظ الساعة السابعة كل يوم.</td></tr>
@@ -1628,7 +1628,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 15 ===== -->
 <div class="lesson-card" id="lesson-15">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 15</div><div class="lesson-title-en">Frequency Adverbs — Always, Usually, Sometimes, Never</div><div class="lesson-title-ar">كلمات التكرار — دايم، عادةً، أحياناً، أبداً 🔄</div><div class="lesson-goal">هدفنا اليوم: نضيف ظروف التكرار إلى جُمَل الروتين.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 15</div><div class="lesson-title-en">Frequency Adverbs — Always, Usually, Sometimes, Never</div><div class="lesson-title-ar">ظروف التكرار (Always/Never)</div><div class="lesson-goal">هدفنا اليوم: نضيف ظروف التكرار إلى جُمَل الروتين.</div></div>
 <div class="lesson-body">
 <div class="verb-cards">
 <div class="verb-card"><span class="vc-verb tts" onclick="speak('Always')">Always</span><div class="vc-pron">أولويز</div><div class="vc-with">دائماً 100%</div></div>
@@ -1642,7 +1642,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 16 ===== -->
 <div class="lesson-card" id="lesson-16">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 16</div><div class="lesson-title-en">Negation &amp; Questions — Do / Does</div><div class="lesson-title-ar">كيف تنفي وتسأل بـ do و does ❓</div><div class="lesson-goal">هدفنا اليوم: نتعلم نحوّل جُمَل الروتين إلى نفي وأسئلة.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 16</div><div class="lesson-title-en">Negation &amp; Questions — Do / Does</div><div class="lesson-title-ar">النفي والأسئلة (Do/Does)</div><div class="lesson-goal">هدفنا اليوم: نتعلم نحوّل جُمَل الروتين إلى نفي وأسئلة.</div></div>
 <div class="lesson-body">
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>النوع</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
 <tr><td class="ar-cell">✅ إثبات</td><td class="en-cell"><span class="tts" onclick="speak('She eats breakfast.')">She eats breakfast.</span></td><td class="ar-cell">هي تأكل الفطور.</td></tr>
@@ -1655,7 +1655,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 17 ===== -->
 <div class="lesson-card" id="lesson-17">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 17</div><div class="lesson-title-en">Possessive Adjectives — My, Your, His, Her, Our, Their</div><div class="lesson-title-ar">كلمات الملكية — تبيني أعرفك عليها! 🏠</div><div class="lesson-goal">هدفنا اليوم: نتعلم نستخدم كلمات الملكية — تبيني أعرفك عليها! 🏠 في جُمَل وصفية.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 17</div><div class="lesson-title-en">Possessive Adjectives — My, Your, His, Her, Our, Their</div><div class="lesson-title-ar">صفات الملكية (My/Your)</div><div class="lesson-goal">هدفنا اليوم: نتعلم نستخدم صفات الملكية (My/Your) في جُمَل وصفية.</div></div>
 <div class="lesson-body">
 <div class="verb-cards">
 <div class="verb-card"><span class="vc-verb tts" onclick="speak('My')">My</span><div class="vc-pron">ماي</div><div class="vc-with">لي</div></div>
@@ -1674,41 +1674,59 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 18 ===== -->
 <div class="lesson-card" id="lesson-18">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 18</div><div class="lesson-title-en">Conjunction: And — Adding Ideas</div><div class="lesson-title-ar">أداة الربط And — نضيف الأفكار مع بعض ➕</div><div class="lesson-goal">هدفنا اليوم: نربط جملتين بأداة الإضافة and.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 18</div><div class="lesson-title-en">Conjunction: And — Adding Ideas</div><div class="lesson-title-ar">أدوات الربط وإضافة الأفكار</div><div class="lesson-goal">هدفنا اليوم: نربط جملتين بأداة الإضافة and.</div></div>
 <div class="lesson-body">
+<div class="alert alert-warning"><span class="icon">💡</span><div class="alert-text"><strong>🎯 القاعدة:</strong> نستخدم <span class="tts" onclick="speak('and')">and</span> لربط فكرتين أو أكثر مع بعض. المعنى بالعربي: "و".</div></div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>الترجمة</th></tr></thead><tbody>
-<tr><td class="en-cell"><span class="tts" onclick="speak('We clean our house and wash our car on Friday.')">We clean our house and wash our car on Friday.</span></td><td class="ar-cell">ننظف بيتنا ونغسل سيارتنا الجمعة.</td></tr>
-<tr><td class="en-cell"><span class="tts" onclick="speak('I eat breakfast and go to work.')">I eat breakfast and go to work.</span></td><td class="ar-cell">آكل الفطور وأذهب للعمل.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('I eat breakfast and go to work.')">I eat breakfast and go to work.</span></td><td class="ar-cell">آكل الفطور وأروح الشغل.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('We clean our house and wash our car on Friday.')">We clean our house and wash our car on Friday.</span></td><td class="ar-cell">ننظف بيتنا ونغسل سيارتنا يوم الجمعة.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('She likes tea and coffee.')">She likes tea and coffee.</span></td><td class="ar-cell">هي تحب الشاي والقهوة.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('My father and mother are at home.')">My father and mother are at home.</span></td><td class="ar-cell">أبوي وأمي في البيت.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('I read books and watch movies.')">I read books and watch movies.</span></td><td class="ar-cell">أقرأ كتب وأشاهد أفلام.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('He is tall and strong.')">He is tall and strong.</span></td><td class="ar-cell">هو طويل وقوي.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('We go to school and study English.')">We go to school and study English.</span></td><td class="ar-cell">نروح المدرسة وندرس إنجليزي.</td></tr>
 </tbody></table></div>
 <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 اربط: "I drink tea." + "I eat bread."</div><div class="quiz-options" id="quiz-18"></div><div class="quiz-answer" id="qa-18"><strong>✅ أحسنت! I drink tea and eat bread.</strong></div></div>
 </div>
 </div>
 <!-- ===== LESSON 19 ===== -->
 <div class="lesson-card" id="lesson-19">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 19</div><div class="lesson-title-en">Conjunction: But — Contrasting Ideas</div><div class="lesson-title-ar">أداة الربط But — لما تبي تقول "لكن" 🔀</div><div class="lesson-goal">هدفنا اليوم: نربط جملتين متناقضتين بأداة but.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 19</div><div class="lesson-title-en">Conjunction: But — Contrasting Ideas</div><div class="lesson-title-ar">أدوات الربط والتناقض (But)</div><div class="lesson-goal">هدفنا اليوم: نربط جملتين متناقضتين بأداة but.</div></div>
 <div class="lesson-body">
+<div class="alert alert-warning"><span class="icon">💡</span><div class="alert-text"><strong>🎯 القاعدة:</strong> نستخدم <span class="tts" onclick="speak('but')">but</span> لما نبي نقول شي متناقض أو مختلف. المعنى بالعربي: "لكن".</div></div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>الترجمة</th></tr></thead><tbody>
-<tr><td class="en-cell"><span class="tts" onclick="speak('This is my car, but it is old.')">This is my car, but it is old.</span></td><td class="ar-cell">هذه سيارتي، لكنها قديمة.</td></tr>
-<tr><td class="en-cell"><span class="tts" onclick="speak('I like coffee, but I do not like tea.')">I like coffee, but I do not like tea.</span></td><td class="ar-cell">أحب القهوة، لكن لا أحب الشاي.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('I like coffee, but I do not like tea.')">I like coffee, but I do not like tea.</span></td><td class="ar-cell">أحب القهوة، لكن ما أحب الشاي.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('This is my car, but it is old.')">This is my car, but it is old.</span></td><td class="ar-cell">هذي سيارتي، لكنها قديمة.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('He is smart, but he is lazy.')">He is smart, but he is lazy.</span></td><td class="ar-cell">هو ذكي، لكنه كسلان.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('I want to play, but I have homework.')">I want to play, but I have homework.</span></td><td class="ar-cell">أبي ألعب، لكن عندي واجبات.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('The food is good, but it is expensive.')">The food is good, but it is expensive.</span></td><td class="ar-cell">الأكل لذيذ، لكنه غالي.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('She speaks English, but she does not speak Arabic.')">She speaks English, but she does not speak Arabic.</span></td><td class="ar-cell">هي تتكلم إنجليزي، لكن ما تتكلم عربي.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('I am tired, but I am happy.')">I am tired, but I am happy.</span></td><td class="ar-cell">أنا تعبان، لكن مبسوط.</td></tr>
 </tbody></table></div>
 <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 أيّ أداة ربط: "I want to go, ___ I am tired."</div><div class="quiz-options" id="quiz-19"></div><div class="quiz-answer" id="qa-19"><strong>✅ أحسنت! but</strong> — تناقض بين الرغبة والعائق.</div></div>
 </div>
 </div>
 <!-- ===== LESSON 20 ===== -->
 <div class="lesson-card" id="lesson-20">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 20</div><div class="lesson-title-en">Conjunction: Because — Giving Reasons</div><div class="lesson-title-ar">أداة الربط Because — لما تبي تقول "لأن" 💡</div><div class="lesson-goal">هدفنا اليوم: نربط نتيجة بسبب باستخدام because.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 20</div><div class="lesson-title-en">Conjunction: Because — Giving Reasons</div><div class="lesson-title-ar">أدوات الربط والسبب (Because)</div><div class="lesson-goal">هدفنا اليوم: نربط نتيجة بسبب باستخدام because.</div></div>
 <div class="lesson-body">
+<div class="alert alert-warning"><span class="icon">💡</span><div class="alert-text"><strong>🎯 القاعدة:</strong> نستخدم <span class="tts" onclick="speak('because')">because</span> لما نبي نعطي سبب. المعنى بالعربي: "لأن".</div></div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>الترجمة</th></tr></thead><tbody>
-<tr><td class="en-cell"><span class="tts" onclick="speak('Her husband works in a hospital because he is a specialist.')">Her husband works in a hospital because he is a specialist.</span></td><td class="ar-cell">زوجها يعمل في مستشفى لأنه أخصائي.</td></tr>
-<tr><td class="en-cell"><span class="tts" onclick="speak('I study English because I want a good job.')">I study English because I want a good job.</span></td><td class="ar-cell">أدرس الإنجليزية لأنني أريد وظيفة جيدة.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('I study English because I want a good job.')">I study English because I want a good job.</span></td><td class="ar-cell">أدرس إنجليزي لأني أبي وظيفة زينة.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('She is happy because she passed the test.')">She is happy because she passed the test.</span></td><td class="ar-cell">هي مبسوطة لأنها نجحت في الاختبار.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('He is tired because he worked all day.')">He is tired because he worked all day.</span></td><td class="ar-cell">هو تعبان لأنه اشتغل طول اليوم.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('I drink water because I am thirsty.')">I drink water because I am thirsty.</span></td><td class="ar-cell">أشرب ماء لأني عطشان.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('We stay home because it is raining.')">We stay home because it is raining.</span></td><td class="ar-cell">نقعد في البيت لأن الجو ممطر.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('They are late because of the traffic.')">They are late because of the traffic.</span></td><td class="ar-cell">هم متأخرين بسبب الزحمة.</td></tr>
+<tr><td class="en-cell"><span class="tts" onclick="speak('I like this restaurant because the food is delicious.')">I like this restaurant because the food is delicious.</span></td><td class="ar-cell">أحب هالمطعم لأن الأكل لذيذ.</td></tr>
 </tbody></table></div>
-<div class="alert alert-warning"><span class="icon">💡</span><div class="alert-text"><strong>🎯 لاحظ الفرق هنا:</strong> because = لأن (سبب) — but = لكن (تناقض) — and = و (إضافة)</div></div>
+<div class="alert alert-warning"><span class="icon">💡</span><div class="alert-text"><strong>🎯 لاحظ الفرق هنا:</strong> <span class="tts" onclick="speak('because')">because</span> = لأن (سبب) — <span class="tts" onclick="speak('but')">but</span> = لكن (تناقض) — <span class="tts" onclick="speak('and')">and</span> = و (إضافة)</div></div>
 <div class="quiz-block"><div class="quiz-label">INTERACTIVE QUIZ</div><div class="quiz-q">🧠 أكمل الجملة: "I am tired ___ I worked all day."</div><div class="quiz-options" id="quiz-20"></div><div class="quiz-answer" id="qa-20"><strong>✅ أحسنت! because</strong> — العمل هو السبب.</div></div>
 </div>
 </div>
 <!-- ===== LESSON 21 ===== -->
 <div class="lesson-card" id="lesson-21">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 21</div><div class="lesson-title-en">Expressing Quantities — Some, Any, Much, Many</div><div class="lesson-title-ar">التعبير عن الكميات — Some و Any و Much و Many</div><div class="lesson-goal">هدفنا اليوم: نتعلم نستخدم أدوات الكمية الصحيحة مع الأسماء المعدودة وغير المعدودة.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 21</div><div class="lesson-title-en">Expressing Quantities — Some, Any, Much, Many</div><div class="lesson-title-ar">التعبير عن الكميات</div><div class="lesson-goal">هدفنا اليوم: نتعلم نستخدم أدوات الكمية الصحيحة مع الأسماء المعدودة وغير المعدودة.</div></div>
 <div class="lesson-body">
 <div class="verb-cards">
 <div class="verb-card"><span class="vc-verb tts" onclick="speak('Some')">Some</span><div class="vc-pron">سم</div><div class="vc-with">بعض — إثبات</div></div>
@@ -1729,7 +1747,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 22 ===== -->
 <div class="lesson-card" id="lesson-22">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 22</div><div class="lesson-title-en">At the Coffee Shop — Ordering &amp; Prices</div><div class="lesson-title-ar">في المقهى — كيف تطلب وتسأل عن السعر ☕</div><div class="lesson-goal">هدفنا اليوم: نتمرّن على حوار واقعي في المقهى.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 22</div><div class="lesson-title-en">At the Coffee Shop — Ordering &amp; Prices</div><div class="lesson-title-ar">في المقهى (الطلب والأسعار)</div><div class="lesson-goal">هدفنا اليوم: نتمرّن على حوار واقعي في المقهى.</div></div>
 <div class="lesson-body">
 <div class="section-title">☕ حوار المقهى</div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Speaker</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
@@ -1743,7 +1761,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 23 ===== -->
 <div class="lesson-card" id="lesson-23">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 23</div><div class="lesson-title-en">Asking for Directions</div><div class="lesson-title-ar">كيف تسأل عن الاتجاهات في الشارع 🗺️</div><div class="lesson-goal">هدفنا اليوم: نتعلم كيف نسأل عن الاتجاهات في الشارع بأدب.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 23</div><div class="lesson-title-en">Asking for Directions</div><div class="lesson-title-ar">السؤال عن الاتجاهات</div><div class="lesson-goal">هدفنا اليوم: نتعلم كيف نسأل عن الاتجاهات في الشارع بأدب.</div></div>
 <div class="lesson-body">
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Speaker</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
 <tr><td class="en-cell">👤 You</td><td class="en-cell"><span class="tts" onclick="speak('Excuse me, where is the hotel?')">Excuse me, where is the hotel?</span></td><td class="ar-cell">عذراً، أين الفندق؟</td></tr>
@@ -1760,7 +1778,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 24 ===== -->
 <div class="lesson-card" id="lesson-24">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 24</div><div class="lesson-title-en">Polite Requests &amp; Month Review</div><div class="lesson-title-ar">كيف تطلب بأدب — الطلبات المهذّبة 🤝 ومراجعة الشهر</div><div class="lesson-goal">هدفنا اليوم: نتعلم صيغ الطلب المهذّب.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 24</div><div class="lesson-title-en">Polite Requests &amp; Month Review</div><div class="lesson-title-ar">الطلب المهذب ومراجعة الشهر</div><div class="lesson-goal">هدفنا اليوم: نتعلم صيغ الطلب المهذّب.</div></div>
 <div class="lesson-body">
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>النطق</th><th>الترجمة</th></tr></thead><tbody>
 <tr><td class="en-cell"><span class="tts" onclick="speak('Can I have the menu, please?')">Can I have the menu, please?</span></td><td class="pronun-cell">كان آي هاف ذا مينيو بليز</td><td class="ar-cell">هل يمكنني أخذ القائمة؟</td></tr>
@@ -1819,7 +1837,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 
 <!-- ===== LESSON 25 ===== -->
 <div class="lesson-card" id="lesson-25">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 25</div><div class="lesson-title-en">Past Simple — Regular Verbs (-ed)</div><div class="lesson-title-ar">الماضي البسيط — الأفعال اللي تاخذ -ed 📝</div><div class="lesson-goal">هدفنا اليوم: نتعلم نكوّن جُمَل بالماضي البسيط باستخدام الأفعال المنتظمة (إضافة -ed).</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 25</div><div class="lesson-title-en">Past Simple — Regular Verbs (-ed)</div><div class="lesson-title-ar">الماضي البسيط (الأفعال المنتظمة)</div><div class="lesson-goal">هدفنا اليوم: نتعلم نكوّن جُمَل بالماضي البسيط باستخدام الأفعال المنتظمة (إضافة -ed).</div></div>
 <div class="lesson-body">
 <div class="verb-cards">
 <div class="verb-card"><span class="vc-verb tts" onclick="speak('worked')">worked</span><div class="vc-pron">ووركد</div><div class="vc-with">work → worked</div></div>
@@ -1839,7 +1857,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 26 ===== -->
 <div class="lesson-card" id="lesson-26">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 26</div><div class="lesson-title-en">Past Simple — Common Irregular Verbs</div><div class="lesson-title-ar">الماضي البسيط — الأفعال الشاذة (اللي لازم تحفظها!) 🧠</div><div class="lesson-goal">هدفنا اليوم: نحفظ أهم 12 فعلاً شاذاً واستخدامها في جُمَل سردية.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 26</div><div class="lesson-title-en">Past Simple — Common Irregular Verbs</div><div class="lesson-title-ar">الماضي البسيط (الأفعال الشاذة)</div><div class="lesson-goal">هدفنا اليوم: نحفظ أهم 12 فعلاً شاذاً واستخدامها في جُمَل سردية.</div></div>
 <div class="lesson-body">
 <div class="verb-cards">
 <div class="verb-card"><span class="vc-verb tts" onclick="speak('went')">went</span><div class="vc-pron">وينت</div><div class="vc-with">go → went</div></div>
@@ -1863,7 +1881,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 27 ===== -->
 <div class="lesson-card" id="lesson-27">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 27</div><div class="lesson-title-en">Past Simple — Negation &amp; Questions (Did)</div><div class="lesson-title-ar">كيف تنفي وتسأل بالماضي — did هي المفتاح 🔑</div><div class="lesson-goal">هدفنا اليوم: نتعلم نستخدم did / did not لتكوين أسئلة ونفي بالماضي.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 27</div><div class="lesson-title-en">Past Simple — Negation &amp; Questions (Did)</div><div class="lesson-title-ar">نفي وأسئلة الماضي (Did)</div><div class="lesson-goal">هدفنا اليوم: نتعلم نستخدم did / did not لتكوين أسئلة ونفي بالماضي.</div></div>
 <div class="lesson-body">
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>النوع</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
 <tr><td class="ar-cell">✅ إثبات</td><td class="en-cell"><span class="tts" onclick="speak('She went to the mall.')">She went to the mall.</span></td><td class="ar-cell">ذهبت للمول.</td></tr>
@@ -1876,7 +1894,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 28 ===== -->
 <div class="lesson-card" id="lesson-28">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 28</div><div class="lesson-title-en">Storytelling — Narrating Past Events</div><div class="lesson-title-ar">فن السرد — احكِ قصتك بالإنجليزي 📖</div><div class="lesson-goal">هدفنا اليوم: نسرد قصة قصيرة متسلسلة باستخدام أفعال ماضية وأدوات ربط.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 28</div><div class="lesson-title-en">Storytelling — Narrating Past Events</div><div class="lesson-title-ar">سرد القصص والأحداث الماضية</div><div class="lesson-goal">هدفنا اليوم: نسرد قصة قصيرة متسلسلة باستخدام أفعال ماضية وأدوات ربط.</div></div>
 <div class="lesson-body">
 <div class="section-title">📖 نموذج سردي</div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>الترجمة</th></tr></thead><tbody>
@@ -1889,7 +1907,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 29 ===== -->
 <div class="lesson-card" id="lesson-29">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 29</div><div class="lesson-title-en">Future with "Going to" — Plans &amp; Intentions</div><div class="lesson-title-ar">المستقبل بـ going to — خططك وأحلامك 🎯</div><div class="lesson-goal">هدفنا اليوم: نتعلم نعبّر عن خطط مستقبلية مُقررة مسبقاً.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 29</div><div class="lesson-title-en">Future with "Going to" — Plans &amp; Intentions</div><div class="lesson-title-ar">المستقبل والتخطيط (Going to)</div><div class="lesson-goal">هدفنا اليوم: نتعلم نعبّر عن خطط مستقبلية مُقررة مسبقاً.</div></div>
 <div class="lesson-body">
 <div class="section-title">📋 خطط مستقبلية</div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>النطق</th><th>الترجمة</th></tr></thead><tbody>
@@ -1903,7 +1921,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 30 ===== -->
 <div class="lesson-card" id="lesson-30">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 30</div><div class="lesson-title-en">Future with "Will" — Instant Decisions &amp; Promises</div><div class="lesson-title-ar">المستقبل بـ will — القرارات اللحظية والوعود ⚡</div><div class="lesson-goal">هدفنا اليوم: نفرّق بين will للقرارات اللحظية و going to للخطط.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 30</div><div class="lesson-title-en">Future with "Will" — Instant Decisions &amp; Promises</div><div class="lesson-title-ar">المستقبل والقرارات الفورية (Will)</div><div class="lesson-goal">هدفنا اليوم: نفرّق بين will للقرارات اللحظية و going to للخطط.</div></div>
 <div class="lesson-body">
 <div class="section-title">📋 will vs. going to</div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>النوع</th><th>الترجمة</th></tr></thead><tbody>
@@ -1917,7 +1935,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 31 ===== -->
 <div class="lesson-card" id="lesson-31">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 31</div><div class="lesson-title-en">Future Negation &amp; Questions</div><div class="lesson-title-ar">كيف تنفي وتسأل عن المستقبل 🔮</div><div class="lesson-goal">هدفنا اليوم: نتعلم نحوّل جُمَل المستقبل إلى نفي وأسئلة.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 31</div><div class="lesson-title-en">Future Negation &amp; Questions</div><div class="lesson-title-ar">نفي وأسئلة المستقبل</div><div class="lesson-goal">هدفنا اليوم: نتعلم نحوّل جُمَل المستقبل إلى نفي وأسئلة.</div></div>
 <div class="lesson-body">
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>النوع</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
 <tr><td class="ar-cell">✅</td><td class="en-cell"><span class="tts" onclick="speak('I will travel next year.')">I will travel next year.</span></td><td class="ar-cell">سأسافر العام القادم.</td></tr>
@@ -1931,7 +1949,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 32 ===== -->
 <div class="lesson-card" id="lesson-32">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 32</div><div class="lesson-title-en">Time Expressions — Past, Present, Future</div><div class="lesson-title-ar">كلمات الزمان — أمس واليوم وبكرة ⏰</div><div class="lesson-goal">هدفنا اليوم: نربط الزمن الصحيح بظرف الزمان المناسب.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 32</div><div class="lesson-title-en">Time Expressions — Past, Present, Future</div><div class="lesson-title-ar">التعبيرات الزمنية (ماضي/حاضر/مستقبل)</div><div class="lesson-goal">هدفنا اليوم: نربط الزمن الصحيح بظرف الزمان المناسب.</div></div>
 <div class="lesson-body">
 <div class="verb-cards">
 <div class="verb-card"><span class="vc-verb tts" onclick="speak('yesterday')">yesterday</span><div class="vc-pron">يسترداي</div><div class="vc-with">أمس — ماضي</div></div>
@@ -1945,7 +1963,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 33 ===== -->
 <div class="lesson-card" id="lesson-33">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 33</div><div class="lesson-title-en">Capstone 1 — Describe Your Day (All Tenses)</div><div class="lesson-title-ar">التحدي الأول — وصف يومك بثلاث أزمنة! 🏆</div><div class="lesson-goal">هدفنا اليوم: نوصف يوم كامل باستخدام الماضي والحاضر والمستقبل معاً.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 33</div><div class="lesson-title-en">Capstone 1 — Describe Your Day (All Tenses)</div><div class="lesson-title-ar">المشروع الأول (وصف يومك كاملاً)</div><div class="lesson-goal">هدفنا اليوم: نوصف يوم كامل باستخدام الماضي والحاضر والمستقبل معاً.</div></div>
 <div class="lesson-body">
 <div class="section-title">📋 نموذج: يومي الكامل</div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Tense</th><th>English</th><th>الترجمة</th></tr></thead><tbody>
@@ -1958,7 +1976,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 34 ===== -->
 <div class="lesson-card" id="lesson-34">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 34</div><div class="lesson-title-en">At the Airport &amp; Traveling Vocabulary</div><div class="lesson-title-ar">في المطار — كلمات السفر اللي لازم تعرفها ✈️</div><div class="lesson-goal">هدفنا اليوم: نتقن المفردات والعبارات الأساسية للسفر والتعامل في المطار.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 34</div><div class="lesson-title-en">At the Airport &amp; Traveling Vocabulary</div><div class="lesson-title-ar">في المطار ومصطلحات السفر</div><div class="lesson-goal">هدفنا اليوم: نتقن المفردات والعبارات الأساسية للسفر والتعامل في المطار.</div></div>
 <div class="lesson-body">
 <div class="verb-cards">
 <div class="verb-card"><span class="vc-verb tts" onclick="speak('Passport')">Passport</span><div class="vc-pron">باسبورت</div><div class="vc-with">جواز سفر</div></div>
@@ -1981,7 +1999,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 35 ===== -->
 <div class="lesson-card" id="lesson-35">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 35</div><div class="lesson-title-en">Capstone 3 — Free Speech: My English Journey</div><div class="lesson-title-ar">التحدي الثالث — تكلم بحرية عن رحلتك! 🎤</div><div class="lesson-goal">هدفنا اليوم: نتحدث بحرية لمدة دقيقة كاملة عن رحلتك في تعلم الإنجليزية.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 35</div><div class="lesson-title-en">Capstone 3 — Free Speech: My English Journey</div><div class="lesson-title-ar">المشروع الثالث (التحدث الحر)</div><div class="lesson-goal">هدفنا اليوم: نتحدث بحرية لمدة دقيقة كاملة عن رحلتك في تعلم الإنجليزية.</div></div>
 <div class="lesson-body">
 <div class="section-title">🎤 تحدّث بحرية — نموذج إرشادي</div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>English</th><th>الترجمة</th></tr></thead><tbody>
@@ -1995,7 +2013,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 </div>
 <!-- ===== LESSON 36 ===== -->
 <div class="lesson-card" id="lesson-36">
-<div class="lesson-header"><div class="lesson-number-badge">LESSON 36</div><div class="lesson-title-en">Grand Review — 3-Month Grammar Map</div><div class="lesson-title-ar">المراجعة الشاملة — كل اللي تعلمناه في 3 أشهر! 🗺️</div><div class="lesson-goal">هدفنا اليوم: نراجع شاملة لجميع القواعد من الشهر الأول إلى الثالث.</div></div>
+<div class="lesson-header"><div class="lesson-number-badge">LESSON 36</div><div class="lesson-title-en">Grand Review — 3-Month Grammar Map</div><div class="lesson-title-ar">المراجعة الكبرى وخريطة القواعد</div><div class="lesson-goal">هدفنا اليوم: نراجع شاملة لجميع القواعد من الشهر الأول إلى الثالث.</div></div>
 <div class="lesson-body">
 <div class="section-title">🗺️ خريطة الرحلة</div>
 <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Month</th><th>Topics</th><th>Key Grammar</th></tr></thead><tbody>
@@ -2076,7 +2094,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <button id="ai-mic-btn" onclick="aiTapToSpeak()" class="w-full bg-[#a5e7ff] text-[#001f28] py-3 rounded-lg text-[10px] font-mono font-bold tracking-widest uppercase hover:shadow-[0_0_15px_#47d6ff] transition-all flex items-center justify-center gap-2">
 <span data-en="TAP TO SPEAK" data-ar="اضغط للتحدث" style="font-family:Tajawal,sans-serif">👇 اضغط للتحدث</span>
 </button>
-<button onclick="aiMuteMic()" class="w-full border border-white/10 bg-white/5 py-3 rounded-lg text-[10px] font-mono font-bold tracking-widest uppercase hover:bg-white/10 transition-all flex items-center justify-center gap-2 text-white/60">
+<button onclick="aiMuteMic()" class="w-full border border-violet-500/20 bg-violet-950/20 py-3 rounded-lg text-[10px] font-mono font-bold tracking-widest uppercase hover:bg-violet-900/30 hover:border-violet-500/40 transition-all flex items-center justify-center gap-2 text-violet-300/60">
 <span data-en="STOP SESSION" data-ar="إنهاء الجلسة" style="font-family:Tajawal,sans-serif">🛑 إنهاء الجلسة</span>
 </button>
 <div class="space-y-2">
@@ -2100,7 +2118,7 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <div class="space-y-3">
 <p class="text-[10px] font-mono font-bold text-white/50 tracking-widest uppercase" data-en="CONNECTION" data-ar="حالة الاتصال" style="font-family:Tajawal,sans-serif;font-size:11px;letter-spacing:0">حالة الاتصال:</p>
 <div class="flex items-center gap-2">
-<span id="ai-conn-dot" class="w-2 h-2 rounded-full bg-gray-500"></span>
+<span id="ai-conn-dot" class="w-2 h-2 rounded-full bg-gray-600"></span>
 <span id="ai-conn-text" class="text-[10px] font-mono text-white/40" data-en-idle="Disconnected" data-ar-idle="غير متصل 🔴" data-en-active="Connected" data-ar-active="متصل بـ Alex 🟢" style="font-family:Tajawal,sans-serif;font-size:11px">غير متصل 🔴</span>
 </div>
 </div>
@@ -2167,8 +2185,35 @@ setTimeout(function(){ if (s) s.remove(); }, 800);
 <button class="vf-age" data-age="girl" onclick="vfSelectAge(this)"><span>👧</span>بنت</button>
 </div>
 </div>
-<div class="vf-sts" id="vf-sts">اضغط الزر وتحدث بالإنجليزية</div>
-<div class="vf-mic-w"><button class="vf-mic" id="vf-mic" onclick="vfToggleSession()"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></button></div>
+
+<!-- Scenario Selector -->
+<div class="vf-sec">
+<div class="vf-lbl">اختر موقف المحادثة</div>
+<div class="vf-scenario-grid" id="vf-scenario-grid">
+<button class="vf-scenario vf-scenario-on" data-scenario="free" onclick="vfSelectScenario(this)">💬 محادثة حرة</button>
+<button class="vf-scenario" data-scenario="coffee" onclick="vfSelectScenario(this)">☕ طلب قهوة</button>
+<button class="vf-scenario" data-scenario="interview" onclick="vfSelectScenario(this)">💼 مقابلة عمل</button>
+<button class="vf-scenario" data-scenario="airport" onclick="vfSelectScenario(this)">✈️ المطار</button>
+<button class="vf-scenario" data-scenario="hotel" onclick="vfSelectScenario(this)">🏨 الفندق</button>
+<button class="vf-scenario" data-scenario="doctor" onclick="vfSelectScenario(this)">🩺 عند الطبيب</button>
+</div>
+</div>
+<div class="vf-sts" id="vf-sts">اضغط "ابدأ المحادثة" للتحدث مع Alex</div>
+
+<!-- iOS AudioContext unlock: explicit start button -->
+<div class="vf-start-w" id="vf-start-w">
+<button class="vf-start-btn" id="vf-start-btn" onclick="vfUnlockAndStart()">
+<span class="material-symbols-outlined" style="font-size:22px">record_voice_over</span>
+<span>ابدأ المحادثة</span>
+</button>
+</div>
+
+<!-- Mic button (hidden until session started) -->
+<div class="vf-mic-w" id="vf-mic-w" style="display:none">
+<div class="vf-mic-ring" id="vf-mic-ring"></div>
+<button class="vf-mic" id="vf-mic" onclick="vfToggleSession()"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></button>
+<div class="vf-mic-label" id="vf-mic-label">اضغط للتحدث</div>
+</div>
 
 <!-- Feature A: Help Me Reply -->
 <div class="vf-hints" id="vf-hints" style="display:none">
@@ -2206,14 +2251,14 @@ body.quiz-mode #voice-fab{display:none}
 .vf-overlay.vf-modal-open .vf-panel{transform:translateY(0) scale(1)}
 .vf-hdr{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 16px;border-bottom:1px solid rgba(255,255,255,0.06)}
 .vf-brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:'Tajawal',sans-serif}
-.vf-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e}
+.vf-dot{width:8px;height:8px;border-radius:50%;background:#b794f4;box-shadow:0 0 8px #b794f4}
 .vf-nm{font-weight:700;font-size:17px}
 .vf-brand small{font-size:10px;color:rgba(255,255,255,0.3);margin-right:6px;font-family:'Space Mono',monospace;letter-spacing:1px}
 .vf-x{background:rgba(255,255,255,0.06);border:none;color:rgba(255,255,255,0.4);width:32px;height:32px;border-radius:10px;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
 .vf-x:hover{background:rgba(255,255,255,0.12);color:#fff}
 .vf-state{display:flex;align-items:center;gap:8px;padding:10px 20px;font-family:'Space Mono',monospace;font-size:10px;color:rgba(255,255,255,0.35);direction:rtl;letter-spacing:1px}
 .vf-st-dot{width:6px;height:6px;border-radius:50%;background:#555;transition:background 0.3s}
-.vf-st-dot.st-active{background:#22c55e;box-shadow:0 0 8px #22c55e}
+.vf-st-dot.st-active{background:#b794f4;box-shadow:0 0 8px #b794f4}
 .vf-shader-wrap{position:relative;margin:0 16px;border-radius:16px;overflow:hidden;background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.06);height:120px}
 .vf-shader-canvas{width:100%;height:100%;display:block}
 .vf-shader-label{position:absolute;top:10px;left:14px;font-family:'Space Mono',monospace;font-size:9px;color:rgba(71,214,255,0.4);letter-spacing:2px;z-index:2;text-transform:uppercase}
@@ -2228,9 +2273,14 @@ body.quiz-mode #voice-fab{display:none}
 .vf-age span{font-size:24px}
 .vf-age:hover{border-color:rgba(71,214,255,0.3);background:rgba(71,214,255,0.05)}
 .vf-age.vf-age-on{border-color:rgba(71,214,255,0.4);background:rgba(71,214,255,0.08);color:#a5e7ff;box-shadow:0 0 15px rgba(71,214,255,0.1)}
+.vf-scenario-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.vf-scenario{padding:8px 6px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:rgba(255,255,255,0.5);font-family:'Tajawal',sans-serif;font-size:10px;font-weight:600;cursor:pointer;transition:all 0.3s;touch-action:manipulation;text-align:center;direction:rtl}
+.vf-scenario:hover{border-color:rgba(71,214,255,0.3);background:rgba(71,214,255,0.05)}
+.vf-scenario.vf-scenario-on{border-color:rgba(71,214,255,0.4);background:rgba(71,214,255,0.08);color:#a5e7ff;box-shadow:0 0 12px rgba(71,214,255,0.1)}
+@media(max-width:480px){.vf-scenario-grid{grid-template-columns:repeat(2,1fr)}}
 .vf-sts{text-align:center;font-family:'Tajawal',sans-serif;font-size:13px;color:rgba(255,255,255,0.35);padding:8px 20px;direction:rtl;min-height:22px;transition:color 0.3s}
 .vf-sts.st-l{color:#a5e7ff}
-.vf-sts.st-s{color:#22c55e}
+.vf-sts.st-s{color:#b794f4}
 .vf-sts.st-thinking{color:#e0b6ff}
 .vf-thinking-dots{display:inline-flex;gap:4px;margin-right:6px;vertical-align:middle}
 .vf-thinking-dots span{width:6px;height:6px;border-radius:50%;background:#e0b6ff;animation:thinkPulse 1.4s ease-in-out infinite}
@@ -2239,7 +2289,25 @@ body.quiz-mode #voice-fab{display:none}
 @keyframes thinkPulse{0%,80%,100%{opacity:0.3;transform:scale(0.8)}
 40%{opacity:1;transform:scale(1.2)}
 }
-.vf-mic-w{display:flex;justify-content:center;padding:14px 0 10px}
+.vf-mic-w{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 0 10px;position:relative}
+
+/* Start Conversation button (iOS AudioContext unlock) */
+.vf-start-w{display:flex;justify-content:center;padding:16px 20px 10px}
+.vf-start-btn{display:flex;align-items:center;gap:10px;padding:14px 28px;border-radius:16px;border:1px solid rgba(71,214,255,0.3);background:rgba(71,214,255,0.08);color:#a5e7ff;font-family:'Tajawal',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all 0.3s;touch-action:manipulation;direction:rtl}
+.vf-start-btn:hover{background:rgba(71,214,255,0.15);box-shadow:0 0 24px rgba(71,214,255,0.2);transform:translateY(-2px)}
+.vf-start-btn:active{transform:scale(0.97)}
+
+/* Mic recording ring indicator */
+.vf-mic-ring{position:absolute;width:80px;height:80px;border-radius:50%;border:2px solid transparent;transition:all 0.3s;pointer-events:none}
+.vf-mic-ring.ring-recording{border-color:rgba(239,68,68,0.5);animation:micRingPulse 1.5s ease-in-out infinite}
+.vf-mic-ring.ring-waiting{border-color:rgba(34,197,94,0.4);animation:micRingSlow 2.5s ease-in-out infinite}
+@keyframes micRingPulse{0%,100%{transform:scale(1);opacity:0.6}50%{transform:scale(1.15);opacity:1}}
+@keyframes micRingSlow{0%,100%{transform:scale(1);opacity:0.3}50%{transform:scale(1.08);opacity:0.6}}
+
+/* Mic label */
+.vf-mic-label{font-family:'Tajawal',sans-serif;font-size:11px;color:rgba(255,255,255,0.4);margin-top:8px;transition:color 0.3s;text-align:center;direction:rtl}
+.vf-mic-label.lbl-recording{color:#ef4444}
+.vf-mic-label.lbl-waiting{color:#b794f4}
 .vf-mic{width:68px;height:68px;border-radius:50%;border:1px solid rgba(71,214,255,0.2);background:rgba(71,214,255,0.08);color:#a5e7ff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 0 24px rgba(71,214,255,0.15);transition:all 0.3s;touch-action:manipulation}
 .vf-mic:hover{transform:scale(1.08);box-shadow:0 0 36px rgba(71,214,255,0.25);border-color:rgba(71,214,255,0.4)}
 .vf-mic.vf-rec{background:rgba(239,68,68,0.12);border-color:rgba(239,68,68,0.4);color:#ef4444;box-shadow:0 0 28px rgba(239,68,68,0.2);animation:vfp 1.2s ease-in-out infinite}
@@ -2249,7 +2317,7 @@ body.quiz-mode #voice-fab{display:none}
 .vf-tr{max-height:100px;overflow-y:auto;padding:4px 20px 16px;font-family:'Tajawal',sans-serif;font-size:12px;color:rgba(255,255,255,0.4);direction:rtl;scrollbar-width:thin}
 .vf-tr-l{padding:4px 8px;border-bottom:1px solid rgba(255,255,255,0.03);display:flex;align-items:flex-start;gap:6px;flex-wrap:wrap;position:relative}
 .vf-tr-u{color:#a5e7ff}
-.vf-tr-a{color:#22c55e}
+.vf-tr-a{color:#b794f4}
 .vf-tr-btn{background:none;border:none;cursor:pointer;font-size:11px;padding:2px 4px;opacity:0.4;transition:opacity 0.2s;flex-shrink:0}
 .vf-tr-btn:hover{opacity:1}
 .vf-utils{display:flex;justify-content:center;gap:8px;padding:6px 20px 10px}
@@ -2264,7 +2332,7 @@ body.quiz-mode #voice-fab{display:none}
 .vf-hint-chip{padding:6px 12px;border-radius:20px;border:1px solid rgba(71,214,255,0.2);background:rgba(71,214,255,0.05);color:#a5e7ff;font-family:'Geist',sans-serif;font-size:11px;cursor:pointer;transition:all 0.2s;direction:ltr;touch-action:manipulation}
 .vf-hint-chip:hover{background:rgba(71,214,255,0.12);border-color:rgba(71,214,255,0.4)}
 .vf-hint-chip:active{transform:scale(0.95)}
-.vf-improve-line{margin-top:4px;padding:4px 8px;border-radius:8px;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.15);font-size:11px;color:#22c55e;direction:ltr}
+.vf-improve-line{margin-top:4px;padding:4px 8px;border-radius:8px;background:rgba(183,148,244,0.08);border:1px solid rgba(183,148,244,0.15);font-size:11px;color:#b794f4;direction:ltr}
 @media(max-width:480px){.vf-wrap{bottom:20px;right:16px}
 .vf-orb{width:60px;height:60px}
 .vf-orb-icon{font-size:24px}
@@ -2276,8 +2344,17 @@ body.quiz-mode #voice-fab{display:none}
 }</style>
 <script>(function(){'use strict';
 var _vfOpen=false,_vfRec=false,_vfAge='boy',_vfCanvas,_vfCtx,_vfAnim,_vfAn,_vfStream,_vfACtx,_vfRecog;
-var VF_API_URL='https://stylish-english-voice-backend.vercel.app/api/voice-session';
+var VF_API_URL='/api/voice-session';
 var _vfHistory=[];
+var VF_MSG_LIMIT=50;
+var VF_MSG_KEY='se_voice_msgs';
+
+function getVoiceMsgCount(){
+try{var d=sessionStorage.getItem(VF_MSG_KEY);return d?parseInt(d):0}catch(e){return 0}
+}
+function incVoiceMsgCount(){
+try{var c=getVoiceMsgCount()+1;sessionStorage.setItem(VF_MSG_KEY,c);return c}catch(e){return 999}
+}
 var _shaderActive=false;
 function initShaderWave(){
 var canvas=document.getElementById('shader-canvas-ANIMATION_17');
@@ -2321,7 +2398,61 @@ vfStop();setWaveActive(false);
 var ti=document.querySelector('.vf-text-in');if(ti)ti.remove();
 }};
 window.vfSelectAge=function(b){document.querySelectorAll('.vf-age').forEach(function(x){x.classList.remove('vf-age-on')});b.classList.add('vf-age-on');_vfAge=b.dataset.age};
+var _vfScenario='free';
+window.vfSelectScenario=function(b){document.querySelectorAll('.vf-scenario').forEach(function(x){x.classList.remove('vf-scenario-on')});b.classList.add('vf-scenario-on');_vfScenario=b.dataset.scenario;
+// Clear history when switching scenarios
+_vfHistory=[];
+var tr=document.getElementById('vf-tr');if(tr)tr.innerHTML='';
+};
 window.vfToggleSession=function(){if(_vfRec)vfStop();else vfStart()};
+
+/* ===== iOS AudioContext Unlock + Start ===== */
+window.vfUnlockAndStart=function(){
+var btn=document.getElementById('vf-start-btn');
+var micW=document.getElementById('vf-mic-w');
+
+// Step 1: Unlock AudioContext (required by iOS Safari)
+var ctx=new(window.AudioContext||window.webkitAudioContext)();
+var buf=ctx.createBuffer(1,1,22050);
+var src=ctx.createBufferSource();
+src.buffer=buf;src.connect(ctx.destination);
+if(src.start)src.start(0);else src.noteOn(0);
+setTimeout(function(){ctx.close()},100);
+
+// Step 2: Hide start button, show mic
+if(btn)btn.style.display='none';
+if(micW)micW.style.display='flex';
+
+// Step 3: Auto-start voice session
+setTimeout(function(){vfStart()},200);
+};
+
+/* ===== Mic Visual State Manager ===== */
+function setMicState(state){
+var ring=document.getElementById('vf-mic-ring');
+var label=document.getElementById('vf-mic-label');
+var mic=document.getElementById('vf-mic');
+if(!ring||!label||!mic)return;
+ring.className='vf-mic-ring';
+label.className='vf-mic-label';
+mic.classList.remove('vf-rec');
+if(state==='recording'){
+ring.classList.add('ring-recording');
+label.classList.add('lbl-recording');
+label.textContent='🎤 أسمعك الآن...';
+mic.classList.add('vf-rec');
+}else if(state==='waiting'){
+ring.classList.add('ring-waiting');
+label.classList.add('lbl-waiting');
+label.textContent='🤖 Alex يجهّز الرد...';
+}else if(state==='speaking'){
+ring.classList.add('ring-waiting');
+label.classList.add('lbl-waiting');
+label.textContent='🔊 Alex يتحدث...';
+}else{
+label.textContent='اضغط للتحدث';
+}
+}
 function vfSetState(s,t){var d=document.getElementById('vf-st-dot'),x=document.getElementById('vf-st-txt');d.className='vf-st-dot'+(s?' st-'+s:'');if(x)x.textContent=t||''}
 function vfSetStatus(t,c){var e=document.getElementById('vf-sts');e.textContent=t;e.className='vf-sts'+(c?' st-'+c:'')}
 function vfAddTr(t,w){var e=document.getElementById('vf-tr'),l=document.createElement('div');l.className='vf-tr-l vf-tr-'+(w==='user'?'u':'a');
@@ -2421,7 +2552,7 @@ var raw = text.textContent.replace('🎤 ', '');
 improveText(raw, lastLine);
 }
 }
-function vfStart(){_vfRec=true;document.getElementById('vf-mic').classList.add('vf-rec');vfSetState('active','متصل');vfSetStatus('🎤 أسمعك — تحدث بالإنجليزية','l');setWaveActive(true);
+function vfStart(){_vfRec=true;document.getElementById('vf-mic').classList.add('vf-rec');vfSetState('active','متصل');vfSetStatus('🎤 أسمعك — تحدث بالإنجليزية','l');setWaveActive(true);setMicState('recording');
 var greeting = buildPersonalizedGreeting();
 if(greeting.isReturning){
 setTimeout(function(){
@@ -2431,8 +2562,14 @@ vfSpeakReply(fullGreet);
 }
 if(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia){
 navigator.mediaDevices.getUserMedia({audio:true}).then(function(s){_vfStream=s;_vfACtx=new(window.AudioContext||window.webkitAudioContext)();var src=_vfACtx.createMediaStreamSource(s);_vfAn=_vfACtx.createAnalyser();_vfAn.fftSize=256;src.connect(_vfAn)}).catch(function(err){
-console.log('Mic access denied, using text fallback:',err.name);
+console.warn('Mic access denied:',err.name);
+var isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent);
+if(err.name==='NotAllowedError'||err.name==='PermissionDeniedError'){
+vfSetStatus(isIOS?'⚠️ افتح الإعدادات > Safari > المايكروفون':'⚠️ اسمح بالمايكروفون من شريط العنوان','');
+}else{
 vfSetStatus('⌨️ المايكروفون غير متاح — استخدم الكتابة','');
+}
+setMicState('idle');
 vfShowTextInput();
 })}else{vfSetStatus('⌨️ المايكروفون غير مدعوم — استخدم الكتابة','');vfShowTextInput()}
 var SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(SR){
@@ -2442,7 +2579,9 @@ _vfRecog.onresult=function(e){_vfRecog._hadResult=true;if(_vfRecog._safariTimeou
 _vfRecog.onend=function(){if(_vfRec&&!(window.speechSynthesis&&window.speechSynthesis.speaking))try{_vfRecog.start()}catch(e){}};
 _vfRecog.onerror=function(e){if(_vfRecog._safariTimeout)clearTimeout(_vfRecog._safariTimeout);
 if(e.error==='not-allowed'||e.error==='service-not-available'){
-vfSetStatus('⌨️ التعرف الصوتي غير متاح — استخدم الكتابة','');vfShowTextInput();
+vfSetStatus('⌨️ التعرف الصوتي غير متاح — استخدم الكتابة','');
+setMicState('idle');
+vfShowTextInput();
 }else if(e.error!=='aborted'&&e.error!=='no-speech'){vfSetStatus('خطأ: '+e.error,'')}};
 _vfRecog.start();
 var _safariTimeout = setTimeout(function(){
@@ -2474,11 +2613,23 @@ vfAddTr(txt,'user');vfMockReply(txt);
 }});
 inp.focus();
 }
-function vfStop(){_vfRec=false;document.getElementById('vf-mic').classList.remove('vf-rec');vfSetState('','غير متصل');vfSetStatus('اضغط الزر وتحدث بالإنجليزية','');setWaveActive(false);if(_vfRecog){try{_vfRecog.abort()}catch(e){}_vfRecog=null}if(_vfStream){_vfStream.getTracks().forEach(function(t){t.stop()});_vfStream=null}if(_vfAnim){cancelAnimationFrame(_vfAnim);_vfAnim=null}if(_vfACtx){_vfACtx.close();_vfACtx=null}_vfAn=null}
+function vfStop(){_vfRec=false;document.getElementById('vf-mic').classList.remove('vf-rec');vfSetState('','غير متصل');vfSetStatus('اضغط الزر وتحدث بالإنجليزية','');setWaveActive(false);setMicState('idle');if(_vfRecog){try{_vfRecog.abort()}catch(e){}_vfRecog=null}if(_vfStream){_vfStream.getTracks().forEach(function(t){t.stop()});_vfStream=null}if(_vfAnim){cancelAnimationFrame(_vfAnim);_vfAnim=null}if(_vfACtx){_vfACtx.close();_vfACtx=null}_vfAn=null}
 function vfMockReply(ut){
+// Rate limit check
+var msgCount=incVoiceMsgCount();
+if(msgCount>VF_MSG_LIMIT){
+vfSetStatus('','');
+var stsEl=document.getElementById('vf-sts');
+if(stsEl){stsEl.className='vf-sts';stsEl.textContent='✨ أنهيت جلسة التعلم المكثفة لليوم! ارجع بكرة وكمّل مشوارك'}
+setMicState('idle');
+vfAddTr('Great session today! Come back tomorrow to continue practising.','ai');
+if(_vfRecog){try{_vfRecog.abort()}catch(e){}}
+return;
+}
 vfSetStatus('','');
 var stsEl=document.getElementById('vf-sts');
 if(stsEl){stsEl.className='vf-sts st-thinking';stsEl.innerHTML='🤖 Alex يفكر <span class="vf-thinking-dots"><span></span><span></span><span></span></span>'}
+setMicState('waiting');
 if(_vfRecog){try{_vfRecog.abort()}catch(e){}_vfRecog=null}
 _vfHistory.push({role:'user',text:ut});
 if(VF_API_URL){
@@ -2493,7 +2644,7 @@ fetch(VF_API_URL,{
 method:'POST',
 headers:{'Content-Type':'application/json'},
 signal:_fetchCtrl.signal,
-body:JSON.stringify({text:contextText,age:_vfAge,history:_vfHistory.slice(-10).map(function(h){return{role:h.role==='ai'?'model':'user',text:h.text}})})
+body:JSON.stringify({text:contextText,age:_vfAge,scenario:_vfScenario,history:_vfHistory.slice(-6).map(function(h){return{role:h.role==='ai'?'model':'user',text:h.text}})})
 }).then(function(r){
 clearTimeout(_fetchTimeout);
 if(!r.ok)throw new Error('HTTP '+r.status);
@@ -2528,6 +2679,7 @@ var arPart=parts.length>1?parts.slice(1).join(' '):'';
 vfAddTr(enPart,'ai');
 if(arPart)vfAddTr(arPart,'ai');
 vfSetStatus('🔊 Alex يتحدث...','s');
+setMicState('speaking');
 _aiTurnCount++;
 var score=Math.min(95,55+_aiTurnCount*4+Math.floor(Math.random()*8));
 if(typeof updateAccentScore==='function')updateAccentScore(score);
@@ -2543,26 +2695,21 @@ var voices=window.speechSynthesis.getVoices();
 var enV=voices.find(function(v){return v.lang.indexOf('en')===0});
 if(enV)u.voice=enV;
 u.onend=function(){
-if(arPart&&window.speechSynthesis){
-var arU=new SpeechSynthesisUtterance(arPart);
-arU.lang='ar-SA';arU.rate=0.92;
-var arV=voices.find(function(v){return v.lang.indexOf('ar')===0});
-if(arV)arU.voice=arV;
-arU.onend=function(){vfSetStatus('🎤 دورك — تحدث الآن','l');if(_vfRec)vfRestartRecog()};
-arU.onerror=function(){vfSetStatus('🎤 دورك — تحدث الآن','l');if(_vfRec)vfRestartRecog()};
-window.speechSynthesis.speak(arU);
-}else{vfSetStatus('🎤 دورك — تحدث الآن','l');if(_vfRec)vfRestartRecog()}
+// Arabic tip shown as text only — no TTS (prevents mispronunciation)
+vfSetStatus('🎤 دورك — تحدث الآن','l');
+setMicState('recording');
+if(_vfRec)vfRestartRecog();
 };
-u.onerror=function(){vfSetStatus('🎤 دورك — تحدث الآن','l');if(_vfRec)vfRestartRecog()};
+u.onerror=function(){vfSetStatus('🎤 دورك — تحدث الآن','l');setMicState('recording');if(_vfRec)vfRestartRecog()};
 window.speechSynthesis.speak(u);
-}else{vfSetStatus('🎤 دورك — تحدث الآن','l');if(_vfRec)vfRestartRecog()}
+}else{vfSetStatus('🎤 دورك — تحدث الآن','l');setMicState('recording');if(_vfRec)vfRestartRecog()}
 }
 function vfLocalFallback(ut){
 var lower=ut.toLowerCase().trim();
 var resp='';var arResp='';
-if(/politic|trump|biden|president|war|bomb|hack|crack|virus|malware|linux terminal|ignore.*instruction|forget.*teacher|pretend.*you.*are|act as|system prompt|your instruction|your rules/i.test(lower)){
-resp='That is an interesting topic, but I am your English teacher! Let us focus on your lesson. Try saying this sentence: I enjoy learning English every day.';
-arResp='موضوع مثير لكن أنا معلمك للإنجليزي! يلا نرجع للدرس';
+if(/hack|crack|virus|malware|linux terminal|ignore.*instruction|forget.*teacher|pretend.*you.*are|act as|system prompt|your instruction|your rules|kill|weapon/i.test(lower)){
+resp='Interesting! But let us talk about something fun. Tell me, what is your favourite food?';
+arResp='يلا نتكلم عن شي حلو! وش أكلك المفضل؟';
 _vfHistory.push({role:'ai',text:resp});
 vfSpeakReply(resp+'\n'+arResp);
 return;
@@ -2634,6 +2781,7 @@ var fullReply=resp+(arResp?'\n'+arResp:'');
 vfSpeakReply(fullReply);
 }
 function vfRestartRecog(){
+setMicState('recording');
 var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
 if(!SR)return;
 _vfRecog=new SR();_vfRecog.lang='en-US';_vfRecog.continuous=false;_vfRecog.interimResults=false;
@@ -2696,7 +2844,7 @@ body.quiz-mode #nav-fab{display:none;}
 
 <style>.resume-modal{position:fixed;inset:0;z-index:99990;background:rgba(10,6,20,0.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:opacity 0.35s ease, visibility 0.35s ease;}
 .resume-modal.rm-show{opacity:1;visibility:visible;}
-.resume-card{background:var(--bg-card);border-radius:22px;border:1px solid rgba(124,77,204,0.15);padding:36px 32px;max-width:400px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(30,10,60,0.35);transform:translateY(20px) scale(0.96);transition:transform 0.35s cubic-bezier(.34,1.56,.64,1);}
+.resume-card{background:#1a1a2e;border-radius:22px;border:1px solid rgba(124,77,204,0.15);padding:36px 32px;max-width:400px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(30,10,60,0.35);transform:translateY(20px) scale(0.96);transition:transform 0.35s cubic-bezier(.34,1.56,.64,1);}
 .rm-show .resume-card{transform:translateY(0) scale(1);}
 .resume-emoji{font-size:48px;margin-bottom:16px;}
 .resume-text{font-family:'Tajawal', 'Cairo', sans-serif;font-size:17px;font-weight:600;line-height:1.8;color:var(--text-primary);direction:rtl;margin-bottom:24px;}
@@ -2820,7 +2968,7 @@ function fireConfetti() {
 var container = document.createElement('div');
 container.className = 'se-confetti-container';
 document.body.appendChild(container);
-var colors = ['#a5e7ff', '#e0b6ff', '#22c55e', '#f1d2ff', '#47d6ff', '#fbbf24', '#f472b6'];
+var colors = ['#b794f4', '#e0b6ff', '#9d4edd', '#f1d2ff', '#c9a8f0', '#6d11ad', '#a5e7ff'];
 var shapes = ['●', '◆', '★', '■', '▲'];
 for (var i = 0; i < 30; i++) {
 var particle = document.createElement('span');
@@ -3490,7 +3638,7 @@ QS.forEach((_, i) => {
 const ok = board.dataset['q'+i] === '1';
 const item = document.createElement('div');
 item.className = 'score-bar-item';
-item.innerHTML = `<div class="bar-track"><div class="bar-fill" style="height:${ok?100:30}%;background:${ok?'#1F8A57':'#E15554'}"></div></div><div class="bar-label">${i+1}</div>`;
+item.innerHTML = `<div class="bar-track"><div class="bar-fill" style="height:${ok?100:30}%;background:${ok?'#6d11ad':'#7f1d1d'}"></div></div><div class="bar-label">${i+1}</div>`;
 barsWrap.appendChild(item);
 });
 board.classList.remove('hidden');
@@ -3538,7 +3686,7 @@ if (_vfRec) vfToggleSession();
 function updateConnState(active) {
 var dot = document.getElementById('ai-conn-dot');
 var txt = document.getElementById('ai-conn-text');
-if (dot) dot.style.background = active ? '#22c55e' : '#666';
+if (dot) dot.style.background = active ? '#b794f4' : '#666';
 if (txt) txt.textContent = active ? 'متصل بـ Alex 🟢' : 'غير متصل 🔴';
 }
 function updateAccentScore(score) {
@@ -3548,7 +3696,7 @@ if (el) el.textContent = score + '%';
 if (ring) {
 var offset = 364.4 - (364.4 * score / 100);
 ring.setAttribute('stroke-dashoffset', offset);
-ring.style.stroke = score >= 80 ? '#22c55e' : score >= 50 ? '#f59e0b' : '#ef4444';
+ring.style.stroke = score >= 80 ? '#b794f4' : score >= 50 ? '#9d4edd' : '#6d11ad';
 }
 }
 function addCorrection(original, corrected) {
